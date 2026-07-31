@@ -90,7 +90,7 @@ function ContractorsContent() {
           <main id="results-section" className="lg:col-span-3 space-y-6 scroll-mt-20">
             {isError && <ErrorMessage message="خطا در دریافت اطلاعات پیمانکاران" />}
 
-            {(isLoading || (isFetching && !data)) ? (
+            {(isLoading || isFetching) ? (
               <LoadingSpinner />
             ) : data ? (
               <>

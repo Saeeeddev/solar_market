@@ -3,19 +3,22 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { Sun, Search } from 'lucide-react';
+import { Sun, Search, Loader2 } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Navigation } from './Navigation';
 
 export function Header() {
   const [searchQuery, setSearchQuery] = useState('');
+  const [isSearching, setIsSearching] = useState(false);
   const router = useRouter();
 
   const handleSearchSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (searchQuery.trim()) {
+      setIsSearching(true);
       router.push(`/contractors?search=${encodeURIComponent(searchQuery.trim())}`);
+      setTimeout(() => setIsSearching(false), 800);
     }
   };
 
@@ -29,9 +32,12 @@ export function Header() {
           </div>
           <span className="text-base sm:text-xl md:text-2xl font-black text-slate-900 whitespace-nowrap">سولار بازار</span>
         </Link>
+
+        {/* Navigation & Mobile Hamburger Menu */}
         <Navigation />
-        {/* Global Search Bar (Always visible on mobile & desktop) */}
-        <form onSubmit={handleSearchSubmit} className="flex items-center gap-1.5 flex-1 max-w-[200px] sm:max-w-xs md:max-w-sm mx-1">
+
+        {/* Global Search Bar (Visible on Mobile & Desktop with Mobile Submit Button) */}
+        <form onSubmit={handleSearchSubmit} className="flex items-center gap-1.5 flex-1 max-w-[210px] sm:max-w-xs md:max-w-sm mx-1">
           <div className="relative w-full">
             <Search className="absolute right-2.5 top-2.5 h-4 w-4 text-[#6D7F9F]" />
             <Input
@@ -43,17 +49,29 @@ export function Header() {
               dir="rtl"
             />
           </div>
+          
+          {/* Mobile Icon Submit Button (Visible on screens < 640px) */}
+          <Button
+            type="submit"
+            size="icon"
+            disabled={isSearching}
+            className="h-9 w-9 bg-[#6D7F9F] hover:bg-[#56698a] text-white rounded-chip shadow-xs transition-colors shrink-0 sm:hidden flex items-center justify-center"
+            aria-label="جستجو"
+          >
+            {isSearching ? <Loader2 className="h-4 w-4 animate-spin" /> : <Search className="h-4 w-4" />}
+          </Button>
+
+          {/* Desktop Text Submit Button (Visible on screens >= 640px) */}
           <Button
             type="submit"
             size="sm"
-            className="h-9 px-3 bg-[#6D7F9F] hover:bg-[#56698a] text-white text-xs font-bold rounded-chip shadow-xs transition-colors shrink-0 hidden sm:inline-flex"
+            disabled={isSearching}
+            className="h-9 px-3.5 bg-[#6D7F9F] hover:bg-[#56698a] text-white text-xs font-bold rounded-chip shadow-xs transition-colors shrink-0 hidden sm:inline-flex items-center gap-1.5"
           >
-            جستجو
+            {isSearching && <Loader2 className="h-3.5 w-3.5 animate-spin" />}
+            <span>جستجو</span>
           </Button>
         </form>
-
-        {/* Navigation & Mobile Hamburger Menu */}
-        
       </div>
     </header>
   );

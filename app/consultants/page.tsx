@@ -68,7 +68,7 @@ export default function ConsultantsPage() {
           <main id="results-section" className="lg:col-span-3 space-y-6 scroll-mt-20">
             {isError && <ErrorMessage message="خطا در بارگذاری مشاوران" />}
 
-            {(isLoading || (isFetching && !data)) ? (
+            {(isLoading || isFetching) ? (
               <LoadingSpinner />
             ) : data ? (
               <>

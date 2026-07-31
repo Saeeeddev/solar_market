@@ -39,9 +39,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="wrap pt-16 pb-8 md:pt-20 text-center space-y-6">
         <div className="flex justify-center mb-4">
-          <div className="p-6 rounded-hero bg-[#6D7F9F]/10 shadow-sm">
-            <Sun className="h-16 w-16 md:h-20 md:w-20 text-[#6D7F9F]" />
-          </div>
+         
         </div>
         <div className="space-y-4 max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight">
