@@ -26,8 +26,9 @@ export default function RootLayout({
       lang="fa"
       dir="rtl"
       className="h-full antialiased"
+      suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col font-sans">
+      <body className="min-h-full flex flex-col font-sans" suppressHydrationWarning>
         <QueryProvider>
           <Header />
           <main className="flex-1">{children}</main>

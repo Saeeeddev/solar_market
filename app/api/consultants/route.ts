@@ -9,12 +9,15 @@ export async function GET(request: Request) {
   const status = searchParams.get('status') || 'all';
   const rank = searchParams.get('rank') || '';
 
+  const isHome = searchParams.get('is_home') === 'true';
+
   const result = queryConsultants({
     page,
     limit,
     search,
     status,
     rank,
+    isHome,
   });
 
   return NextResponse.json(result);

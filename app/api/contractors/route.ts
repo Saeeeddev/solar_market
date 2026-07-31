@@ -14,6 +14,8 @@ export async function GET(request: Request) {
   const certificate = searchParams.get('certificate') || 'all'; // 'all' | 'has_cert' | 'no_cert'
   const rank = searchParams.get('rank') || '';
 
+  const isHome = searchParams.get('is_home') === 'true';
+
   if (type === 'megawatt') {
     const result = queryMegawattContractors({
       page,
@@ -21,6 +23,7 @@ export async function GET(request: Request) {
       search,
       status,
       rank,
+      isHome,
     });
     return NextResponse.json(result);
   } else {
@@ -31,6 +34,7 @@ export async function GET(request: Request) {
       status,
       certificate,
       rank,
+      isHome,
     });
     return NextResponse.json(result);
   }

@@ -1,0 +1,125 @@
+{
+  "category": "megarwatt_contactor",
+  "category_title_fa": "پیمانکاران تایید شده متقاضیان احداث نیروگاه‌های تجدیدپذیر مگاواتی",
+  "headers": [
+    "نام شرکت به ترتیب حروف الفبا",
+    "شناسه ملی",
+    "رتبه سازمان برنامه",
+    "شماره تماس",
+    "تاریخ انقضاء"
+  ],
+  "total_count": 269,
+  "records": [
+    {
+      "company_name": "پویان منابع پایدار",
+      "national_id": [
+        "10103953271"
+      ],
+      "expiration_date": "04/12/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02166856498",
+        "09122132885"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "احداث و توسعه نیروگاه های مپنا - توسعه یک",
+      "national_id": [
+        "10102649926"
+      ],
+      "expiration_date": "14/02/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02182980000"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "آذین سانای برق آرمان",
+      "national_id": [
+        "14005550706"
+      ],
+      "expiration_date": "22/12/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02177917939"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "آرتا گستر تاجواره",
+      "national_id": [
+        "14004000419"
+      ],
+      "expiration_date": "13/03/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02166093207"
+      ],
+      "ranks": [
+        "رتبه 4 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 4 نیرو"
+      ]
+    },
+    {
+      "company_name": "آرمان انرژی",
+      "national_id": [
+        "10102627087"
+      ],
+      "expiration_date": "01/05/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02122904823",
+        "09351256680"
+      ],
+      "ranks": [
+        "رتبه 2 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 2 نیرو"
+      ]
+    },
+    {
+      "company_name": "آرمان نیرو زنده رود",
+      "national_id": [
+        "14005423878"
+      ],
+      "expiration_date": "20/08/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03134318126",
+        "09131081226"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    }
+  ]
+}

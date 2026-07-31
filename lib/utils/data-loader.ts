@@ -47,6 +47,10 @@ let smallScaleCache: JSONDataContainer<SmallScaleRecord> | null = null;
 let megawattCache: JSONDataContainer<MegawattRecord> | null = null;
 let consultantsCache: JSONDataContainer<ConsultantRecord> | null = null;
 
+let hSmallScaleCache: JSONDataContainer<SmallScaleRecord> | null = null;
+let hMegawattCache: JSONDataContainer<MegawattRecord> | null = null;
+let hConsultantsCache: JSONDataContainer<ConsultantRecord> | null = null;
+
 function getLibDataPath(filename: string): string {
   return path.join(process.cwd(), 'lib', 'data', filename);
 }
@@ -76,6 +80,33 @@ export function getConsultantsData(): JSONDataContainer<ConsultantRecord> {
     consultantsCache = JSON.parse(rawData);
   }
   return consultantsCache!;
+}
+
+export function getHSmallScaleData(): JSONDataContainer<SmallScaleRecord> {
+  if (!hSmallScaleCache) {
+    const filePath = getLibDataPath('H_small_scale_contractor.json');
+    const rawData = fs.readFileSync(filePath, 'utf-8');
+    hSmallScaleCache = JSON.parse(rawData);
+  }
+  return hSmallScaleCache!;
+}
+
+export function getHMegawattData(): JSONDataContainer<MegawattRecord> {
+  if (!hMegawattCache) {
+    const filePath = getLibDataPath('H_megarwatt_contactor.json');
+    const rawData = fs.readFileSync(filePath, 'utf-8');
+    hMegawattCache = JSON.parse(rawData);
+  }
+  return hMegawattCache!;
+}
+
+export function getHConsultantsData(): JSONDataContainer<ConsultantRecord> {
+  if (!hConsultantsCache) {
+    const filePath = getLibDataPath('H_consultants.json');
+    const rawData = fs.readFileSync(filePath, 'utf-8');
+    hConsultantsCache = JSON.parse(rawData);
+  }
+  return hConsultantsCache!;
 }
 
 function isNoRankItem(rk: string): boolean {
@@ -115,8 +146,9 @@ export function querySmallScaleContractors(params: {
   status?: string; // 'all' | 'valid' | 'expired'
   certificate?: string; // 'all' | 'has_cert' | 'no_cert'
   rank?: string;
+  isHome?: boolean;
 }): PaginatedResult<SmallScaleRecord> {
-  const container = getSmallScaleData();
+  const container = params.isHome ? getHSmallScaleData() : getSmallScaleData();
   let records = [...container.records];
 
   // 1. Filter by Search
@@ -191,8 +223,9 @@ export function queryMegawattContractors(params: {
   search?: string;
   status?: string; // 'all' | 'valid' | 'expired'
   rank?: string;
+  isHome?: boolean;
 }): PaginatedResult<MegawattRecord> {
-  const container = getMegawattData();
+  const container = params.isHome ? getHMegawattData() : getMegawattData();
   let records = [...container.records];
 
   // 1. Filter by Search
@@ -259,8 +292,9 @@ export function queryConsultants(params: {
   search?: string;
   status?: string; // 'all' | 'valid' | 'expired'
   rank?: string;
+  isHome?: boolean;
 }): PaginatedResult<ConsultantRecord> {
-  const container = getConsultantsData();
+  const container = params.isHome ? getHConsultantsData() : getConsultantsData();
   let records = [...container.records];
 
   // 1. Filter by Search

@@ -77,7 +77,7 @@ export function useSmallScaleContractors(limit = 6) {
   return useQuery<PaginatedResult<any>>({
     queryKey: ['contractors', 'small', 'home', limit],
     queryFn: async () => {
-      const response = await fetch(`/api/contractors?type=small&page=1&limit=${limit}`);
+      const response = await fetch(`/api/contractors?type=small&is_home=true&page=1&limit=${limit}`);
       if (!response.ok) {
         throw new Error('خطا در دریافت پیمانکاران مقیاس کوچک');
       }
@@ -91,7 +91,7 @@ export function useMegawattContractors(limit = 6) {
   return useQuery<PaginatedResult<any>>({
     queryKey: ['contractors', 'megawatt', 'home', limit],
     queryFn: async () => {
-      const response = await fetch(`/api/contractors?type=megawatt&page=1&limit=${limit}`);
+      const response = await fetch(`/api/contractors?type=megawatt&is_home=true&page=1&limit=${limit}`);
       if (!response.ok) {
         throw new Error('خطا در دریافت پیمانکاران مگاواتی');
       }
@@ -136,7 +136,7 @@ export function useFeaturedConsultants(limit = 4) {
   return useQuery<PaginatedResult<any>>({
     queryKey: ['consultants', 'featured', limit],
     queryFn: async () => {
-      const response = await fetch(`/api/consultants?page=1&limit=${limit}`);
+      const response = await fetch(`/api/consultants?is_home=true&page=1&limit=${limit}`);
       if (!response.ok) {
         throw new Error('خطا در دریافت مشاوران');
       }
