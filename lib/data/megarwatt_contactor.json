@@ -1,0 +1,5058 @@
+{
+  "category": "megarwatt_contactor",
+  "category_title_fa": "پیمانکاران تایید شده متقاضیان احداث نیروگاه‌های تجدیدپذیر مگاواتی",
+  "headers": [
+    "نام شرکت به ترتیب حروف الفبا",
+    "شناسه ملی",
+    "رتبه سازمان برنامه",
+    "شماره تماس",
+    "تاریخ انقضاء"
+  ],
+  "total_count": 269,
+  "records": [
+    {
+      "company_name": "آتی نیرو پاک گستر",
+      "national_id": [
+        "14005979882"
+      ],
+      "expiration_date": "30/10/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02188211013"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "احداث و توسعه نیروگاه های مپنا - توسعه یک",
+      "national_id": [
+        "10102649926"
+      ],
+      "expiration_date": "14/02/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02182980000"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "آذین سانای برق آرمان",
+      "national_id": [
+        "14005550706"
+      ],
+      "expiration_date": "22/12/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02177917939"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "آرتا گستر تاجواره",
+      "national_id": [
+        "14004000419"
+      ],
+      "expiration_date": "13/03/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02166093207"
+      ],
+      "ranks": [
+        "رتبه 4 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 4 نیرو"
+      ]
+    },
+    {
+      "company_name": "آرمان انرژی",
+      "national_id": [
+        "10102627087"
+      ],
+      "expiration_date": "01/05/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02122904823",
+        "09351256680"
+      ],
+      "ranks": [
+        "رتبه 2 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 2 نیرو"
+      ]
+    },
+    {
+      "company_name": "آرمان نیرو زنده رود",
+      "national_id": [
+        "14005423878"
+      ],
+      "expiration_date": "20/08/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03134318126",
+        "09131081226"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "آرمان نیروی بوتیا",
+      "national_id": [
+        "14007103020"
+      ],
+      "expiration_date": "13/03/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "0343245698"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "آرن دژپی",
+      "national_id": [
+        "14004697619"
+      ],
+      "expiration_date": "22/12/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02634038005"
+      ],
+      "ranks": [
+        "رتبه 4 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 4 نیرو"
+      ]
+    },
+    {
+      "company_name": "آروین تجهیز پاسارگاد",
+      "national_id": [
+        "14007601262"
+      ],
+      "expiration_date": "07/11/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02188776949",
+        "09354819646"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "آریا سولار صنعت",
+      "national_id": [
+        "10360047589"
+      ],
+      "expiration_date": "23/10/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "05632214472",
+        "09153617790"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "آریانیر",
+      "national_id": [
+        "10102201832"
+      ],
+      "expiration_date": "22/12/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02144604350"
+      ],
+      "ranks": [
+        "رتبه 2 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 2 نیرو"
+      ]
+    },
+    {
+      "company_name": "اسسکو",
+      "national_id": [
+        "10100665122"
+      ],
+      "expiration_date": "02/10/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02188744213",
+        "09123154103"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "اطلس افروز شرق",
+      "national_id": [
+        "10380359711"
+      ],
+      "expiration_date": "14/02/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "05137268999",
+        "09153160567"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "افق نیرواستیل",
+      "national_id": [
+        "10460133461"
+      ],
+      "expiration_date": "13/03/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "04433490014"
+      ],
+      "ranks": [
+        "رتبه 4 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 4 نیرو"
+      ]
+    },
+    {
+      "company_name": "امکان نیرو فجر",
+      "national_id": [
+        "14005809392"
+      ],
+      "expiration_date": "15/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "۰۲۱۸۸۰۶۶۰۳۰",
+        "09122377215"
+      ],
+      "ranks": [
+        "رتبه 4 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 4 نیرو"
+      ]
+    },
+    {
+      "company_name": "انتقال برق اهورا",
+      "national_id": [
+        "10610091510"
+      ],
+      "expiration_date": "18/11/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "08733229725",
+        "08733229726",
+        "08733229670"
+      ],
+      "ranks": [
+        "رتبه 4 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 4 نیرو"
+      ]
+    },
+    {
+      "company_name": "انتقال گستر طبس",
+      "national_id": [
+        "10861792300"
+      ],
+      "expiration_date": "15/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02122865823",
+        "09121908436"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "انرژی خورشیدی کومش",
+      "national_id": [
+        "14010781834"
+      ],
+      "expiration_date": "08/07/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "09135106993"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "انرژی سازان تکین",
+      "national_id": [
+        "10103272182"
+      ],
+      "expiration_date": "18/09/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02144338377"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "انرژی گستران متحد",
+      "national_id": [
+        "10103683618"
+      ],
+      "expiration_date": "18/09/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02187700982"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "آواسان انرژی",
+      "national_id": [
+        "14014413647"
+      ],
+      "expiration_date": "30/10/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02122655943",
+        "02126294167",
+        "09122368018"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "آوای آب و خشت و خورشید اسپرلوس",
+      "national_id": [
+        "14009883190"
+      ],
+      "expiration_date": "15/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03136682980",
+        "09130001337"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "اوکسین صنعت",
+      "national_id": [
+        "10610047625"
+      ],
+      "expiration_date": "04/12/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02188501132",
+        "09128164064"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "آویژه نیرو صنعت",
+      "national_id": [
+        "10720264369"
+      ],
+      "expiration_date": "24/04/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "01332529934"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "ایرساشید انرژی",
+      "national_id": [
+        "14007721857"
+      ],
+      "expiration_date": "14/02/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02126854016",
+        "09202949593"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "ایمن تصویر کویر",
+      "national_id": [
+        "10480074002"
+      ],
+      "expiration_date": "29/11/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02335255991",
+        "09126311914",
+        "09125315897"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "ایمن صنعت سها",
+      "national_id": [
+        "14003903223"
+      ],
+      "expiration_date": "30/10/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03157777200300",
+        "09127465911"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "ایمن گستر کمین جنوب",
+      "national_id": [
+        "14000160313"
+      ],
+      "expiration_date": "29/02/1405",
+      "is_expired": true,
+      "status_text": "فاقد اعتبار",
+      "phone_numbers": [
+        "09178261007",
+        "09120410028"
+      ],
+      "ranks": [
+        "رتبه 4 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 4 نیرو"
+      ]
+    },
+    {
+      "company_name": "باد مهر توان گستر",
+      "national_id": [
+        "14006466933"
+      ],
+      "expiration_date": "05/08/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "09123476762",
+        "09393388469"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "بامداد صبا پیشرو",
+      "national_id": [
+        "14006641094"
+      ],
+      "expiration_date": "02/10/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "0266383580",
+        "09125060863"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "برق آب فن",
+      "national_id": [
+        "10101943111"
+      ],
+      "expiration_date": "20/08/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02188723350",
+        "0912123359809137903273"
+      ],
+      "ranks": [
+        "رتبه 3 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 3 نیرو"
+      ]
+    },
+    {
+      "company_name": "برق آسای کیش",
+      "national_id": [
+        "10380390726"
+      ],
+      "expiration_date": "13/03/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "05136071446"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "برق و تاسیسات داریان",
+      "national_id": [
+        "10101281322"
+      ],
+      "expiration_date": "13/03/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "0212291391719",
+        "02126406937"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "برق و نیروگاهی کیسون",
+      "national_id": [
+        "14009930212"
+      ],
+      "expiration_date": "17/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02124836166",
+        "09122349690"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "برنا برق اصفهان",
+      "national_id": [
+        "10260382980"
+      ],
+      "expiration_date": "08/07/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03132332485",
+        "09131147919"
+      ],
+      "ranks": [
+        "رتبه 4 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 4 نیرو"
+      ]
+    },
+    {
+      "company_name": "بهسولار بهره وری انرژی",
+      "national_id": [
+        "14010221723"
+      ],
+      "expiration_date": "13/03/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "05633331519"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "بهگام پایا ساخت",
+      "national_id": [
+        "10103216419"
+      ],
+      "expiration_date": "01/05/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "88518425021",
+        "09217481985"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "بهینه صنعت شیدتاب",
+      "national_id": [
+        "14007505806"
+      ],
+      "expiration_date": "02/04/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "05155251313"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "بین المللی پتروتکسان",
+      "national_id": [
+        "10102309266"
+      ],
+      "expiration_date": "15/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02188065502",
+        "09120587881"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "پارت صنعت مهر گستر توس",
+      "national_id": [
+        "10380651221"
+      ],
+      "expiration_date": "20/08/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "05136015049",
+        "09153145327"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "پارس تابلو",
+      "national_id": [
+        "10100911408"
+      ],
+      "expiration_date": "18/09/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02191072222"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "پارس ساختار",
+      "national_id": [
+        "10200089736"
+      ],
+      "expiration_date": "20/06/1404",
+      "is_expired": true,
+      "status_text": "فاقد اعتبار",
+      "phone_numbers": [
+        "04133346779"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "پارس واره آسیا",
+      "national_id": [
+        "10260537794"
+      ],
+      "expiration_date": "08/07/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02632285094",
+        "02691001773",
+        "09128693312"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "پارسیان انرژی پرتو",
+      "national_id": [
+        "14005311383"
+      ],
+      "expiration_date": "02/10/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02122127800",
+        "09128222215"
+      ],
+      "ranks": [
+        "رتبه 4 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 4 نیرو"
+      ]
+    },
+    {
+      "company_name": "پارمیس طراحان پاسارگاد",
+      "national_id": [
+        "10320358681"
+      ],
+      "expiration_date": "02/10/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02166910290",
+        "09124700477"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "پاک نیرو سولار",
+      "national_id": [
+        "14007703241"
+      ],
+      "expiration_date": "13/03/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03132294854"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "پالاسازه انرژی",
+      "national_id": [
+        "14009901944"
+      ],
+      "expiration_date": "02/10/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "026872134",
+        "02188540971",
+        "09393105963"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "پرتو الکترو افروز",
+      "national_id": [
+        "14006264000"
+      ],
+      "expiration_date": "10/04/1405",
+      "is_expired": true,
+      "status_text": "فاقد اعتبار",
+      "phone_numbers": [
+        "03432472412"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "پرتو الکتریک خراسان",
+      "national_id": [
+        "14010718332"
+      ],
+      "expiration_date": "",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "0519101309109300950930"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "پردیس گستر خیام",
+      "national_id": [
+        "10260143430"
+      ],
+      "expiration_date": "14/02/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03153241119",
+        "09132214719"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "پرشین سازه پرتو",
+      "national_id": [
+        "10103216267"
+      ],
+      "expiration_date": "22/12/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02144761778"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "پرورش داده ها",
+      "national_id": [
+        "10101147298"
+      ],
+      "expiration_date": "02/10/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02188712451",
+        "09126932919"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "پگاه انرژی پارسیان",
+      "national_id": [
+        "10530471603"
+      ],
+      "expiration_date": "01/02/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02634013862"
+      ],
+      "ranks": [
+        "رتبه 3 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 3 نیرو"
+      ]
+    },
+    {
+      "company_name": "پناه نیروی البرز",
+      "national_id": [
+        "14007300389"
+      ],
+      "expiration_date": "22/12/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02334245454"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "پویا صنعت آوای مدرن",
+      "national_id": [
+        "10530384302"
+      ],
+      "expiration_date": "08/07/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "07136363413",
+        "0917113343"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "پویا گران صنعت هزاره سوم",
+      "national_id": [
+        "10530329065"
+      ],
+      "expiration_date": "22/12/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "07132296971",
+        "07132284116"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "پویا نوین توان اندیشه (پنتا)",
+      "national_id": [
+        "10103575277"
+      ],
+      "expiration_date": "25/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02144361134",
+        "09125877617"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "پویان منابع پایدار",
+      "national_id": [
+        "10103953271"
+      ],
+      "expiration_date": "04/12/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02166856498",
+        "09122132885"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "پویش رایان بهین نیروی فارس",
+      "national_id": [
+        "10530430355"
+      ],
+      "expiration_date": "24/04/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "07138386366",
+        "07138385504"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "پیشتاز صنعت اندیش ویرا",
+      "national_id": [
+        "14010174454"
+      ],
+      "expiration_date": "22/12/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "33542413024"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "پیشگامان هور توان",
+      "national_id": [
+        "14010492617"
+      ],
+      "expiration_date": "",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02133255588",
+        "09124027186"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "پیمان خطوط شرق",
+      "national_id": [
+        "10380425554"
+      ],
+      "expiration_date": "02/04/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "05135423184"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "پیمان نیرو هورسان",
+      "national_id": [
+        "14013143821"
+      ],
+      "expiration_date": "13/03/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "051376677701"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "تام ايران خودرو",
+      "national_id": [
+        "10101800644"
+      ],
+      "expiration_date": "22/12/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "4897242148972078"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "تامین آب و برق ایران (تابیران)",
+      "national_id": [
+        "10100660789"
+      ],
+      "expiration_date": "08/07/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02188636526",
+        "09372117855"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "تجهیز آمیتیس کیان",
+      "national_id": [
+        "14005142195"
+      ],
+      "expiration_date": "14/02/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02158463000",
+        "09120312692"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "تراز بنیان غرب",
+      "national_id": [
+        "10101474171"
+      ],
+      "expiration_date": "24/04/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03155421871"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "تسلط جویان انرژی",
+      "national_id": [
+        "10590023240"
+      ],
+      "expiration_date": "05/08/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02532908735",
+        "09127528345"
+      ],
+      "ranks": [
+        "5"
+      ],
+      "organization_rank": [
+        "5"
+      ]
+    },
+    {
+      "company_name": "تک سازه دیلمان",
+      "national_id": [
+        "14003499777"
+      ],
+      "expiration_date": "18/11/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "04435253565",
+        "09121942347",
+        "09128369160"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "توان پژوهان فناور پاسارگاد",
+      "national_id": [
+        "10320779220"
+      ],
+      "expiration_date": "08/07/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "12202176250114",
+        "09054444137",
+        "09120506750",
+        "09054444713"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "توان تجهیز آزما",
+      "national_id": [
+        "10840088189"
+      ],
+      "expiration_date": "05/08/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03538282060",
+        "09133529581"
+      ],
+      "ranks": [
+        "5"
+      ],
+      "organization_rank": [
+        "5"
+      ]
+    },
+    {
+      "company_name": "توان گستر دقیق",
+      "national_id": [
+        "10102025049"
+      ],
+      "expiration_date": "23/10/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02144018036",
+        "02144018034"
+      ],
+      "ranks": [
+        "رتبه 2 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 2 نیرو"
+      ]
+    },
+    {
+      "company_name": "توان گستر نصر اراک",
+      "national_id": [
+        "10780125014"
+      ],
+      "expiration_date": "22/12/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "08632212753"
+      ],
+      "ranks": [
+        "رتبه 3 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 3 نیرو"
+      ]
+    },
+    {
+      "company_name": "توسعه انرژی آریا مجمر",
+      "national_id": [
+        "14007381790"
+      ],
+      "expiration_date": "29/11/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "035382787002",
+        "09199332017"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "توسعه انرژی آیسان سولار کویر یزد",
+      "national_id": [
+        "14009336108"
+      ],
+      "expiration_date": "",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03535217121",
+        "03535211901",
+        "03535217141",
+        "09135407140"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "توسعه پستهاي فشار قوي پارسيان",
+      "national_id": [
+        "10101394920"
+      ],
+      "expiration_date": "18/11/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02148076717",
+        "09122134377"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "توسعه تأمین تجهیز اترک",
+      "national_id": [
+        "14011603288"
+      ],
+      "expiration_date": "29/11/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03136203328",
+        "09133316662"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "توسعه راهکارهای انرژی شریف",
+      "national_id": [
+        "14009739811"
+      ],
+      "expiration_date": "15/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02126411497",
+        "09104091727"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "توسعه صنایع تابان انرژی پاسارگاد",
+      "national_id": [
+        "10320254113"
+      ],
+      "expiration_date": "08/07/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02179717623",
+        "09360232922"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "توسعه صنایع و انرژی آریاشید آفرید",
+      "national_id": [
+        "14005634992"
+      ],
+      "expiration_date": "29/05/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02126291863",
+        "09122420065"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "توسعه صنعتی رسا انرژی سبز",
+      "national_id": [
+        "14011681040"
+      ],
+      "expiration_date": "02/04/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02126409869"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "توسعه مهندسی زاویر",
+      "national_id": [
+        "10104107393"
+      ],
+      "expiration_date": "18/11/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02186012166",
+        "0912078352909369422588"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "توسعه و تعمیرات شبکه های برق (نیرو توسعه)",
+      "national_id": [
+        "10101692264"
+      ],
+      "expiration_date": "30/10/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02144107065",
+        "09121055987"
+      ],
+      "ranks": [
+        "رتبه 3 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 3 نیرو"
+      ]
+    },
+    {
+      "company_name": "تولید توسعه بوتیا انرژی خاورمیانه",
+      "national_id": [
+        "14014210090"
+      ],
+      "expiration_date": "04/12/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02188219358",
+        "09123721489"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "تولید ملزومات برق",
+      "national_id": [
+        "10100131332"
+      ],
+      "expiration_date": "18/09/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02187740"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "تیام پارسی پاسارگاد",
+      "national_id": [
+        "10861659108"
+      ],
+      "expiration_date": "25/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03133932083",
+        "09101843458"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "ثمین انرژی شمسا",
+      "national_id": [
+        "14014355505"
+      ],
+      "expiration_date": "14/02/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02188810039",
+        "091238661689"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "خدمات انرژی یلدای سهند",
+      "national_id": [
+        "10100218598"
+      ],
+      "expiration_date": "14/02/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02632558186",
+        "09125630288"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "خدمات ایفا صنعت تابا",
+      "national_id": [
+        "14004561102"
+      ],
+      "expiration_date": "29/05/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02175041395",
+        "09123017229"
+      ],
+      "ranks": [
+        "رتبه 3 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 3 نیرو"
+      ]
+    },
+    {
+      "company_name": "خدماتی تأسیساتی ساختمانی ستاک بختیاری",
+      "national_id": [
+        "10680054350"
+      ],
+      "expiration_date": "02/04/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03833348938"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "خورشید تاب توان",
+      "national_id": [
+        "14003407356"
+      ],
+      "expiration_date": "18/11/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02833687801",
+        "09128214357"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "خورشید تابان ساحل",
+      "national_id": [
+        "14006379730"
+      ],
+      "expiration_date": "08/07/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "07691010256",
+        "09107017282",
+        "09179078481"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "خورشید سان پارس",
+      "national_id": [
+        "14011517811"
+      ],
+      "expiration_date": "18/11/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02182808480",
+        "09195110981"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "دادمان یزد",
+      "national_id": [
+        "10860117436"
+      ],
+      "expiration_date": "18/09/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03536229427"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "دالاهو کویر یزد",
+      "national_id": [
+        "10860161550"
+      ],
+      "expiration_date": "24/04/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03591001122"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "دانش بنیان انرژی موج خورشید",
+      "national_id": [
+        "14007812110"
+      ],
+      "expiration_date": "",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "07433227545",
+        "09359337043",
+        "09120799572"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "دنیز نیروی زنگان",
+      "national_id": [
+        "10460115348"
+      ],
+      "expiration_date": "05/08/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02433364489",
+        "09123420962"
+      ],
+      "ranks": [
+        "5"
+      ],
+      "organization_rank": [
+        "5"
+      ]
+    },
+    {
+      "company_name": "رادمان پاک انرژی",
+      "national_id": [
+        "14006910479"
+      ],
+      "expiration_date": "02/04/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02126212385"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "رادین فولاد دامغان (راد نیرو مهرام)",
+      "national_id": [
+        "14013551737"
+      ],
+      "expiration_date": "17/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02335235397",
+        "09129543063"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "راهکار پایدار انرژی نوین",
+      "national_id": [
+        "14007125170"
+      ],
+      "expiration_date": "13/03/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02140880254"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "رای آوین فن",
+      "national_id": [
+        "10102434340"
+      ],
+      "expiration_date": "20/06/1404",
+      "is_expired": true,
+      "status_text": "فاقد اعتبار",
+      "phone_numbers": [
+        "02188612011"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "رای آوین فن",
+      "national_id": [
+        "10102434340"
+      ],
+      "expiration_date": "02/04/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02188612011"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "رسانا پایش طلائی",
+      "national_id": [
+        "14004905917"
+      ],
+      "expiration_date": "08/07/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "08138233777",
+        "09122027564"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "رستاک پویا",
+      "national_id": [
+        "10103069333"
+      ],
+      "expiration_date": "10/04/1405",
+      "is_expired": true,
+      "status_text": "فاقد اعتبار",
+      "phone_numbers": [
+        "02144220075"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "رستاک قدرت کریمیان",
+      "national_id": [
+        "14007063512"
+      ],
+      "expiration_date": "08/07/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03432516085",
+        "09133877573"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "رسم آرا",
+      "national_id": [
+        "10101670983"
+      ],
+      "expiration_date": "03/03/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "021886758206"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "رشد صنعت",
+      "national_id": [
+        "10101242739"
+      ],
+      "expiration_date": "22/12/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "48000981021"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "رعدتابان",
+      "national_id": [
+        "10101594504"
+      ],
+      "expiration_date": "18/09/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02144002262"
+      ],
+      "ranks": [
+        "رتبه 2 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 2 نیرو"
+      ]
+    },
+    {
+      "company_name": "ره یاب گیسوم",
+      "national_id": [
+        "14010600714"
+      ],
+      "expiration_date": "22/12/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02634038005"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "رهیافت های هوشمند صدری ایرانیان",
+      "national_id": [
+        "10380665779"
+      ],
+      "expiration_date": "24/04/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "0219109906"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "رهیافت‌های هوشمند صدری ایرانیان",
+      "national_id": [
+        "10380665779"
+      ],
+      "expiration_date": "27/07/1404",
+      "is_expired": true,
+      "status_text": "فاقد اعتبار",
+      "phone_numbers": [
+        "05138766343"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "ساختمانی مهندسی و بازرگانی هور سازه مهر آریا",
+      "national_id": [
+        "14012130983"
+      ],
+      "expiration_date": "25/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02188385518",
+        "09122269399"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "سازه پایدار آرمان نیرو",
+      "national_id": [
+        "14003432146"
+      ],
+      "expiration_date": "17/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02166293276",
+        "09366055440"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "سازه کاو",
+      "national_id": [
+        "10101001361"
+      ],
+      "expiration_date": "24/04/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02171753000"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "سازه های فلزی یاسان",
+      "national_id": [
+        "10780056640"
+      ],
+      "expiration_date": "18/09/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02188694115"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "سازه های نوین تبریز",
+      "national_id": [
+        "10200215790"
+      ],
+      "expiration_date": "23/10/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "4145041"
+      ],
+      "ranks": [
+        "رتبه 3 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 3 نیرو"
+      ]
+    },
+    {
+      "company_name": "سازه‌های صنعتی فرهان افراز",
+      "national_id": [
+        "14007928350"
+      ],
+      "expiration_date": "14/02/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02144972925",
+        "09125379743"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "سامان انرژی اصفهان",
+      "national_id": [
+        "10260397594"
+      ],
+      "expiration_date": "30/10/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03137765059"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "سامان محیط آزما",
+      "national_id": [
+        "10103741652"
+      ],
+      "expiration_date": "04/12/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02188864064",
+        "09125229890"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "سامانه های برق آسای پاوان",
+      "national_id": [
+        "14005495546"
+      ],
+      "expiration_date": "05/08/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "051137262999",
+        "09120822251"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "سان انرژی راهبران امید",
+      "national_id": [
+        "14014948248"
+      ],
+      "expiration_date": "13/03/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03155310008"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "سانیر آریا",
+      "national_id": [
+        "10460137090"
+      ],
+      "expiration_date": "18/09/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "202122907591"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "سپاهان توان گستر",
+      "national_id": [
+        "10260401687"
+      ],
+      "expiration_date": "25/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03136256997",
+        "09133089208"
+      ],
+      "ranks": [
+        "رتبه 4 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 4 نیرو"
+      ]
+    },
+    {
+      "company_name": "سپهر انرژی نوین آینده",
+      "national_id": [
+        "14005901110"
+      ],
+      "expiration_date": "14/02/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02144859642",
+        "09120727157"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "سپهر انرژی هوشمند",
+      "national_id": [
+        "14010197378"
+      ],
+      "expiration_date": "18/11/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03137865684",
+        "09128906351"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "سما نیرو البرز",
+      "national_id": [
+        "14005283853"
+      ],
+      "expiration_date": "25/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02634477726",
+        "09124059210"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "سورنا الکتریک توس",
+      "national_id": [
+        "10380671309"
+      ],
+      "expiration_date": "03/03/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "05136918304"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "سولار باد انرژی ایرانیان",
+      "national_id": [
+        "14006843386"
+      ],
+      "expiration_date": "02/04/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02191088806"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "سولار پرتو درخشان سبز",
+      "national_id": [
+        "14011029985"
+      ],
+      "expiration_date": "18/11/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02186017955",
+        "09123901055"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "سولار تجهیز نورا",
+      "national_id": [
+        "14011290413"
+      ],
+      "expiration_date": "25/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03155504034",
+        "09125263623"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "سیمرغ الکترونیک اسرار",
+      "national_id": [
+        "14006898949"
+      ],
+      "expiration_date": "14/02/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "05144672762",
+        "09153330249",
+        "09155083958"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "سیمرغ نوآوری پایدار ایرانیان",
+      "national_id": [
+        "10320879421"
+      ],
+      "expiration_date": "15/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "0212205124502122054958",
+        "09982151289"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "سینا گروه بهسان",
+      "national_id": [
+        "10102180033"
+      ],
+      "expiration_date": "18/09/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02126294091"
+      ],
+      "ranks": [
+        "رتبه 2 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 2 نیرو"
+      ]
+    },
+    {
+      "company_name": "شارق صنعت پارس",
+      "national_id": [
+        "14003307024"
+      ],
+      "expiration_date": "14/02/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "07144551037",
+        "09177518083"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "شرکت احداث کنترل",
+      "national_id": [
+        "10101543933"
+      ],
+      "expiration_date": "25/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02146043796",
+        "09912069153"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "شرکت فنی مهندسی یکتا نیروی خاور",
+      "national_id": [
+        "10380651162"
+      ],
+      "expiration_date": "25/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "0513881263602122820392",
+        "0939406320009159032864"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "شرکت وارگه سازان زاگرس  و شرکت اکسین الکترونیک سیمین",
+      "national_id": [
+        "10420195763",
+        "14012419525"
+      ],
+      "expiration_date": "25/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "06133360462",
+        "06152627918",
+        "09168290180",
+        "09163502561"
+      ],
+      "ranks": [
+        "رتبه 4 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 4 نیرو"
+      ]
+    },
+    {
+      "company_name": "شعاع گستر شرق",
+      "national_id": [
+        "10380343405"
+      ],
+      "expiration_date": "15/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "05138589160",
+        "09151244939"
+      ],
+      "ranks": [
+        "رتبه 4 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 4 نیرو"
+      ]
+    },
+    {
+      "company_name": "شهر انرژی خورشیدی",
+      "national_id": [
+        "14012590900"
+      ],
+      "expiration_date": "29/11/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "04433383849",
+        "09141886857"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "شهرآب انرژی پارس رود (فناوران شهرآب پارس رود)",
+      "national_id": [
+        "14006924370"
+      ],
+      "expiration_date": "02/04/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "01133373668"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "شیدسان راد",
+      "national_id": [
+        "10320486428"
+      ],
+      "expiration_date": "18/09/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02188048291"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "صادرات تجهیزات و خدمات صنایع آب و برق ایران (صانیر)",
+      "national_id": [
+        "10101540420"
+      ],
+      "expiration_date": "20/08/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02142741653",
+        "09185606647"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "صبا نیروی توس",
+      "national_id": [
+        "10380353205"
+      ],
+      "expiration_date": "25/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "05138555375",
+        "09155034827"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "صنایع آترین تبریز",
+      "national_id": [
+        "10200174923"
+      ],
+      "expiration_date": "22/12/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "04191001011"
+      ],
+      "ranks": [
+        "رتبه 2 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 2 نیرو"
+      ]
+    },
+    {
+      "company_name": "صنایع برق ساز آبپخش",
+      "national_id": [
+        "10320006580"
+      ],
+      "expiration_date": "29/02/1405",
+      "is_expired": true,
+      "status_text": "فاقد اعتبار",
+      "phone_numbers": [
+        "07138384860"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "صنایع پیشرفته هواخورشید",
+      "national_id": [
+        "10380645347"
+      ],
+      "expiration_date": "15/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "05138804406",
+        "09153156049"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "صنایع صبح پارلار آسیا",
+      "national_id": [
+        "10200366294"
+      ],
+      "expiration_date": "",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "04151612137",
+        "09106905371"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "صنعت برق و توان آرتاویل",
+      "national_id": [
+        "14010957672"
+      ],
+      "expiration_date": "02/04/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "04591014910"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "صنعت سازه ثمین",
+      "national_id": [
+        "10860807719"
+      ],
+      "expiration_date": "08/07/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02126602550",
+        "09155845728"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "صنعتی پارس برق آژینه",
+      "national_id": [
+        "14003735230"
+      ],
+      "expiration_date": "29/05/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02146116871",
+        "09121720657"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "طراحی و ساختمان نفت",
+      "national_id": [
+        "10101305592"
+      ],
+      "expiration_date": "30/10/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "0218855354",
+        "09374890875"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "فراب",
+      "national_id": [
+        "10861653535"
+      ],
+      "expiration_date": "20/12/1404",
+      "is_expired": true,
+      "status_text": "فاقد اعتبار",
+      "phone_numbers": [
+        "402188900042",
+        "902188903117"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "فراگستربیستون",
+      "national_id": [
+        "10101871174"
+      ],
+      "expiration_date": "08/07/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02188613300",
+        "09129735377"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "فراندیش نیرو صفاهان",
+      "national_id": [
+        "14013232609"
+      ],
+      "expiration_date": "15/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03133932235",
+        "09133284972"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "فرجاد توان آسیا",
+      "national_id": [
+        "14005301448"
+      ],
+      "expiration_date": "23/10/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03155583079"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "فردیس نیروی شیراز",
+      "national_id": [
+        "10530216836"
+      ],
+      "expiration_date": "01/02/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "07136491239"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "فرهان انرژی ماندگار",
+      "national_id": [
+        "14011561726"
+      ],
+      "expiration_date": "05/08/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "09124161521",
+        "02188208326"
+      ],
+      "ranks": [
+        "5"
+      ],
+      "organization_rank": [
+        "5"
+      ]
+    },
+    {
+      "company_name": "فن یار یاسین گلستان",
+      "national_id": [
+        "14014382223"
+      ],
+      "expiration_date": "24/04/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "01732160492"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "فن‌آوران صانع شرق",
+      "national_id": [
+        "10380417186"
+      ],
+      "expiration_date": "27/07/1404",
+      "is_expired": true,
+      "status_text": "فاقد اعتبار",
+      "phone_numbers": [
+        "05135243522"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "فنی مهندسی انرژی گستران هورداد نیرو",
+      "national_id": [
+        "14009513512"
+      ],
+      "expiration_date": "29/11/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "09120143699",
+        "05433216606"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "فنی مهندسی آیندگان صنعت سپاهان",
+      "national_id": [
+        "10260357596"
+      ],
+      "expiration_date": "24/04/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02144107065"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "فنی مهندسی فارس نیروی رعد",
+      "national_id": [
+        "10530082145"
+      ],
+      "expiration_date": "05/08/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "09171303832"
+      ],
+      "ranks": [
+        "رتبه 2 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 2 نیرو"
+      ]
+    },
+    {
+      "company_name": "فنی مهندسی فدک شهرکرد",
+      "national_id": [
+        "10680044317"
+      ],
+      "expiration_date": "15/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "09353284339",
+        "03833340026"
+      ],
+      "ranks": [
+        "رتبه 4 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 4 نیرو"
+      ]
+    },
+    {
+      "company_name": "فنی مهندسی فناوران صنعت استوناوند",
+      "national_id": [
+        "14003640272"
+      ],
+      "expiration_date": "03/03/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02334245225"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "فنی مهندسی نور تاب توان قزوین",
+      "national_id": [
+        "10861478331"
+      ],
+      "expiration_date": "08/07/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02833669767",
+        "09122626732"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "فنی مهندسی همت کاران اصفهان",
+      "national_id": [
+        "10260124962"
+      ],
+      "expiration_date": "13/03/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03137790750"
+      ],
+      "ranks": [
+        "رتبه 2 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 2 نیرو"
+      ]
+    },
+    {
+      "company_name": "فنی و مهندسی پرنیان انرژی پاک مانا",
+      "national_id": [
+        "14011555267"
+      ],
+      "expiration_date": "14/02/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "08632802639",
+        "09182717206"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "فنی و مهندسی توان رسانای کادوس",
+      "national_id": [
+        "14007105021"
+      ],
+      "expiration_date": "14/02/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "01332545881",
+        "09111395466"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "فنی و مهندسی جهان رعد گستران",
+      "national_id": [
+        "10100438473"
+      ],
+      "expiration_date": "25/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02165292781",
+        "09121087665"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "فنی و مهندسی سولارگستر کریمان",
+      "national_id": [
+        "14014252052"
+      ],
+      "expiration_date": "",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03432230654",
+        "09003510555"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "فنی و مهندسی مادنیروگستر",
+      "national_id": [
+        "10200225343"
+      ],
+      "expiration_date": "17/03/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "0914150866209143157503"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "فنی و مهندسی همت کاران",
+      "national_id": [
+        "10260124962"
+      ],
+      "expiration_date": "20/06/1404",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03137777088"
+      ],
+      "ranks": [
+        "رتبه 2 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 2 نیرو"
+      ]
+    },
+    {
+      "company_name": "فولاد تدبیر اصفهان",
+      "national_id": [
+        "10260436311"
+      ],
+      "expiration_date": "17/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02144203652",
+        "09131811062"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "فولمن",
+      "national_id": [
+        "10100695865"
+      ],
+      "expiration_date": "29/05/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "09124246360"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "قرارگاه سازندگی خاتم الانبیاء(ص)",
+      "national_id": [
+        "14003235490"
+      ],
+      "expiration_date": "24/04/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "021880857009"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "کارا رعد نیرو",
+      "national_id": [
+        "10630127572"
+      ],
+      "expiration_date": "01/05/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "09131406334"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "کارن نور مهرسان آریا",
+      "national_id": [
+        "14014847897"
+      ],
+      "expiration_date": "02/10/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02634010767"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "کاواک ایستا",
+      "national_id": [
+        "10103252179"
+      ],
+      "expiration_date": "30/10/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02144205587",
+        "09121867728"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "الکترو صنعت دلسا",
+      "national_id": [
+        "14010248499"
+      ],
+      "expiration_date": "17/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "06643333476",
+        "09167948904"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "الکتروتابان زنده‏ رود",
+      "national_id": [
+        "10861222860"
+      ],
+      "expiration_date": "25/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03142640425",
+        "09132320647"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "کرچنر سولار گروپ ایرانیان",
+      "national_id": [
+        "14007829126"
+      ],
+      "expiration_date": "05/08/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "09307492863",
+        "02127647777"
+      ],
+      "ranks": [
+        "رتبه 2 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 2 نیرو"
+      ]
+    },
+    {
+      "company_name": "کرمان نماد نیرو",
+      "national_id": [
+        "10630150303"
+      ],
+      "expiration_date": "14/02/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03432521416",
+        "0902340573"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "کنسرسیوم آتیه سازان صنعت و معدن، پارسه نیرو کاسپین",
+      "national_id": [
+        "14004624078",
+        "10103546732"
+      ],
+      "expiration_date": "15/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02126764006",
+        "09121255961"
+      ],
+      "ranks": [
+        "فاقد رتبه",
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "فاقد رتبه",
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "کنسرسیوم آکسون انرژی سامیا و رعد نیرو مقاوم",
+      "national_id": [
+        "10380531780"
+      ],
+      "expiration_date": "18/11/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "05137642105",
+        "09122563269"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "کنسرسیوم پویش آفتاب ماندگار و بانک تجارت، گروه ماموت و گروه طبیعت",
+      "national_id": [
+        "14014456671"
+      ],
+      "expiration_date": "08/07/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "09019012980"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "کنسرسیوم شرکت آینده سازان سیاره سبز و تجارت بین الملل سپانو اندیشه نوین",
+      "national_id": [
+        "14004153784",
+        "14005479097"
+      ],
+      "expiration_date": "08/07/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02188901060",
+        "02188900930",
+        "09123122439"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو - فاقد رتبه"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو - فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "کنسرسیوم شرکت مشاورین انرژی نسل نو نیرو و شرکت فنی مهندسی ارشیا صنعت ارغوان",
+      "national_id": [
+        "14014368439"
+      ],
+      "expiration_date": "02/10/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02691001773",
+        "09132674144"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "کنسرسیوم نیکسان: مشارکت شرکت توسعه نیکان آتیه و مهندسی صنعتی راسل تابلو",
+      "national_id": [
+        "10320893459",
+        "10101614504"
+      ],
+      "expiration_date": "25/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02122470001",
+        "09123248370",
+        "09121334605"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "کهن نیروی جم",
+      "national_id": [
+        "14005278891"
+      ],
+      "expiration_date": "22/12/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02633420592"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "کهن نیروی شهر آریا",
+      "national_id": [
+        "14007638321"
+      ],
+      "expiration_date": "22/12/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02633420592"
+      ],
+      "ranks": [
+        "رتبه 4 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 4 نیرو"
+      ]
+    },
+    {
+      "company_name": "کویر نیروی شهداد",
+      "national_id": [
+        "10860505931"
+      ],
+      "expiration_date": "22/12/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "9-۰۳۴۳۲۱۲۵۷۳۸"
+      ],
+      "ranks": [
+        "رتبه 4 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 4 نیرو"
+      ]
+    },
+    {
+      "company_name": "کی پی وی مهرآباد",
+      "national_id": [
+        "14007854524"
+      ],
+      "expiration_date": "02/10/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03432269966",
+        "09131405480"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "کیامهر منطقه آزاد چابهار (سهامی خاص)",
+      "national_id": [
+        "14004572507"
+      ],
+      "expiration_date": "07/11/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02122584779",
+        "09121016932"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "کیسان انرژی گستر شرق",
+      "national_id": [
+        "14004715807"
+      ],
+      "expiration_date": "05/08/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "05138585858",
+        "09152995858"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "گام اراک",
+      "national_id": [
+        "10780044263"
+      ],
+      "expiration_date": "10/04/1405",
+      "is_expired": true,
+      "status_text": "فاقد اعتبار",
+      "phone_numbers": [
+        "02188517192"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "گروه صنعتی تولیدی الکترو کاوه",
+      "national_id": [
+        "10100916460"
+      ],
+      "expiration_date": "25/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "77614612",
+        "09121492489",
+        "09124273658",
+        "09127154472"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "گروه صنعتی سازه پیوند",
+      "national_id": [
+        "10530319115"
+      ],
+      "expiration_date": "20/08/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "09171088950"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "گروه نوران انرژی سبز خاورمیانه",
+      "national_id": [
+        "14009110840"
+      ],
+      "expiration_date": "04/12/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02126851405",
+        "09192304073"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "گسترش انرژی ساوالان سولار",
+      "national_id": [
+        "14008079877"
+      ],
+      "expiration_date": "20/08/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02122654016",
+        "09123067752"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "گیتی فاز گستر نیرو",
+      "national_id": [
+        "10320263837"
+      ],
+      "expiration_date": "17/03/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "09121574347",
+        "02188385634"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "مانا انرژی سپهر تابان",
+      "national_id": [
+        "14014042093"
+      ],
+      "expiration_date": "15/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03538213594",
+        "09130981907"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "مانا مهر انرژی نسیم",
+      "national_id": [
+        "14010804136"
+      ],
+      "expiration_date": "13/12/1404",
+      "is_expired": true,
+      "status_text": "فاقد اعتبار",
+      "phone_numbers": [
+        "02137995200"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "مبنا نیرو",
+      "national_id": [
+        "10101517967"
+      ],
+      "expiration_date": "18/09/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02144444438"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "مپنا توسعه 3",
+      "national_id": [
+        "10102945235"
+      ],
+      "expiration_date": "27/07/1404",
+      "is_expired": true,
+      "status_text": "فاقد اعتبار",
+      "phone_numbers": [
+        "02184624724"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "محب نیرو جنوب",
+      "national_id": [
+        "10860108637"
+      ],
+      "expiration_date": "18/09/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "07191001210"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "مدیران ساخت شهرآرا",
+      "national_id": [
+        "14009315199"
+      ],
+      "expiration_date": "29/11/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02188876525",
+        "09183692029",
+        "09192026848"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "مدیریت طرح انرژی امید",
+      "national_id": [
+        "14014343741"
+      ],
+      "expiration_date": "30/10/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "0217682801961",
+        "09124378389"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "مشارکت بلندطبقه- هرمس یوتاب",
+      "national_id": [
+        "10260255701",
+        "14004103475"
+      ],
+      "expiration_date": "02/10/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02144333320",
+        "09120809609"
+      ],
+      "ranks": [
+        "فاقد رتبه",
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه",
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "مشاهیر نیرو جنوب",
+      "national_id": [
+        "10630155200"
+      ],
+      "expiration_date": "18/09/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "034332525407"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "مشاور غرب نیرو",
+      "national_id": [
+        "10101336048"
+      ],
+      "expiration_date": "24/04/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02188895261"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "مهد انرژی هور ایرانیان ماهان",
+      "national_id": [
+        "14007113457"
+      ],
+      "expiration_date": "30/10/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "07132316470",
+        "09177270752"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "مهرسان نوین پارس",
+      "national_id": [
+        "14006701420"
+      ],
+      "expiration_date": "08/07/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02122001529",
+        "09123546297"
+      ],
+      "ranks": [
+        "رتبه 4 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 4 نیرو"
+      ]
+    },
+    {
+      "company_name": "مهریاب انرژی گستر شریف",
+      "national_id": [
+        "14008576783"
+      ],
+      "expiration_date": "20/08/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "76273382",
+        "09126063013"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "مهندسان پارسه پایدار",
+      "national_id": [
+        "10102132431"
+      ],
+      "expiration_date": "14/02/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02144296690",
+        "09121862634",
+        "09121473823"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "مهندسی آذرخش انرژی مهام شرق",
+      "national_id": [
+        "10380437833"
+      ],
+      "expiration_date": "17/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "05138436840",
+        "09334003397"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "مهندسی انتقال نیرو و مخابرات شرق (مهام شرق)",
+      "national_id": [
+        "10380246532"
+      ],
+      "expiration_date": "27/07/1404",
+      "is_expired": true,
+      "status_text": "فاقد اعتبار",
+      "phone_numbers": [
+        "05138462126"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "مهندسی آویسا طرح و توسعه",
+      "national_id": [
+        "10320346136"
+      ],
+      "expiration_date": "02/04/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02166428292"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "مهندسی بهینه کارا طرح پارسا",
+      "national_id": [
+        "14014209075"
+      ],
+      "expiration_date": "25/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02188685308",
+        "09128358898"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "مهندسی پاراوان و تیدا سما گستر",
+      "national_id": [
+        "10800076392"
+      ],
+      "expiration_date": "05/08/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02122927300",
+        "09183516129"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "مهندسی پارسه ابتکار",
+      "national_id": [
+        "10102247572"
+      ],
+      "expiration_date": "29/11/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02188556550",
+        "09121127996"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "مهندسی پرتو آفرین سپهر روشن",
+      "national_id": [
+        "14014466828"
+      ],
+      "expiration_date": "07/11/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03136532257",
+        "09128678030"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "مهندسی پیشتازان بردین",
+      "national_id": [
+        "10260480868"
+      ],
+      "expiration_date": "15/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03133907220",
+        "09131679772"
+      ],
+      "ranks": [
+        "رتبه 3 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 3 نیرو"
+      ]
+    },
+    {
+      "company_name": "مهندسی تعمیرات انتقال نیروی تهران (متانیر)",
+      "national_id": [
+        "10101765479"
+      ],
+      "expiration_date": "",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02188362100",
+        "09366343293"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "مهندسی توسعه پترو فرآیند کرخه",
+      "national_id": [
+        "10320854413"
+      ],
+      "expiration_date": "18/11/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02188885334",
+        "09131148008"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "مهندسی تولید و تامین نیل تک مبین",
+      "national_id": [
+        "14006444816"
+      ],
+      "expiration_date": "04/12/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02122365752",
+        "09120149331",
+        "09177085243"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "مهندسی سپاسد",
+      "national_id": [
+        "10101378219"
+      ],
+      "expiration_date": "03/03/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02188643751"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "مهندسی عمران و تولیدی نیرو",
+      "national_id": [
+        "10101357432"
+      ],
+      "expiration_date": "18/11/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02186012166",
+        "0912078352909369422588"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "مهندسی فرانیرو",
+      "national_id": [
+        "10101278250"
+      ],
+      "expiration_date": "18/11/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02185527254",
+        "09122652400"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "مهندسی فکور بین الملل تهران (فیتکو)",
+      "national_id": [
+        "10102302260"
+      ],
+      "expiration_date": "29/05/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02175041395",
+        "09123017229"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "مهندسی کترا",
+      "national_id": [
+        "10500006077"
+      ],
+      "expiration_date": "20/08/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "09912986546",
+        "09912986547"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "مهندسی نوآوران تحقیق",
+      "national_id": [
+        "10101611476"
+      ],
+      "expiration_date": "14/02/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02142981",
+        "09153191775"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "مهندسی و توسعه آسان انرژی فراگیر",
+      "national_id": [
+        "14013279525"
+      ],
+      "expiration_date": "29/11/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02188872192"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "مهندسی یاسین نور زاگرس",
+      "national_id": [
+        "10740054478"
+      ],
+      "expiration_date": "14/02/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "06642302241",
+        "09354953492"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "مهندسین باختر مشاور",
+      "national_id": [
+        "10780052990"
+      ],
+      "expiration_date": "15/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "08632211721",
+        "09188644361"
+      ],
+      "ranks": [
+        "رتبه 3 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 3 نیرو"
+      ]
+    },
+    {
+      "company_name": "مهندسین کنترل و ابزاردقیق توان جنوب شرق",
+      "national_id": [
+        "10630143827"
+      ],
+      "expiration_date": "14/02/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03432818280",
+        "09133976508"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "مهندسین مشاور آریا نیروی جم",
+      "national_id": [
+        "10103017381"
+      ],
+      "expiration_date": "30/10/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02192001300",
+        "09123773442"
+      ],
+      "ranks": [
+        "رتبه 1 انتقال و توزیع نیرو، رتبه 3 تولید نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 انتقال و توزیع نیرو، رتبه 3 تولید نیرو"
+      ]
+    },
+    {
+      "company_name": "مولد گستر برق شایان",
+      "national_id": [
+        "14005468735"
+      ],
+      "expiration_date": "18/09/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03442252665"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "میراث گستر شمال",
+      "national_id": [
+        "14013244721"
+      ],
+      "expiration_date": "14/02/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "09120201049"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "نارگان سازه رستاک",
+      "national_id": [
+        "10320196193"
+      ],
+      "expiration_date": "30/10/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "08632230070",
+        "09124309447",
+        "09904309447"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "نام آوران مهر صنعت فولاد",
+      "national_id": [
+        "14012140764"
+      ],
+      "expiration_date": "02/04/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03191740246"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "نام‌آوران توسعه صنعت پارسیان",
+      "national_id": [
+        "10320889300"
+      ],
+      "expiration_date": "27/07/1404",
+      "is_expired": true,
+      "status_text": "فاقد اعتبار",
+      "phone_numbers": [
+        "03132755667"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "نصب نیرو ایلام",
+      "national_id": [
+        "10300074060"
+      ],
+      "expiration_date": "30/10/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "08433360336",
+        "09181410804"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "نگارطلوع سپاهان نوراخورشید",
+      "national_id": [
+        "14012502140"
+      ],
+      "expiration_date": "02/04/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03133358143"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "نوا پارس انرژی(نوا انرژی)",
+      "national_id": [
+        "14014470749"
+      ],
+      "expiration_date": "15/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "07138439799",
+        "09178042125"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "نوآوران راه سعادت",
+      "national_id": [
+        "14012918210"
+      ],
+      "expiration_date": "25/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02191072777",
+        "09010654107",
+        "09122544975",
+        "09125809600"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "نورآفرینان انرژی خاوران",
+      "national_id": [
+        "14014738255"
+      ],
+      "expiration_date": "29/11/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "05632525122",
+        "09159620287"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "نورسان انرژی آریا",
+      "national_id": [
+        "10320802763"
+      ],
+      "expiration_date": "01/05/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "41459000",
+        "09903502152"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "نورهان انرژی",
+      "national_id": [
+        "14006324713"
+      ],
+      "expiration_date": "05/08/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02188581754",
+        "09128950932"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "نوژان نیرو",
+      "national_id": [
+        "10260553162"
+      ],
+      "expiration_date": "29/02/1405",
+      "is_expired": true,
+      "status_text": "فاقد اعتبار",
+      "phone_numbers": [
+        "03191005005"
+      ],
+      "ranks": [
+        "رتبه 4 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 4 نیرو"
+      ]
+    },
+    {
+      "company_name": "نوین آرا پرداز ایساتیس",
+      "national_id": [
+        "10840451262"
+      ],
+      "expiration_date": "08/07/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03537330580",
+        "09132748475"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "نیاک انرژی گلسار",
+      "national_id": [
+        "14010223081"
+      ],
+      "expiration_date": "15/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03132234810",
+        "09053409337"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "نیرو افشان برق فارس",
+      "national_id": [
+        "10530245064"
+      ],
+      "expiration_date": "18/09/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "07136280052"
+      ],
+      "ranks": [
+        "رتبه 2 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 2 نیرو"
+      ]
+    },
+    {
+      "company_name": "نیرو انرژی سپنتا",
+      "national_id": [
+        "14007682426"
+      ],
+      "expiration_date": "05/08/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03136610183",
+        "09381475087"
+      ],
+      "ranks": [
+        "5"
+      ],
+      "organization_rank": [
+        "5"
+      ]
+    },
+    {
+      "company_name": "نیرو بتن خلیج فارس",
+      "national_id": [
+        "10800136255"
+      ],
+      "expiration_date": "02/04/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "07633752680"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "نیرو برق دیبا",
+      "national_id": [
+        "10103653540"
+      ],
+      "expiration_date": "02/04/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02637309851"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "نیرو پارس یزد",
+      "national_id": [
+        "10860088048"
+      ],
+      "expiration_date": "20/06/1404",
+      "is_expired": true,
+      "status_text": "فاقد اعتبار",
+      "phone_numbers": [
+        "03537266675"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "نیرو پارس یزد",
+      "national_id": [
+        "10860088048"
+      ],
+      "expiration_date": "02/04/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "انقضا 01/03/1405",
+        "03537266657"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "نیرو سازان میران سهند",
+      "national_id": [
+        "14009786689"
+      ],
+      "expiration_date": "04/12/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "07138422587",
+        "09164085770"
+      ],
+      "ranks": [
+        "فاقد رتبه"
+      ],
+      "organization_rank": [
+        "فاقد رتبه"
+      ]
+    },
+    {
+      "company_name": "نیرو صنعت سرچشمه",
+      "national_id": [
+        "10630179524"
+      ],
+      "expiration_date": "29/11/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03432533106",
+        "03432530511",
+        "09138637401"
+      ],
+      "ranks": [
+        "رتبه 2 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 2 نیرو"
+      ]
+    },
+    {
+      "company_name": "نیرو صنعت غزال",
+      "national_id": [
+        "10320177556"
+      ],
+      "expiration_date": "29/11/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02644261552",
+        "84733510912"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "نیرو نویان قشم",
+      "national_id": [
+        "14005392401"
+      ],
+      "expiration_date": "05/08/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "09122228485",
+        "02145419000"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "هانا انرژی ایرانیان",
+      "national_id": [
+        "14004942780"
+      ],
+      "expiration_date": "14/02/1407",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "۰۵۱۳۶۰۳۶۷۲۱",
+        "05136041184",
+        "09155190851"
+      ],
+      "ranks": [
+        "رتبه 4 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 4 نیرو"
+      ]
+    },
+    {
+      "company_name": "همراه افق تهران",
+      "national_id": [
+        "10101883375"
+      ],
+      "expiration_date": "22/12/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02188610954"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "هور تاب توان",
+      "national_id": [
+        "14005427147"
+      ],
+      "expiration_date": "17/09/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02188399098",
+        "09125449025"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "هوشمند پرتو توان",
+      "national_id": [
+        "14007080994"
+      ],
+      "expiration_date": "18/09/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "03191095131"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "هومان نیرو سپهر نیک نام (هومانیر)",
+      "national_id": [
+        "14008162114"
+      ],
+      "expiration_date": "10/04/1405",
+      "is_expired": true,
+      "status_text": "فاقد اعتبار",
+      "phone_numbers": [
+        "02182802006",
+        "01133245854"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    },
+    {
+      "company_name": "هیربد نیرو",
+      "national_id": [
+        "10102643633"
+      ],
+      "expiration_date": "22/12/1405",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02188525250"
+      ],
+      "ranks": [
+        "رتبه 2 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 2 نیرو"
+      ]
+    },
+    {
+      "company_name": "هیربدان",
+      "national_id": [
+        "10102067277"
+      ],
+      "expiration_date": "27/07/1404",
+      "is_expired": true,
+      "status_text": "فاقد اعتبار",
+      "phone_numbers": [
+        "02188068855"
+      ],
+      "ranks": [
+        "رتبه 1 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 1 نیرو"
+      ]
+    },
+    {
+      "company_name": "یگانه اندیش نفت و برق",
+      "national_id": [
+        "14013826190"
+      ],
+      "expiration_date": "07/11/1406",
+      "is_expired": false,
+      "status_text": "معتبر",
+      "phone_numbers": [
+        "02188824379",
+        "09122147352"
+      ],
+      "ranks": [
+        "رتبه 5 نیرو"
+      ],
+      "organization_rank": [
+        "رتبه 5 نیرو"
+      ]
+    }
+  ]
+}
