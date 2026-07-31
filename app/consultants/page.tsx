@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { CompanyGrid } from '@/components/company/CompanyGrid';
 import { ConsultantFilters, ConsultantFilterState } from '@/components/company/ConsultantFilters';
 import { LoadingSpinner } from '@/components/shared/LoadingSpinner';
@@ -18,6 +18,11 @@ export default function ConsultantsPage() {
     rank: '',
   });
 
+  // Scroll to top whenever page or filter changes
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [page, filters]);
+
   const handleFilterChange = (newFilters: ConsultantFilterState) => {
     setFilters(newFilters);
     setPage(1);
@@ -32,23 +37,23 @@ export default function ConsultantsPage() {
   });
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <div className="space-y-8">
+    <div className="container mx-auto px-3 sm:px-4 py-8">
+      <div className="space-y-6 md:space-y-8">
         {/* Header */}
         <div className="space-y-2">
-          <h1 className="text-3xl md:text-4xl font-bold">مشاوران</h1>
-          <p className="text-muted-foreground">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-black text-slate-900">مشاوران</h1>
+          <p className="text-xs sm:text-sm text-slate-600">
             لیست کامل مشاوران تایید شده در صنعت نیروگاه‌های خورشیدی
           </p>
           {data && (
-            <p className="text-sm text-muted-foreground">
-              {data.total.toLocaleString('fa-IR')} مشاور یافت شد
+            <p className="text-xs sm:text-sm font-bold text-[#6D7F9F]">
+              {data.total.toLocaleString('fa-IR')} مشاور ثبت‌شده
             </p>
           )}
         </div>
 
         {/* Content Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 md:gap-8">
           {/* Sidebar */}
           <aside className="lg:col-span-1">
             <ConsultantFilters
@@ -73,29 +78,36 @@ export default function ConsultantsPage() {
                   type="consultant"
                 />
 
-                {/* Pagination */}
+                {/* Pagination Controls */}
                 {data.totalPages > 1 && (
-                  <div className="flex items-center justify-center gap-2 pt-4">
+                  <div className="flex items-center justify-center gap-1.5 sm:gap-2 pt-6">
                     <Button
                       variant="outline"
                       size="icon"
                       onClick={() => setPage((p) => Math.max(1, p - 1))}
                       disabled={page === 1}
-                      className="rounded-chip"
+                      className="rounded-chip border-slate-300 text-slate-700 hover:bg-[#6D7F9F]/10 hover:text-[#6D7F9F]"
                     >
                       <ChevronRight className="h-4 w-4" />
                     </Button>
 
-                    <div className="flex items-center gap-1.5">
+                    <div className="flex items-center gap-1 sm:gap-1.5">
                       {Array.from({ length: Math.min(5, data.totalPages) }, (_, i) => {
                         const pageNum = i + 1;
+                        const isActive = page === pageNum;
+
                         return (
                           <Button
                             key={pageNum}
-                            variant={page === pageNum ? 'default' : 'outline'}
+                            variant={isActive ? 'default' : 'outline'}
                             size="sm"
                             onClick={() => setPage(pageNum)}
-                            className="rounded-chip font-bold"
+                            className={cn(
+                              'rounded-chip font-bold transition-all text-xs px-3',
+                              isActive
+                                ? 'bg-[#6D7F9F] text-white hover:bg-[#56698a] shadow-xs'
+                                : 'border-slate-300 text-slate-700 hover:bg-[#6D7F9F]/10 hover:text-[#6D7F9F]'
+                            )}
                           >
                             {pageNum.toLocaleString('fa-IR')}
                           </Button>
@@ -108,7 +120,7 @@ export default function ConsultantsPage() {
                       size="icon"
                       onClick={() => setPage((p) => Math.min(data.totalPages, p + 1))}
                       disabled={page === data.totalPages}
-                      className="rounded-chip"
+                      className="rounded-chip border-slate-300 text-slate-700 hover:bg-[#6D7F9F]/10 hover:text-[#6D7F9F]"
                     >
                       <ChevronLeft className="h-4 w-4" />
                     </Button>

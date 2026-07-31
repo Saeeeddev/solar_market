@@ -1,5 +1,5 @@
 import { Card, CardContent } from '@/components/ui/card';
-import { Sun, Target, Users, TrendingUp } from 'lucide-react';
+import { Sun, Target, Users, TrendingUp, ShieldCheck, Mail, Phone } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -9,166 +9,131 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="container mx-auto px-4 py-8">
-      <div className="max-w-4xl mx-auto space-y-12">
-        {/* Header */}
-        <div className="text-center space-y-4">
-          <div className="flex justify-center mb-6">
-            <Sun className="h-16 w-16 text-secondary" />
-          </div>
-          <h1 className="text-4xl font-bold">درباره سولار بازار</h1>
-          <p className="text-xl text-muted-foreground">
-            دایرکتوری جامع صنعت خورشیدی ایران
-          </p>
-        </div>
-
-        {/* Mission */}
-        <Card>
-          <CardContent className="pt-6 space-y-4">
-            <div className="flex items-center gap-3 mb-4">
-              <Target className="h-8 w-8 text-primary" />
-              <h2 className="text-2xl font-bold">ماموریت ما</h2>
+    <div className="container mx-auto px-4 py-12">
+      <div className="max-w-4xl mx-auto">
+        {/* Unified Single Card for About Solar Bazar */}
+        <Card className="rounded-card border border-slate-200/80 bg-white shadow-card overflow-hidden">
+          <CardContent className="p-8 md:p-12 space-y-12 text-right">
+            {/* Header / Brand */}
+            <div className="text-center space-y-4 border-b border-slate-100 pb-8">
+              <div className="flex justify-center mb-4">
+                <div className="p-5 rounded-hero bg-[#6D7F9F]/10">
+                  <Sun className="h-16 w-16 text-[#6D7F9F]" />
+                </div>
+              </div>
+              <h1 className="text-4xl font-extrabold text-slate-900">درباره سولار بازار</h1>
+              <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+                دایرکتوری جامع و مرجع تخصصی صنعت نیروگاه‌های خورشیدی ایران
+              </p>
             </div>
-            <p className="text-right leading-relaxed text-muted-foreground">
-              سولار بازار با هدف ایجاد یک پلتفرم جامع و قابل اعتماد برای معرفی پیمانکاران،
-              مشاوران و شرکت‌های فعال در صنعت نیروگاه‌های خورشیدی ایران طراحی شده است.
-              ما تلاش می‌کنیم تا دسترسی به اطلاعات معتبر و به‌روز درباره متخصصان این صنعت را
-              برای تمامی ذی‌نفعان آسان‌تر کنیم.
-            </p>
-          </CardContent>
-        </Card>
 
-        {/* Features */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <Card>
-            <CardContent className="pt-6">
-              <div className="flex items-start gap-4">
-                <div className="p-3 bg-primary/10 rounded-lg">
-                  <Users className="h-6 w-6 text-primary" />
+            {/* Mission Section */}
+            <div className="space-y-4">
+              <div className="flex items-center gap-3">
+                <Target className="h-7 w-7 text-[#6D7F9F]" />
+                <h2 className="text-2xl font-bold text-slate-900">ماموریت ما</h2>
+              </div>
+              <p className="leading-relaxed text-slate-700 text-base">
+                سولار بازار با هدف ایجاد یک پلتفرم جامع، مطمئن و به‌روز برای معرفی پیمانکاران،
+                مشاوران و فعالان صنعت نیروگاه‌های خورشیدی ایران طراحی شده است.
+                ما تلاش می‌کنیم تا دسترسی به اطلاعات معتبر، ارزیابی شده و طبقه‌بندی‌شده متخصصان
+                این حوزه را برای تمامی سرمایه‌گذاران، متقاضیان و ذی‌نفعان آسان و شفاف سازیم.
+              </p>
+            </div>
+
+            {/* Features Grid inside the same card */}
+            <div className="space-y-4 border-t border-slate-100 pt-8">
+              <h2 className="text-2xl font-bold text-slate-900 mb-6">ویژگی‌ها و ارزش‌های کلیدی</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="p-5 bg-slate-50 rounded-xl border border-slate-200/60 space-y-2">
+                  <div className="flex items-center gap-3">
+                    <Users className="h-6 w-6 text-[#6D7F9F]" />
+                    <h3 className="font-bold text-lg text-slate-900">اطلاعات تایید شده</h3>
+                  </div>
+                  <p className="text-sm text-slate-600 leading-relaxed">
+                    تمامی پیمانکاران و مشاوران ثبت شده بر اساس مستندات رسمی و سازمان‌های ذی‌صلاح
+                    ارزیابی و دسته‌بندی شده‌اند.
+                  </p>
                 </div>
-                <div className="space-y-2">
-                  <h3 className="font-bold text-lg">اطلاعات تایید شده</h3>
-                  <p className="text-sm text-muted-foreground text-right">
-                    تمامی پیمانکاران و مشاوران موجود در سولار بازار دارای مجوزهای معتبر
-                    و تایید شده از سازمان‌های ذی‌صلاح هستند.
+
+                <div className="p-5 bg-slate-50 rounded-xl border border-slate-200/60 space-y-2">
+                  <div className="flex items-center gap-3">
+                    <TrendingUp className="h-6 w-6 text-emerald-600" />
+                    <h3 className="font-bold text-lg text-slate-900">به‌روزرسانی مستمر</h3>
+                  </div>
+                  <p className="text-sm text-slate-600 leading-relaxed">
+                    اطلاعات شرکت‌ها و شرایط گواهینامه‌ها به صورت مستمر پایش شده تا آخرین تغییرات در
+                    دسترس شما قرار گیرد.
+                  </p>
+                </div>
+
+                <div className="p-5 bg-slate-50 rounded-xl border border-slate-200/60 space-y-2">
+                  <div className="flex items-center gap-3">
+                    <Sun className="h-6 w-6 text-amber-500" />
+                    <h3 className="font-bold text-lg text-slate-900">تخصص در انرژی خورشیدی</h3>
+                  </div>
+                  <p className="text-sm text-slate-600 leading-relaxed">
+                    تمرکز کامل بر نیروگاه‌های تجدیدپذیر مقیاس کوچک (انشعابی) و سیستم‌های مگاواتی.
+                  </p>
+                </div>
+
+                <div className="p-5 bg-slate-50 rounded-xl border border-slate-200/60 space-y-2">
+                  <div className="flex items-center gap-3">
+                    <ShieldCheck className="h-6 w-6 text-[#6D7F9F]" />
+                    <h3 className="font-bold text-lg text-slate-900">دسترسی و جستجوی آسان</h3>
+                  </div>
+                  <p className="text-sm text-slate-600 leading-relaxed">
+                    امکان جستجو بر اساس رتبه‌بندی، تاریخ انقضاء، گواهینامه‌ها و شماره‌های تماس مستقیم.
                   </p>
                 </div>
               </div>
-            </CardContent>
-          </Card>
+            </div>
 
-          <Card>
-            <CardContent className="pt-6">
-              <div className="flex items-start gap-4">
-                <div className="p-3 bg-secondary/10 rounded-lg">
-                  <TrendingUp className="h-6 w-6 text-secondary" />
-                </div>
-                <div className="space-y-2">
-                  <h3 className="font-bold text-lg">به‌روزرسانی مستمر</h3>
-                  <p className="text-sm text-muted-foreground text-right">
-                    اطلاعات شرکت‌ها به صورت مستمر بررسی و به‌روزرسانی می‌شود تا
-                    اطمینان حاصل شود که همواره به اطلاعات دقیق دسترسی دارید.
-                  </p>
-                </div>
+            {/* Services List inside the same card */}
+            <div className="space-y-4 border-t border-slate-100 pt-8">
+              <h2 className="text-2xl font-bold text-slate-900 mb-4">خدمات سولار بازار</h2>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-2 text-slate-700 font-medium">
+                  <span className="text-[#6D7F9F] font-bold">•</span>
+                  <span>لیست جامع پیمانکاران احداث نیروگاه‌های خورشیدی مقیاس کوچک (انشعابی)</span>
+                </li>
+                <li className="flex items-start gap-2 text-slate-700 font-medium">
+                  <span className="text-[#6D7F9F] font-bold">•</span>
+                  <span>دایرکتوری کامل شرکت‌های پیمانکار نیروگاه‌های مگاواتی</span>
+                </li>
+                <li className="flex items-start gap-2 text-slate-700 font-medium">
+                  <span className="text-[#6D7F9F] font-bold">•</span>
+                  <span>فهرست شرکت‌های مشاور تایید شده و دارنده رتبه سازمان برنامه</span>
+                </li>
+                <li className="flex items-start gap-2 text-slate-700 font-medium">
+                  <span className="text-[#6D7F9F] font-bold">•</span>
+                  <span>فیلترهای پیشرفته بر اساس شناسه ملی، وضعیت اعتبار، رتبه و شماره تماس</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Contact Section inside the same card */}
+            <div className="border-t border-slate-100 pt-8 text-center space-y-4 bg-slate-50/80 -mx-8 -mb-8 p-8 rounded-b-card">
+              <h2 className="text-2xl font-bold text-slate-900">تماس با ما</h2>
+              <p className="text-slate-600 text-sm max-w-lg mx-auto">
+                برای افزودن اطلاعات شرکت یا مطرح کردن هرگونه پیشنهاد، با تیم پشتیبانی سولار بازار در ارتباط باشید.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 items-center justify-center pt-2">
+                <a
+                  href="mailto:info@solarbazar.ir"
+                  className="flex items-center gap-2 px-4 py-2 bg-white border border-slate-200 rounded-chip text-sm font-bold text-[#6D7F9F] hover:bg-slate-100 transition-colors"
+                >
+                  <Mail className="h-4 w-4" />
+                  <span dir="ltr">info@solarbazar.ir</span>
+                </a>
+                <a
+                  href="tel:02112345678"
+                  className="flex items-center gap-2 px-4 py-2 bg-white border border-slate-200 rounded-chip text-sm font-bold text-[#6D7F9F] hover:bg-slate-100 transition-colors"
+                >
+                  <Phone className="h-4 w-4" />
+                  <span dir="ltr">021-12345678</span>
+                </a>
               </div>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardContent className="pt-6">
-              <div className="flex items-start gap-4">
-                <div className="p-3 bg-accent/10 rounded-lg">
-                  <Sun className="h-6 w-6 text-accent-foreground" />
-                </div>
-                <div className="space-y-2">
-                  <h3 className="font-bold text-lg">تخصص در انرژی خورشیدی</h3>
-                  <p className="text-sm text-muted-foreground text-right">
-                    تمرکز کامل بر صنعت نیروگاه‌های خورشیدی و ارائه اطلاعات تخصصی
-                    در این حوزه.
-                  </p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardContent className="pt-6">
-              <div className="flex items-start gap-4">
-                <div className="p-3 bg-primary/10 rounded-lg">
-                  <Target className="h-6 w-6 text-primary" />
-                </div>
-                <div className="space-y-2">
-                  <h3 className="font-bold text-lg">دسترسی آسان</h3>
-                  <p className="text-sm text-muted-foreground text-right">
-                    رابط کاربری ساده و کاربرپسند برای جستجو و دسترسی سریع به
-                    اطلاعات مورد نیاز شما.
-                  </p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-
-        {/* What We Offer */}
-        <Card>
-          <CardContent className="pt-6 space-y-4">
-            <h2 className="text-2xl font-bold text-right mb-4">خدمات ما</h2>
-            <ul className="space-y-3 text-right">
-              <li className="flex items-start gap-2">
-                <span className="text-primary mt-1">•</span>
-                <span className="text-muted-foreground">
-                  لیست کامل پیمانکاران دارای رتبه در ساخت نیروگاه‌های خورشیدی
-                </span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-primary mt-1">•</span>
-                <span className="text-muted-foreground">
-                  دایرکتوری مشاوران تایید شده در صنعت انرژی خورشیدی
-                </span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-primary mt-1">•</span>
-                <span className="text-muted-foreground">
-                  اطلاعات شرکت‌های شعبه فعال در این حوزه
-                </span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-primary mt-1">•</span>
-                <span className="text-muted-foreground">
-                  امکان جستجو و فیلتر بر اساس معیارهای مختلف
-                </span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-primary mt-1">•</span>
-                <span className="text-muted-foreground">
-                  دسترسی به اطلاعات تماس و جزئیات شرکت‌ها
-                </span>
-              </li>
-            </ul>
-          </CardContent>
-        </Card>
-
-        {/* Contact Info */}
-        <Card className="bg-gradient-to-r from-primary/5 to-secondary/5">
-          <CardContent className="pt-6 text-center space-y-4">
-            <h2 className="text-2xl font-bold">تماس با ما</h2>
-            <p className="text-muted-foreground">
-              برای افزودن اطلاعات شرکت خود یا هرگونه سوال و پیشنهاد، با ما در تماس باشید
-            </p>
-            <div className="flex flex-col gap-2 items-center">
-              <a
-                href="mailto:info@solarbazar.ir"
-                className="text-primary hover:underline"
-              >
-                info@solarbazar.ir
-              </a>
-              <a
-                href="tel:02112345678"
-                className="text-primary hover:underline"
-                dir="ltr"
-              >
-                021-12345678
-              </a>
             </div>
           </CardContent>
         </Card>

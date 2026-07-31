@@ -78,6 +78,30 @@ export function getConsultantsData(): JSONDataContainer<ConsultantRecord> {
   return consultantsCache!;
 }
 
+function matchRank(rankString: string, targetRank: string): boolean {
+  if (!rankString) return false;
+  const s = rankString.toLowerCase();
+  if (targetRank === 'no_rank') {
+    return s.includes('ندارد') || s.includes('فاقد');
+  }
+  if (targetRank === '1' || targetRank === 'رتبه ۱' || targetRank === 'رتبه 1') {
+    return s.includes('رتبه ۱') || s.includes('رتبه 1') || s.includes('1 نیرو') || s.includes('۱ نیرو');
+  }
+  if (targetRank === '2' || targetRank === 'رتبه ۲' || targetRank === 'رتبه 2') {
+    return s.includes('رتبه ۲') || s.includes('رتبه 2') || s.includes('2 نیرو') || s.includes('۲ نیرو');
+  }
+  if (targetRank === '3' || targetRank === 'رتبه ۳' || targetRank === 'رتبه 3') {
+    return s.includes('رتبه ۳') || s.includes('رتبه 3') || s.includes('3 نیرو') || s.includes('۳ نیرو');
+  }
+  if (targetRank === '4' || targetRank === 'رتبه ۴' || targetRank === 'رتبه 4') {
+    return s.includes('رتبه ۴') || s.includes('رتبه 4') || s.includes('4 نیرو') || s.includes('۴ نیرو');
+  }
+  if (targetRank === '5' || targetRank === 'رتبه ۵' || targetRank === 'رتبه 5') {
+    return s.includes('رتبه ۵') || s.includes('رتبه 5') || s.includes('5 نیرو') || s.includes('۵ نیرو');
+  }
+  return s.includes(targetRank.toLowerCase());
+}
+
 export function querySmallScaleContractors(params: {
   page?: number;
   limit?: number;
@@ -119,12 +143,22 @@ export function querySmallScaleContractors(params: {
     }
   }
 
-  // 4. Filter by Rank
-  if (params.rank && params.rank.trim() !== '') {
-    const rkQuery = params.rank.trim().toLowerCase();
-    records = records.filter((r) =>
-      r.ranks && r.ranks.some((rk) => rk.toLowerCase().includes(rkQuery))
-    );
+  // 4. Filter by Rank (supports 7 buttons: all, no_rank, 1, 2, 3, 4, 5)
+  if (params.rank && params.rank !== 'all') {
+    if (params.rank === 'no_rank') {
+      records = records.filter(
+        (r) =>
+          r.contractor_certificate === 'ندارد' ||
+          !r.ranks ||
+          r.ranks.length === 0 ||
+          r.ranks.some((rk) => matchRank(rk, 'no_rank'))
+      );
+    } else {
+      const targetRk = params.rank;
+      records = records.filter(
+        (r) => r.ranks && r.ranks.some((rk) => matchRank(rk, targetRk))
+      );
+    }
   }
 
   const total = records.length;
@@ -177,13 +211,22 @@ export function queryMegawattContractors(params: {
     }
   }
 
-  // 3. Filter by Rank
-  if (params.rank && params.rank.trim() !== '') {
-    const rkQuery = params.rank.trim().toLowerCase();
-    records = records.filter((r) =>
-      (r.ranks && r.ranks.some((rk) => rk.toLowerCase().includes(rkQuery))) ||
-      (r.organization_rank && r.organization_rank.some((rk) => rk.toLowerCase().includes(rkQuery)))
-    );
+  // 3. Filter by Rank (supports 7 buttons: all, no_rank, 1, 2, 3, 4, 5)
+  if (params.rank && params.rank !== 'all') {
+    if (params.rank === 'no_rank') {
+      records = records.filter(
+        (r) =>
+          (!r.ranks || r.ranks.length === 0) &&
+          (!r.organization_rank || r.organization_rank.length === 0)
+      );
+    } else {
+      const targetRk = params.rank;
+      records = records.filter(
+        (r) =>
+          (r.ranks && r.ranks.some((rk) => matchRank(rk, targetRk))) ||
+          (r.organization_rank && r.organization_rank.some((rk) => matchRank(rk, targetRk)))
+      );
+    }
   }
 
   const total = records.length;
@@ -237,12 +280,21 @@ export function queryConsultants(params: {
   }
 
   // 3. Filter by Rank
-  if (params.rank && params.rank.trim() !== '') {
-    const rkQuery = params.rank.trim().toLowerCase();
-    records = records.filter((r) =>
-      (r.ranks && r.ranks.some((rk) => rk.toLowerCase().includes(rkQuery))) ||
-      (r.power_rank && r.power_rank.some((rk) => rk.toLowerCase().includes(rkQuery)))
-    );
+  if (params.rank && params.rank !== 'all') {
+    if (params.rank === 'no_rank') {
+      records = records.filter(
+        (r) =>
+          (!r.ranks || r.ranks.length === 0) &&
+          (!r.power_rank || r.power_rank.length === 0)
+      );
+    } else {
+      const targetRk = params.rank;
+      records = records.filter(
+        (r) =>
+          (r.ranks && r.ranks.some((rk) => matchRank(rk, targetRk))) ||
+          (r.power_rank && r.power_rank.some((rk) => matchRank(rk, targetRk)))
+      );
+    }
   }
 
   const total = records.length;

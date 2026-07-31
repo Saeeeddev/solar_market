@@ -1,7 +1,5 @@
-import { useState } from 'react';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
 import {
   Phone,
   Calendar,
@@ -10,10 +8,8 @@ import {
   CheckCircle2,
   XCircle,
   FileText,
-  ChevronDown,
-  ChevronUp,
   Zap,
-  Info,
+  ShieldCheck,
 } from 'lucide-react';
 import { cn } from '@/lib/utils/cn';
 
@@ -23,8 +19,6 @@ interface CompanyCardProps {
 }
 
 export function CompanyCard({ company, type }: CompanyCardProps) {
-  const [showDetails, setShowDetails] = useState(false);
-
   if (!company) return null;
 
   // Extract fields from JSON records
@@ -39,7 +33,7 @@ export function CompanyCard({ company, type }: CompanyCardProps) {
   const isExpired = company.is_expired ?? company.status === 'expired';
   const statusText = company.status_text || (isExpired ? 'منقضی شده' : 'معتبر');
 
-  // Determine category badge text
+  // Determine category badge
   const isSmallScale =
     type === 'small' || company.category === 'small_scale_contractor' || company.contractor_certificate !== undefined;
   const isMegawatt =
@@ -58,26 +52,26 @@ export function CompanyCard({ company, type }: CompanyCardProps) {
   const hasCertificate = company.contractor_certificate === 'دارد';
 
   return (
-    <Card className="group card-hover h-full flex flex-col justify-between rounded-card border-line-soft bg-gradient-card shadow-card hover:shadow-card-hover transition-all duration-300">
-      <CardHeader className="space-y-3 pb-3">
-        {/* Top Badge Row */}
-        <div className="flex items-center justify-between gap-2 flex-wrap">
+    <Card className="group card-hover h-full flex flex-col justify-between rounded-card border border-slate-200/80 bg-white shadow-card hover:shadow-card-hover transition-all duration-300 overflow-hidden">
+      <CardHeader className="p-3.5 sm:p-5 space-y-2.5 pb-2">
+        {/* Category & Status Badge Row */}
+        <div className="flex items-center justify-between gap-1.5 flex-wrap">
           {/* Category Tag */}
           {isSmallScale && (
-            <Badge variant="secondary" className="rounded-chip bg-primary-soft text-primary-deep border-none text-xs font-medium">
-              <Zap className="h-3.5 w-3.5 ml-1 text-primary-brand" />
-              پیمانکار مقیاس کوچک
+            <Badge variant="secondary" className="rounded-chip bg-[#6D7F9F]/10 text-[#6D7F9F] border-none text-[10px] sm:text-xs font-bold px-2 py-0.5">
+              <Zap className="h-3 w-3 ml-1 text-[#6D7F9F]" />
+              مقیاس کوچک
             </Badge>
           )}
           {isMegawatt && (
-            <Badge variant="secondary" className="rounded-chip bg-secondary/10 text-secondary border-none text-xs font-medium">
-              <Building2 className="h-3.5 w-3.5 ml-1" />
+            <Badge variant="secondary" className="rounded-chip bg-emerald-100/80 text-emerald-800 border-none text-[10px] sm:text-xs font-bold px-2 py-0.5">
+              <Building2 className="h-3 w-3 ml-1 text-emerald-700" />
               پیمانکار مگاواتی
             </Badge>
           )}
           {isConsultant && (
-            <Badge variant="secondary" className="rounded-chip bg-accent/10 text-accent-foreground border-none text-xs font-medium">
-              <Award className="h-3.5 w-3.5 ml-1" />
+            <Badge variant="secondary" className="rounded-chip bg-purple-100/80 text-purple-800 border-none text-[10px] sm:text-xs font-bold px-2 py-0.5">
+              <Award className="h-3 w-3 ml-1 text-purple-700" />
               شرکت مشاور
             </Badge>
           )}
@@ -86,123 +80,113 @@ export function CompanyCard({ company, type }: CompanyCardProps) {
           <Badge
             variant={!isExpired ? 'default' : 'destructive'}
             className={cn(
-              'rounded-chip text-xs font-semibold',
-              !isExpired ? 'bg-secondary text-secondary-foreground hover:bg-secondary/90' : ''
+              'rounded-chip text-[10px] sm:text-xs font-bold px-2 py-0.5',
+              !isExpired ? 'bg-emerald-600 text-white hover:bg-emerald-700' : 'bg-rose-600 text-white'
             )}
           >
             {!isExpired ? (
-              <CheckCircle2 className="h-3.5 w-3.5 ml-1 inline" />
+              <CheckCircle2 className="h-3 w-3 ml-0.5 inline" />
             ) : (
-              <XCircle className="h-3.5 w-3.5 ml-1 inline" />
+              <XCircle className="h-3 w-3 ml-0.5 inline" />
             )}
             {statusText}
           </Badge>
         </div>
 
         {/* Company Title */}
-        <h3 className="text-xl font-bold text-right leading-relaxed text-ink group-hover:text-primary transition-colors">
+        <h3 className="text-base sm:text-xl font-bold text-right leading-snug text-slate-900 group-hover:text-[#6D7F9F] transition-colors line-clamp-2">
           {companyName}
         </h3>
 
         {/* National ID */}
-        <div className="flex items-center gap-2 text-sm text-muted-brand text-right">
-          <FileText className="h-4 w-4 text-subtle flex-shrink-0" />
-          <span>شناسه ملی: {nationalId}</span>
+        <div className="flex items-center gap-1.5 text-xs text-slate-600 text-right">
+          <FileText className="h-3.5 w-3.5 text-slate-400 flex-shrink-0" />
+          <span>شناسه ملی: <strong className="font-bold text-slate-800">{nationalId}</strong></span>
         </div>
       </CardHeader>
 
-      <CardContent className="space-y-4 pt-0">
-        {/* Certificate Info (Small Scale) */}
-        {company.contractor_certificate !== undefined && (
-          <div className="flex items-center justify-between text-sm text-right pt-2 border-t border-line-soft">
-            <span className="text-muted-brand">گواهینامه پیمانکاری:</span>
-            <Badge
-              variant="outline"
-              className={cn(
-                'rounded-chip text-xs border-line',
-                hasCertificate ? 'bg-primary-soft text-primary-deep' : 'bg-muted text-muted-foreground'
-              )}
-            >
-              {company.contractor_certificate}
-            </Badge>
-          </div>
-        )}
+      <CardContent className="p-3.5 sm:p-5 pt-0 space-y-3 flex-1 flex flex-col justify-between">
+        <div className="space-y-2.5">
+          {/* Certificate Info (Small Scale) */}
+          {company.contractor_certificate !== undefined && (
+            <div className="flex items-center justify-between text-xs text-right pt-2 border-t border-slate-100">
+              <span className="text-slate-600 font-medium">گواهینامه پیمانکاری:</span>
+              <span
+                className={cn(
+                  'rounded-chip text-[10px] sm:text-xs font-bold px-2 py-0.5 border',
+                  hasCertificate
+                    ? 'bg-emerald-50 text-emerald-800 border-emerald-300'
+                    : 'bg-slate-100 text-slate-700 border-slate-300'
+                )}
+              >
+                {company.contractor_certificate}
+              </span>
+            </div>
+          )}
 
-        {/* Expiration Date */}
-        {expirationDate !== '-' && (
-          <div className="flex items-center gap-2 text-sm text-muted-brand text-right pt-1">
-            <Calendar className="h-4 w-4 text-subtle flex-shrink-0" />
-            <span>تاریخ انقضاء: {expirationDate}</span>
-          </div>
-        )}
-
-        {/* Phone Numbers */}
-        {phoneNumbers.length > 0 && (
-          <div className="flex items-start gap-2 text-sm text-right pt-2 border-t border-line-soft">
-            <Phone className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
-            <div className="flex flex-wrap gap-2" dir="ltr">
-              {phoneNumbers.map((phone, idx) => (
-                <a
+          {/* BOLD Ranks Chips */}
+          {ranks.length > 0 && (
+            <div className="flex flex-wrap gap-1 pt-1">
+              {ranks.map((rank, idx) => (
+                <Badge
                   key={idx}
-                  href={`tel:${phone}`}
-                  className="text-sm font-sans hover:text-primary transition-colors text-ink"
-                  onClick={(e) => e.stopPropagation()}
+                  variant="secondary"
+                  className="text-[10px] sm:text-xs rounded-chip bg-[#6D7F9F]/15 text-[#3a4966] border border-[#6D7F9F]/30 font-extrabold px-2 py-0.5"
                 >
-                  {phone}
-                </a>
+                  {rank}
+                </Badge>
               ))}
             </div>
-          </div>
-        )}
+          )}
 
-        {/* Ranks Chips */}
-        {ranks.length > 0 && (
-          <div className="flex flex-wrap gap-1.5 pt-2">
-            {ranks.slice(0, 3).map((rank, idx) => (
-              <Badge
-                key={idx}
-                variant="secondary"
-                className="text-xs rounded-chip bg-primary-soft text-primary-deep border-none font-normal"
-              >
-                {rank}
-              </Badge>
-            ))}
-            {ranks.length > 3 && (
-              <Badge variant="outline" className="text-xs rounded-chip border-line text-subtle">
-                +{ranks.length - 3}
-              </Badge>
-            )}
-          </div>
-        )}
-
-        {/* Activity Conditions Expandable */}
-        {activityConditions.length > 0 && (
-          <div className="pt-2 border-t border-line-soft">
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={() => setShowDetails(!showDetails)}
-              className="w-full text-xs h-8 justify-between text-primary font-medium hover:bg-primary-soft/50 rounded-chip px-2"
-            >
-              <span className="flex items-center gap-1">
-                <Info className="h-3.5 w-3.5" />
-                شرایط فعالیت ({activityConditions.length} مورد)
-              </span>
-              {showDetails ? <ChevronUp className="h-3.5 w-3.5" /> : <ChevronDown className="h-3.5 w-3.5" />}
-            </Button>
-
-            {showDetails && (
-              <div className="mt-2 p-3 bg-surface-2 rounded-card text-xs space-y-1.5 text-ink-2 border border-line-soft text-right">
+          {/* Activity Conditions (Contrast Gray Box) */}
+          {activityConditions.length > 0 && (
+            <div className="pt-1">
+              <p className="text-[11px] sm:text-xs font-bold text-slate-700 mb-1 flex items-center gap-1">
+                <ShieldCheck className="h-3 w-3 text-[#6D7F9F]" />
+                شرایط فعالیت:
+              </p>
+              <div className="p-2 sm:p-3 bg-gray-100 rounded-xl text-[11px] sm:text-xs space-y-1 text-slate-800 border border-gray-200/80 text-right leading-relaxed">
                 {activityConditions.map((cond, idx) => (
-                  <div key={idx} className="flex items-start gap-1.5 leading-relaxed">
-                    <span className="text-primary font-bold">•</span>
+                  <div key={idx} className="flex items-start gap-1 font-medium">
+                    <span className="text-[#6D7F9F] font-bold">•</span>
                     <span>{cond}</span>
                   </div>
                 ))}
               </div>
-            )}
+            </div>
+          )}
+        </div>
+
+        {/* BOTTOM ROW: Expiration Date (Right) & BOLD PHONE NUMBERS IN BOTTOM-LEFT */}
+        <div className="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between gap-2">
+          {/* Expiration Date */}
+          <div className="flex items-center gap-1 text-[10px] sm:text-xs text-slate-600">
+            <Calendar className="h-3.5 w-3.5 text-slate-400 flex-shrink-0" />
+            <span>انقضاء: <strong className="font-bold text-slate-800">{expirationDate}</strong></span>
           </div>
-        )}
+
+          {/* PHONE NUMBERS IN BOTTOM-LEFT (BOLD & CLICKABLE) */}
+          {phoneNumbers.length > 0 ? (
+            <div className="flex items-center gap-1 font-mono text-left" dir="ltr">
+              <Phone className="h-3.5 w-3.5 text-[#6D7F9F] flex-shrink-0" />
+              <div className="flex flex-col text-left">
+                {phoneNumbers.slice(0, 2).map((phone, idx) => (
+                  <a
+                    key={idx}
+                    href={`tel:${phone}`}
+                    className="text-xs sm:text-sm font-black text-[#6D7F9F] hover:text-[#56698a] hover:underline transition-colors tracking-tight"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    {phone}
+                  </a>
+                ))}
+              </div>
+            </div>
+          ) : (
+            <span className="text-[10px] text-slate-400">-</span>
+          )}
+        </div>
       </CardContent>
     </Card>
   );

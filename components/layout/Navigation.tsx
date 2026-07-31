@@ -11,7 +11,6 @@ const navItems = [
   { href: '/', label: 'خانه' },
   { href: '/contractors', label: 'پیمانکاران' },
   { href: '/consultants', label: 'مشاوران' },
-  { href: '/branch-companies', label: 'شرکت‌های شعبه' },
   { href: '/about', label: 'درباره ما' },
 ];
 
@@ -35,8 +34,10 @@ export function Navigation() {
             key={item.href}
             href={item.href}
             className={cn(
-              "text-sm font-medium transition-colors hover:text-amber-600 dark:hover:text-amber-400",
-              isItemActive(item.href) ? "text-amber-600 dark:text-amber-400 font-bold" : "text-slate-700 dark:text-slate-200"
+              "text-sm font-bold transition-colors hover:text-[#6D7F9F]",
+              isItemActive(item.href)
+                ? "text-[#6D7F9F] font-extrabold border-b-2 border-[#6D7F9F] pb-1"
+                : "text-slate-700"
             )}
           >
             {item.label}
@@ -48,7 +49,7 @@ export function Navigation() {
       <Button
         variant="ghost"
         size="icon"
-        className="md:hidden"
+        className="md:hidden text-[#6D7F9F]"
         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
       >
         {mobileMenuOpen ? (
@@ -61,15 +62,15 @@ export function Navigation() {
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="fixed inset-x-0 top-16 z-50 md:hidden">
-          <nav className="border-b bg-background p-6 shadow-lg">
+          <nav className="border-b border-slate-200 bg-white p-6 shadow-lg">
             <div className="flex flex-col gap-4">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
                   className={cn(
-                    "text-base font-medium transition-colors hover:text-amber-600 text-right",
-                    isItemActive(item.href) ? "text-amber-600 font-bold" : "text-foreground"
+                    "text-base font-bold transition-colors hover:text-[#6D7F9F] text-right",
+                    isItemActive(item.href) ? "text-[#6D7F9F] font-extrabold" : "text-slate-700"
                   )}
                   onClick={() => setMobileMenuOpen(false)}
                 >

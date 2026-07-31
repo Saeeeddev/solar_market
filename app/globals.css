@@ -46,8 +46,8 @@
   --color-popover: hsl(var(--popover));
   --color-popover-foreground: hsl(var(--popover-foreground));
 
-  --color-primary: hsl(var(--primary));
-  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-primary: #6D7F9F;
+  --color-primary-foreground: #ffffff;
 
   --color-secondary: hsl(var(--secondary));
   --color-secondary-foreground: hsl(var(--secondary-foreground));
@@ -63,9 +63,9 @@
 
   --color-border: hsl(var(--border));
   --color-input: hsl(var(--input));
-  --color-ring: hsl(var(--ring));
+  --color-ring: #6D7F9F;
 
-  --color-chart-1: hsl(var(--chart-1));
+  --color-chart-1: #6D7F9F;
   --color-chart-2: hsl(var(--chart-2));
   --color-chart-3: hsl(var(--chart-3));
   --color-chart-4: hsl(var(--chart-4));
@@ -73,21 +73,21 @@
 
   --color-sidebar: hsl(var(--sidebar));
   --color-sidebar-foreground: hsl(var(--sidebar-foreground));
-  --color-sidebar-primary: hsl(var(--sidebar-primary));
-  --color-sidebar-primary-foreground: hsl(var(--sidebar-primary-foreground));
+  --color-sidebar-primary: #6D7F9F;
+  --color-sidebar-primary-foreground: #ffffff;
   --color-sidebar-accent: hsl(var(--sidebar-accent));
   --color-sidebar-accent-foreground: hsl(var(--sidebar-accent-foreground));
   --color-sidebar-border: hsl(var(--sidebar-border));
-  --color-sidebar-ring: hsl(var(--sidebar-ring));
+  --color-sidebar-ring: #6D7F9F;
 
-  --color-primary-brand: #6d7f9f;
+  --color-primary-brand: #6D7F9F;
   --color-primary-deep: #56698a;
   --color-primary-soft: #eef1f6;
   --color-teal: #93afb1;
   --color-teal-deep: #6f9092;
   --color-teal-soft: #eaf1f1;
   --color-surface: #ffffff;
-  --color-surface-2: #f7f7f9;
+  --color-surface-2: #f3f4f6;
   --color-line: #d0d0d1;
   --color-line-soft: #e8e8ea;
   --color-ink: #23272e;
@@ -127,79 +127,29 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
     
-    /* Primary: Blue (Solar industry professional) */
-    --primary: 220 90% 56%; /* Professional blue */
+    /* Primary: #6D7F9F */
+    --primary: 218 20% 53%; /* #6D7F9F */
     --primary-foreground: 0 0% 100%;
     
-    /* Secondary: Green (Solar/Energy theme) */
-    --secondary: 142 76% 36%; /* Green for solar theme */
+    /* Secondary: Green */
+    --secondary: 142 76% 36%;
     --secondary-foreground: 0 0% 100%;
     
-    /* Accent: Yellow/Gold (Energy theme) */
-    --accent: 43 96% 56%; /* Gold/yellow energy theme */
+    /* Accent: Gold */
+    --accent: 43 96% 56%;
     --accent-foreground: 222 47% 11%;
     
-    --muted: 210 40% 96%; /* Light gray-blue */
-    --muted-foreground: 215 16% 47%; /* Slate gray */
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 16% 47%;
     
-    --destructive: 0 84% 60%; /* Red for errors */
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
     
-    --border: 214 32% 91%; /* Light border */
+    --border: 214 32% 91%;
     --input: 214 32% 91%;
-    --ring: 220 90% 56%; /* Same as primary */
+    --ring: 218 20% 53%;
     
-    --chart-1: 220 90% 56%; /* Blue */
-    --chart-2: 142 76% 36%; /* Green */
-    --chart-3: 43 96% 56%; /* Yellow */
-    --chart-4: 222 47% 11%;
-    --chart-5: 215 16% 47%;
-    
-    --radius: 0.5rem;
-    
-    --sidebar: 0 0% 97%;
-    --sidebar-foreground: 222 47% 11%;
-    --sidebar-primary: 220 90% 56%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 210 40% 96%;
-    --sidebar-accent-foreground: 222 47% 11%;
-    --sidebar-border: 214 32% 91%;
-    --sidebar-ring: 220 90% 56%;
-  }
-
-  .dark {
-    --background: 222 47% 7%;
-    --foreground: 0 0% 98%;
-    --card: 222 47% 9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 222 47% 9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 222 47% 9%;
-    --secondary: 222 47% 15%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 222 47% 15%;
-    --muted-foreground: 215 16% 70%;
-    --accent: 222 47% 15%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 63% 31%;
-    --destructive-foreground: 0 85% 97%;
-    --border: 0 0% 100% / 10%;
-    --input: 0 0% 100% / 15%;
-    --ring: 215 16% 57%;
-    --chart-1: 0 0% 87%;
-    --chart-2: 215 16% 57%;
-    --chart-3: 222 47% 22%;
-    --chart-4: 222 47% 28%;
-    --chart-5: 222 47% 15%;
-    --sidebar: 222 47% 9%;
-    --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 217 91% 60%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 222 47% 15%;
-    --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 0 0% 100% / 10%;
-    --sidebar-ring: 215 16% 57%;
+    --radius: 0.75rem;
   }
 }
 
@@ -209,16 +159,18 @@
   }
   
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply text-foreground font-sans;
     font-family: 'Yekan Bakh', Tahoma, Arial, sans-serif;
-    /* Elegant gradient background inspired by Synergy */
+    /* Custom background gradient requested by user */
     background: linear-gradient(
       135deg,
-      hsl(var(--background)) 0%,
-      hsl(220 20% 97%) 25%,
-      hsl(215 25% 96%) 50%,
-      hsl(210 30% 95%) 75%,
-      hsl(var(--background)) 100%
+      #f3f4f6 0%,
+      #ebedf0 16%,
+      #eef0f2 32%,
+      #f7f8f9 50%,
+      #f3f4f6 66%,
+      #ebedf0 84%,
+      #eceef1 100%
     );
     background-attachment: fixed;
     letter-spacing: 0;
@@ -232,14 +184,12 @@
     font-family: 'Yekan Bakh', Tahoma, Arial, sans-serif;
   }
   
-  /* RTL Adjustments */
   [dir="ltr"] {
     direction: ltr;
   }
   
-  /* Enhanced focus styles */
   *:focus-visible {
-    outline: 2px solid hsl(var(--ring));
+    outline: 2px solid #6D7F9F;
     outline-offset: 2px;
   }
 }
@@ -264,102 +214,57 @@
     }
   }
   
-  /* Synergy-inspired gradient backgrounds */
   .gradient-brand {
     background: linear-gradient(135deg, #eef1f6 0%, #eaf1f1 100%);
   }
   
   .gradient-card {
-    background: linear-gradient(180deg, #ffffff 0%, #f7f7f9 100%);
+    background: #ffffff;
   }
   
-  /* Text gradients */
   .text-gradient {
-    background: linear-gradient(135deg, #6d7f9f 0%, #93afb1 100%);
+    background: linear-gradient(135deg, #6D7F9F 0%, #93afb1 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
   
-  /* Custom button styles */
   .btn-primary {
-    @apply bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300;
-    box-shadow: 0 4px 14px rgba(59, 130, 246, 0.15);
+    background-color: #6D7F9F;
+    color: #ffffff;
+    transition: all 300ms ease;
+    box-shadow: 0 4px 14px rgba(109, 127, 159, 0.25);
   }
   
   .btn-primary:hover {
+    background-color: #56698a;
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.25);
+    box-shadow: 0 8px 25px rgba(109, 127, 159, 0.35);
   }
   
-  /* Card hover effects */
   .card-hover {
     @apply transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1;
   }
   
-  /* Enhanced glassmorphism effects */
-  .glass {
-    backdrop-filter: blur(12px);
-    background: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-  }
-  
-  /* Text balance */
   .text-balance {
     text-wrap: balance;
   }
 }
 
-/* ── Enhanced Entrance animations (Synergy-style) ── */
-.rise {
-  opacity: 1;
-  transform: translateY(0);
-  filter: blur(0);
-  transition:
-    opacity 700ms cubic-bezier(0.23, 1, 0.32, 1),
-    transform 700ms cubic-bezier(0.23, 1, 0.32, 1),
-    filter 700ms cubic-bezier(0.23, 1, 0.32, 1);
-  transition-delay: var(--rise-delay, 0ms);
-}
-
-@starting-style {
-  .rise {
-    opacity: 0;
-    transform: translateY(24px);
-    filter: blur(4px);
-  }
-}
-
-/* Staggered animations for grid items */
-.rise-stagger {
-  animation-delay: calc(var(--stagger-index, 0) * 150ms);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .rise,
-  .rise-stagger {
-    transition: opacity 300ms ease;
-    transition-delay: 0ms;
-    transform: none !important;
-    filter: none !important;
-    animation: none !important;
-  }
-}
-
-/* ── Custom scrollbar ── */
+/* Custom scrollbar matching design system */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: hsl(var(--muted));
+  background: #eef0f2;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(var(--border));
+  background: #6D7F9F;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(var(--primary));
+  background: #56698a;
 }
