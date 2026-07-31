@@ -59,18 +59,18 @@ export function Navigation() {
         )}
       </Button>
 
-      {/* Mobile Menu */}
+      {/* Mobile Dropdown Menu */}
       {mobileMenuOpen && (
         <div className="fixed inset-x-0 top-16 z-50 md:hidden">
-          <nav className="border-b border-slate-200 bg-white p-6 shadow-lg">
-            <div className="flex flex-col gap-4">
+          <nav className="border-b border-slate-200 bg-white p-5 shadow-xl">
+            <div className="flex flex-col gap-3">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
                   className={cn(
-                    "text-base font-bold transition-colors hover:text-[#6D7F9F] text-right",
-                    isItemActive(item.href) ? "text-[#6D7F9F] font-extrabold" : "text-slate-700"
+                    "text-base font-bold transition-colors hover:text-[#6D7F9F] text-right py-2 px-3 rounded-chip hover:bg-slate-50",
+                    isItemActive(item.href) ? "text-[#6D7F9F] font-extrabold bg-[#6D7F9F]/10" : "text-slate-700"
                   )}
                   onClick={() => setMobileMenuOpen(false)}
                 >

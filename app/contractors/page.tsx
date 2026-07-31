@@ -86,8 +86,8 @@ function ContractorsContent() {
             />
           </aside>
 
-          {/* Main Content Grid (2 cards per row on mobile) */}
-          <main className="lg:col-span-3 space-y-6">
+          {/* Main Content Grid (1 card per row on mobile) */}
+          <main id="results-section" className="lg:col-span-3 space-y-6 scroll-mt-20">
             {isError && <ErrorMessage message="خطا در دریافت اطلاعات پیمانکاران" />}
 
             {(isLoading || (isFetching && !data)) ? (

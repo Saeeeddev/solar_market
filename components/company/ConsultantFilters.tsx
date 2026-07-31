@@ -1,9 +1,10 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Button } from '@/components/ui/button';
-import { Search, RotateCcw, Award } from 'lucide-react';
+import { Search, RotateCcw, Award, SlidersHorizontal, X, Check } from 'lucide-react';
 import { cn } from '@/lib/utils/cn';
 
 export interface ConsultantFilterState {
@@ -35,123 +36,226 @@ export function ConsultantFilters({
   headers = [],
   totalResults,
 }: ConsultantFiltersProps) {
-  const resetFilters = () => {
-    onFilterChange({
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [draftFilters, setDraftFilters] = useState<ConsultantFilterState>(filters);
+
+  // Sync draft filters whenever props filter or drawer opens
+  useEffect(() => {
+    setDraftFilters(filters);
+  }, [filters, mobileOpen]);
+
+  const resetFilters = (targetState: ConsultantFilterState, setFn: (f: ConsultantFilterState) => void) => {
+    setFn({
       search: '',
       status: 'all',
       rank: '',
     });
   };
 
-  const hasActiveFilters =
-    filters.search !== '' || filters.status !== 'all' || filters.rank !== '';
+  const hasActiveFilters = (f: ConsultantFilterState) =>
+    f.search !== '' || f.status !== 'all' || f.rank !== '';
+
+  const handleMobileSubmit = () => {
+    onFilterChange(draftFilters);
+    setMobileOpen(false);
+    setTimeout(() => {
+      const resultsEl = document.getElementById('results-section');
+      if (resultsEl) {
+        resultsEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } else {
+        window.scrollTo({ top: 300, behavior: 'smooth' });
+      }
+    }, 100);
+  };
+
+  const renderFilterForm = (
+    currentFilters: ConsultantFilterState,
+    updateFn: (newF: ConsultantFilterState) => void,
+    isMobileView: boolean = false
+  ) => {
+    return (
+      <div className="space-y-6">
+        <div className="flex items-center justify-between border-b border-slate-100 pb-3">
+          <h3 className="font-bold text-xs text-slate-800">فیلترهای مشاوران</h3>
+
+          {hasActiveFilters(currentFilters) && (
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => resetFilters(currentFilters, updateFn)}
+              className="h-auto p-0 text-xs text-rose-600 hover:text-rose-700 font-semibold"
+            >
+              <RotateCcw className="h-3 w-3 ml-1" />
+              پاک کردن
+            </Button>
+          )}
+        </div>
+
+        {/* Search */}
+        <div className="space-y-2">
+          <Label htmlFor={isMobileView ? "mobile-search-consultant" : "search-consultant"} className="text-xs font-semibold text-slate-700">
+            جستجو ({headers[0] || 'نام شرکت'})
+          </Label>
+          <div className="relative">
+            <Search className="absolute right-3 top-2.5 h-4 w-4 text-slate-400" />
+            <Input
+              id={isMobileView ? "mobile-search-consultant" : "search-consultant"}
+              type="text"
+              placeholder="نام شرکت، شناسه ملی، شماره تماس..."
+              value={currentFilters.search}
+              onChange={(e) => updateFn({ ...currentFilters, search: e.target.value })}
+              className="pr-9 text-xs rounded-chip border-slate-200 bg-slate-50 focus:bg-white"
+              dir="rtl"
+            />
+          </div>
+        </div>
+
+        {/* 7 RANK BUTTONS FILTER */}
+        <div className="space-y-2">
+          <Label className="text-xs font-semibold text-slate-700 flex items-center gap-1">
+            <Award className="h-3.5 w-3.5 text-purple-600" />
+            فیلتر رتبه نیرو (۷ حالت)
+          </Label>
+          <div className="grid grid-cols-2 gap-1.5 p-1 bg-slate-100 rounded-chip text-xs">
+            {rankOptions.map((opt) => (
+              <button
+                key={opt.value}
+                type="button"
+                onClick={() => updateFn({ ...currentFilters, rank: opt.value })}
+                className={cn(
+                  'py-1.5 px-2 rounded-chip font-bold transition-all text-xs text-center',
+                  currentFilters.rank === opt.value
+                    ? 'bg-purple-600 text-white shadow-xs'
+                    : 'text-slate-700 hover:text-slate-900 hover:bg-slate-200/60'
+                )}
+              >
+                {opt.label}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Status Filter */}
+        <div className="space-y-2">
+          <Label className="text-xs font-semibold text-slate-700">
+            وضعیت اعتبار ({headers[4] || 'تاریخ انقضاء'})
+          </Label>
+          <div className="grid grid-cols-3 gap-1.5 p-1 bg-slate-100 rounded-chip text-xs">
+            <button
+              type="button"
+              onClick={() => updateFn({ ...currentFilters, status: 'all' })}
+              className={cn(
+                'py-1.5 rounded-chip font-bold transition-all',
+                currentFilters.status === 'all' ? 'bg-white text-slate-900 shadow-xs' : 'text-slate-600'
+              )}
+            >
+              همه
+            </button>
+            <button
+              type="button"
+              onClick={() => updateFn({ ...currentFilters, status: 'valid' })}
+              className={cn(
+                'py-1.5 rounded-chip font-bold transition-all',
+                currentFilters.status === 'valid' ? 'bg-emerald-600 text-white shadow-xs' : 'text-slate-600'
+              )}
+            >
+              معتبر
+            </button>
+            <button
+              type="button"
+              onClick={() => updateFn({ ...currentFilters, status: 'expired' })}
+              className={cn(
+                'py-1.5 rounded-chip font-bold transition-all',
+                currentFilters.status === 'expired' ? 'bg-rose-600 text-white shadow-xs' : 'text-slate-600'
+              )}
+            >
+              منقضی
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  };
 
   return (
-    <div className="space-y-6 p-5 border border-slate-200/80 rounded-card bg-white shadow-card sticky top-20">
-      <div className="flex items-center justify-between border-b border-slate-100 pb-3">
-        <h3 className="font-bold text-xs text-slate-800">فیلترهای مشاوران</h3>
+    <>
+      {/* DESKTOP FILTER SIDEBAR (Unchanged for lg+) */}
+      <div className="hidden lg:block p-5 border border-slate-200/80 rounded-card bg-white shadow-card sticky top-20">
+        {renderFilterForm(filters, onFilterChange, false)}
 
-        {hasActiveFilters && (
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={resetFilters}
-            className="h-auto p-0 text-xs text-rose-600 hover:text-rose-700 font-semibold"
-          >
-            <RotateCcw className="h-3 w-3 ml-1" />
-            پاک کردن
-          </Button>
+        {totalResults !== undefined && (
+          <div className="pt-3 mt-4 text-center border-t border-slate-100 text-xs font-bold text-purple-700">
+            {totalResults.toLocaleString('fa-IR')} شرکت مشاور یافته شد
+          </div>
         )}
       </div>
 
-      {/* Search */}
-      <div className="space-y-2">
-        <Label htmlFor="search" className="text-xs font-semibold text-slate-700">
-          جستجو ({headers[0] || 'نام شرکت'})
-        </Label>
-        <div className="relative">
-          <Search className="absolute right-3 top-2.5 h-4 w-4 text-slate-400" />
-          <Input
-            id="search"
-            type="text"
-            placeholder="نام شرکت، شناسه ملی، شماره تماس..."
-            value={filters.search}
-            onChange={(e) => onFilterChange({ ...filters, search: e.target.value })}
-            className="pr-9 text-xs rounded-chip border-slate-200 bg-slate-50 focus:bg-white"
-            dir="rtl"
-          />
-        </div>
+      {/* MOBILE COMPACT FILTER TRIGGER BUTTON (Only for smaller screens < lg) */}
+      <div className="lg:hidden mb-4">
+        <Button
+          onClick={() => setMobileOpen(true)}
+          className="w-full h-12 bg-white hover:bg-slate-50 border border-slate-300 text-slate-900 font-black text-sm rounded-chip shadow-sm flex items-center justify-between px-4"
+        >
+          <div className="flex items-center gap-2">
+            <div className="p-1.5 rounded-chip bg-purple-100 text-purple-700">
+              <SlidersHorizontal className="h-4 w-4" />
+            </div>
+            <span>فیلتر و جستجوی مشاوران</span>
+            {hasActiveFilters(filters) && (
+              <span className="px-2 py-0.5 rounded-chip bg-purple-600 text-white text-[10px] font-bold">
+                فیلتر فعال
+              </span>
+            )}
+          </div>
+          {totalResults !== undefined && (
+            <span className="text-xs font-bold text-purple-700">
+              ({totalResults.toLocaleString('fa-IR')})
+            </span>
+          )}
+        </Button>
       </div>
 
-      {/* 7 RANK BUTTONS FILTER */}
-      <div className="space-y-2">
-        <Label className="text-xs font-semibold text-slate-700 flex items-center gap-1">
-          <Award className="h-3.5 w-3.5 text-purple-600" />
-          فیلتر رتبه نیرو (۷ حالت)
-        </Label>
-        <div className="grid grid-cols-2 gap-1.5 p-1 bg-slate-100 rounded-chip text-xs">
-          {rankOptions.map((opt) => (
-            <button
-              key={opt.value}
-              type="button"
-              onClick={() => onFilterChange({ ...filters, rank: opt.value })}
-              className={cn(
-                'py-1.5 px-2 rounded-chip font-bold transition-all text-xs text-center',
-                filters.rank === opt.value
-                  ? 'bg-purple-600 text-white shadow-xs'
-                  : 'text-slate-700 hover:text-slate-900 hover:bg-slate-200/60'
-              )}
-            >
-              {opt.label}
-            </button>
-          ))}
-        </div>
-      </div>
+      {/* MOBILE FILTER MODAL / DRAWER */}
+      {mobileOpen && (
+        <div className="fixed inset-0 z-50 lg:hidden flex flex-col justify-end bg-slate-900/60 backdrop-blur-xs animate-in fade-in-0 duration-200">
+          <div className="bg-white rounded-t-2xl max-h-[85vh] flex flex-col shadow-2xl overflow-hidden animate-in slide-in-from-bottom duration-300">
+            {/* Modal Header */}
+            <div className="flex items-center justify-between p-4 border-b border-slate-100 bg-slate-50/80">
+              <div className="flex items-center gap-2">
+                <SlidersHorizontal className="h-4 w-4 text-purple-700" />
+                <h3 className="font-black text-sm text-slate-900">فیلتر و جستجوی مشاوران</h3>
+              </div>
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => setMobileOpen(false)}
+                className="h-8 w-8 text-slate-500 rounded-chip"
+              >
+                <X className="h-5 w-5" />
+              </Button>
+            </div>
 
-      {/* Status Filter */}
-      <div className="space-y-2">
-        <Label className="text-xs font-semibold text-slate-700">
-          وضعیت اعتبار ({headers[4] || 'تاریخ انقضاء'})
-        </Label>
-        <div className="grid grid-cols-3 gap-1.5 p-1 bg-slate-100 rounded-chip text-xs">
-          <button
-            type="button"
-            onClick={() => onFilterChange({ ...filters, status: 'all' })}
-            className={cn(
-              'py-1.5 rounded-chip font-bold transition-all',
-              filters.status === 'all' ? 'bg-white text-slate-900 shadow-xs' : 'text-slate-600'
-            )}
-          >
-            همه
-          </button>
-          <button
-            type="button"
-            onClick={() => onFilterChange({ ...filters, status: 'valid' })}
-            className={cn(
-              'py-1.5 rounded-chip font-bold transition-all',
-              filters.status === 'valid' ? 'bg-emerald-600 text-white shadow-xs' : 'text-slate-600'
-            )}
-          >
-            معتبر
-          </button>
-          <button
-            type="button"
-            onClick={() => onFilterChange({ ...filters, status: 'expired' })}
-            className={cn(
-              'py-1.5 rounded-chip font-bold transition-all',
-              filters.status === 'expired' ? 'bg-rose-600 text-white shadow-xs' : 'text-slate-600'
-            )}
-          >
-            منقضی
-          </button>
-        </div>
-      </div>
+            {/* Modal Body */}
+            <div className="p-5 overflow-y-auto flex-1">
+              {renderFilterForm(draftFilters, setDraftFilters, true)}
+            </div>
 
-      {totalResults !== undefined && (
-        <div className="pt-3 text-center border-t border-slate-100 text-xs font-bold text-purple-700">
-          {totalResults.toLocaleString('fa-IR')} شرکت مشاور یافته شد
+            {/* Modal Footer with SUBMIT BUTTON */}
+            <div className="p-4 border-t border-slate-100 bg-white shadow-lg space-y-2">
+              <Button
+                onClick={handleMobileSubmit}
+                className="w-full h-12 bg-purple-600 hover:bg-purple-700 text-white font-black text-sm rounded-chip shadow-md flex items-center justify-center gap-2 transition-all"
+              >
+                <Check className="h-5 w-5" />
+                اعمال فیلتر و مشاهده نتایج
+                {totalResults !== undefined && (
+                  <span className="opacity-90 font-normal">({totalResults.toLocaleString('fa-IR')} مورد)</span>
+                )}
+              </Button>
+            </div>
+          </div>
         </div>
       )}
-    </div>
+    </>
   );
 }

@@ -52,25 +52,25 @@ export function CompanyCard({ company, type }: CompanyCardProps) {
   const hasCertificate = company.contractor_certificate === 'دارد';
 
   return (
-    <Card className="group card-hover h-full flex flex-col justify-between rounded-card border border-slate-200/80 bg-white shadow-card hover:shadow-card-hover transition-all duration-300 overflow-hidden">
+    <Card className="group card-hover h-full flex flex-col justify-between border-0 ring-0 rounded-card bg-white shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden">
       <CardHeader className="p-3.5 sm:p-5 space-y-2.5 pb-2">
         {/* Category & Status Badge Row */}
         <div className="flex items-center justify-between gap-1.5 flex-wrap">
           {/* Category Tag */}
           {isSmallScale && (
-            <Badge variant="secondary" className="rounded-chip bg-[#6D7F9F]/10 text-[#6D7F9F] border-none text-[10px] sm:text-xs font-bold px-2 py-0.5">
+            <Badge variant="secondary" className="rounded-chip bg-[#6D7F9F]/10 text-[#6D7F9F] border-0 text-[10px] sm:text-xs font-bold px-2 py-0.5">
               <Zap className="h-3 w-3 ml-1 text-[#6D7F9F]" />
               مقیاس کوچک
             </Badge>
           )}
           {isMegawatt && (
-            <Badge variant="secondary" className="rounded-chip bg-emerald-100/80 text-emerald-800 border-none text-[10px] sm:text-xs font-bold px-2 py-0.5">
+            <Badge variant="secondary" className="rounded-chip bg-emerald-100/80 text-emerald-800 border-0 text-[10px] sm:text-xs font-bold px-2 py-0.5">
               <Building2 className="h-3 w-3 ml-1 text-emerald-700" />
               پیمانکار مگاواتی
             </Badge>
           )}
           {isConsultant && (
-            <Badge variant="secondary" className="rounded-chip bg-purple-100/80 text-purple-800 border-none text-[10px] sm:text-xs font-bold px-2 py-0.5">
+            <Badge variant="secondary" className="rounded-chip bg-purple-100/80 text-purple-800 border-0 text-[10px] sm:text-xs font-bold px-2 py-0.5">
               <Award className="h-3 w-3 ml-1 text-purple-700" />
               شرکت مشاور
             </Badge>
@@ -80,7 +80,7 @@ export function CompanyCard({ company, type }: CompanyCardProps) {
           <Badge
             variant={!isExpired ? 'default' : 'destructive'}
             className={cn(
-              'rounded-chip text-[10px] sm:text-xs font-bold px-2 py-0.5',
+              'rounded-chip text-[10px] sm:text-xs font-bold px-2 py-0.5 border-0',
               !isExpired ? 'bg-emerald-600 text-white hover:bg-emerald-700' : 'bg-rose-600 text-white'
             )}
           >
@@ -109,14 +109,14 @@ export function CompanyCard({ company, type }: CompanyCardProps) {
         <div className="space-y-2.5">
           {/* Certificate Info (Small Scale) */}
           {company.contractor_certificate !== undefined && (
-            <div className="flex items-center justify-between text-xs text-right pt-2 border-t border-slate-100">
+            <div className="flex items-center justify-between text-xs text-right pt-2">
               <span className="text-slate-600 font-medium">گواهینامه پیمانکاری:</span>
               <span
                 className={cn(
-                  'rounded-chip text-[10px] sm:text-xs font-bold px-2 py-0.5 border',
+                  'rounded-chip text-[10px] sm:text-xs font-bold px-2.5 py-1 border-0',
                   hasCertificate
-                    ? 'bg-emerald-50 text-emerald-800 border-emerald-300'
-                    : 'bg-slate-100 text-slate-700 border-slate-300'
+                    ? 'bg-emerald-50 text-emerald-800'
+                    : 'bg-slate-100 text-slate-700'
                 )}
               >
                 {company.contractor_certificate}
@@ -126,12 +126,12 @@ export function CompanyCard({ company, type }: CompanyCardProps) {
 
           {/* BOLD Ranks Chips */}
           {ranks.length > 0 && (
-            <div className="flex flex-wrap gap-1 pt-1">
+            <div className="flex flex-wrap gap-1.5 pt-1">
               {ranks.map((rank, idx) => (
                 <Badge
                   key={idx}
                   variant="secondary"
-                  className="text-[10px] sm:text-xs rounded-chip bg-[#6D7F9F]/15 text-[#3a4966] border border-[#6D7F9F]/30 font-extrabold px-2 py-0.5"
+                  className="text-[10px] sm:text-xs rounded-chip bg-[#6D7F9F]/15 text-[#3a4966] border-0 font-extrabold px-2.5 py-1"
                 >
                   {rank}
                 </Badge>
@@ -146,7 +146,7 @@ export function CompanyCard({ company, type }: CompanyCardProps) {
                 <ShieldCheck className="h-3 w-3 text-[#6D7F9F]" />
                 شرایط فعالیت:
               </p>
-              <div className="p-2 sm:p-3 bg-gray-100 rounded-xl text-[11px] sm:text-xs space-y-1 text-slate-800 border border-gray-200/80 text-right leading-relaxed">
+              <div className="p-2.5 sm:p-3 bg-slate-100 rounded-xl text-[11px] sm:text-xs space-y-1 text-slate-800 border-0 text-right leading-relaxed">
                 {activityConditions.map((cond, idx) => (
                   <div key={idx} className="flex items-start gap-1 font-medium">
                     <span className="text-[#6D7F9F] font-bold">•</span>
@@ -158,33 +158,31 @@ export function CompanyCard({ company, type }: CompanyCardProps) {
           )}
         </div>
 
-        {/* BOTTOM ROW: Expiration Date (Right) & BOLD PHONE NUMBERS IN BOTTOM-LEFT */}
-        <div className="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between gap-2">
+        {/* BOTTOM ROW: Expiration Date (Right) & STACKED BUTTON-LIKE PHONE NUMBERS (Left) */}
+        <div className="mt-3 pt-3 flex items-center justify-between gap-2">
           {/* Expiration Date */}
           <div className="flex items-center gap-1 text-[10px] sm:text-xs text-slate-600">
             <Calendar className="h-3.5 w-3.5 text-slate-400 flex-shrink-0" />
             <span>انقضاء: <strong className="font-bold text-slate-800">{expirationDate}</strong></span>
           </div>
 
-          {/* PHONE NUMBERS IN BOTTOM-LEFT (BOLD & CLICKABLE) */}
+          {/* PHONE NUMBERS IN STACKED BUTTON-LIKE BOXES */}
           {phoneNumbers.length > 0 ? (
-            <div className="flex items-center gap-1 font-mono text-left" dir="ltr">
-              <Phone className="h-3.5 w-3.5 text-[#6D7F9F] flex-shrink-0" />
-              <div className="flex flex-col text-left">
-                {phoneNumbers.slice(0, 2).map((phone, idx) => (
-                  <a
-                    key={idx}
-                    href={`tel:${phone}`}
-                    className="text-xs sm:text-sm font-black text-[#6D7F9F] hover:text-[#56698a] hover:underline transition-colors tracking-tight"
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    {phone}
-                  </a>
-                ))}
-              </div>
+            <div className="flex flex-col gap-1.5 text-left font-mono" dir="ltr">
+              {phoneNumbers.slice(0, 2).map((phone, idx) => (
+                <a
+                  key={idx}
+                  href={`tel:${phone}`}
+                  className="inline-flex items-center justify-start gap-1.5 px-2.5 py-1 bg-slate-100 hover:bg-[#6D7F9F] text-[#3a4966] hover:text-white text-xs font-black rounded-chip transition-all shadow-2xs group/btn border-0"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <Phone className="h-3 w-3 text-[#6D7F9F] group-hover/btn:text-white transition-colors flex-shrink-0" />
+                  <span className="tracking-tight">{phone}</span>
+                </a>
+              ))}
             </div>
           ) : (
-            <span className="text-[10px] text-slate-400">-</span>
+            <span className="text-[10px] text-slate-400 font-bold">-</span>
           )}
         </div>
       </CardContent>

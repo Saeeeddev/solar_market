@@ -168,7 +168,7 @@ export default function HomePage() {
         {smallScaleError && <ErrorMessage message="خطا در دریافت پیمانکاران مقیاس کوچک" />}
 
         {smallScaleData && smallScaleData.data && (
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {smallScaleData.data.map((company: any, index: number) => (
               <div key={company.id || index} className="h-full">
                 <CompanyCard company={company} type="small" />
@@ -206,7 +206,7 @@ export default function HomePage() {
         {megawattError && <ErrorMessage message="خطا در دریافت پیمانکاران مگاواتی" />}
 
         {megawattData && megawattData.data && (
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {megawattData.data.map((company: any, index: number) => (
               <div key={company.id || index} className="h-full">
                 <CompanyCard company={company} type="megawatt" />
@@ -244,7 +244,7 @@ export default function HomePage() {
         {consultantsError && <ErrorMessage message="خطا در دریافت مشاوران" />}
 
         {consultantsData && consultantsData.data && (
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {consultantsData.data.map((company: any, index: number) => (
               <div key={company.id || index} className="h-full">
                 <CompanyCard company={company} type="consultant" />
