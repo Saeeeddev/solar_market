@@ -12,10 +12,10 @@ export default function AboutPage() {
     <div className="container mx-auto px-4 py-12">
       <div className="max-w-4xl mx-auto">
         {/* Unified Single Card for About Solar Bazar */}
-        <Card className="rounded-card border border-slate-200/80 bg-white shadow-card overflow-hidden">
+        <Card className="rounded-card border-0 ring-0 bg-white shadow-card overflow-hidden">
           <CardContent className="p-8 md:p-12 space-y-12 text-right">
             {/* Header / Brand */}
-            <div className="text-center space-y-4 border-b border-slate-100 pb-8">
+            <div className="text-center space-y-4 border-0 ring-0 border-slate-100 pb-8">
               <div className="flex justify-center mb-4">
                 <div className="p-5 rounded-hero bg-[#6D7F9F]/10">
                   <Sun className="h-16 w-16 text-[#6D7F9F]" />

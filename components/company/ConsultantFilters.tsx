@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Button } from '@/components/ui/button';
@@ -22,7 +22,7 @@ interface ConsultantFiltersProps {
 
 const rankOptions = [
   { label: 'همه', value: '' },
-  { label: 'بدون رتبه', value: 'no_rank' },
+  { label: 'فاقد رتبه', value: 'no_rank' },
   { label: 'رتبه ۱', value: 'رتبه ۱' },
   { label: 'رتبه ۲', value: 'رتبه ۲' },
   { label: 'رتبه ۳', value: 'رتبه ۳' },
@@ -37,15 +37,9 @@ export function ConsultantFilters({
   totalResults,
 }: ConsultantFiltersProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [draftFilters, setDraftFilters] = useState<ConsultantFilterState>(filters);
 
-  // Sync draft filters whenever props filter or drawer opens
-  useEffect(() => {
-    setDraftFilters(filters);
-  }, [filters, mobileOpen]);
-
-  const resetFilters = (targetState: ConsultantFilterState, setFn: (f: ConsultantFilterState) => void) => {
-    setFn({
+  const resetFilters = () => {
+    onFilterChange({
       search: '',
       status: 'all',
       rank: '',
@@ -56,7 +50,6 @@ export function ConsultantFilters({
     f.search !== '' || f.status !== 'all' || f.rank !== '';
 
   const handleMobileSubmit = () => {
-    onFilterChange(draftFilters);
     setMobileOpen(false);
     setTimeout(() => {
       const resultsEl = document.getElementById('results-section');
@@ -75,14 +68,14 @@ export function ConsultantFilters({
   ) => {
     return (
       <div className="space-y-6">
-        <div className="flex items-center justify-between border-b border-slate-100 pb-3">
+        <div className="flex items-center justify-between pb-1">
           <h3 className="font-bold text-xs text-slate-800">فیلترهای مشاوران</h3>
 
           {hasActiveFilters(currentFilters) && (
             <Button
               variant="ghost"
               size="sm"
-              onClick={() => resetFilters(currentFilters, updateFn)}
+              onClick={resetFilters}
               className="h-auto p-0 text-xs text-rose-600 hover:text-rose-700 font-semibold"
             >
               <RotateCcw className="h-3 w-3 ml-1" />
@@ -104,7 +97,7 @@ export function ConsultantFilters({
               placeholder="نام شرکت، شناسه ملی، شماره تماس..."
               value={currentFilters.search}
               onChange={(e) => updateFn({ ...currentFilters, search: e.target.value })}
-              className="pr-9 text-xs rounded-chip border-slate-200 bg-slate-50 focus:bg-white"
+              className="pr-9 text-xs rounded-chip border-0 bg-slate-100 focus:bg-white"
               dir="rtl"
             />
           </div>
@@ -179,22 +172,22 @@ export function ConsultantFilters({
 
   return (
     <>
-      {/* DESKTOP FILTER SIDEBAR (Unchanged for lg+) */}
-      <div className="hidden lg:block p-5 border border-slate-200/80 rounded-card bg-white shadow-card sticky top-20">
+      {/* DESKTOP FILTER SIDEBAR (Borderless) */}
+      <div className="hidden lg:block p-5 border-0 ring-0 rounded-card bg-white shadow-md sticky top-20">
         {renderFilterForm(filters, onFilterChange, false)}
 
         {totalResults !== undefined && (
-          <div className="pt-3 mt-4 text-center border-t border-slate-100 text-xs font-bold text-purple-700">
+          <div className="pt-3 mt-4 text-center text-xs font-bold text-purple-700">
             {totalResults.toLocaleString('fa-IR')} شرکت مشاور یافته شد
           </div>
         )}
       </div>
 
-      {/* MOBILE COMPACT FILTER TRIGGER BUTTON (Only for smaller screens < lg) */}
+      {/* MOBILE COMPACT FILTER TRIGGER BUTTON */}
       <div className="lg:hidden mb-4">
         <Button
           onClick={() => setMobileOpen(true)}
-          className="w-full h-12 bg-white hover:bg-slate-50 border border-slate-300 text-slate-900 font-black text-sm rounded-chip shadow-sm flex items-center justify-between px-4"
+          className="w-full h-12 bg-white hover:bg-slate-50 border-0 ring-0 text-slate-900 font-black text-sm rounded-chip shadow-md flex items-center justify-between px-4"
         >
           <div className="flex items-center gap-2">
             <div className="p-1.5 rounded-chip bg-purple-100 text-purple-700">
@@ -220,7 +213,7 @@ export function ConsultantFilters({
         <div className="fixed inset-0 z-50 lg:hidden flex flex-col justify-end bg-slate-900/60 backdrop-blur-xs animate-in fade-in-0 duration-200">
           <div className="bg-white rounded-t-2xl max-h-[85vh] flex flex-col shadow-2xl overflow-hidden animate-in slide-in-from-bottom duration-300">
             {/* Modal Header */}
-            <div className="flex items-center justify-between p-4 border-b border-slate-100 bg-slate-50/80">
+            <div className="flex items-center justify-between p-4 bg-slate-50">
               <div className="flex items-center gap-2">
                 <SlidersHorizontal className="h-4 w-4 text-purple-700" />
                 <h3 className="font-black text-sm text-slate-900">فیلتر و جستجوی مشاوران</h3>
@@ -237,11 +230,11 @@ export function ConsultantFilters({
 
             {/* Modal Body */}
             <div className="p-5 overflow-y-auto flex-1">
-              {renderFilterForm(draftFilters, setDraftFilters, true)}
+              {renderFilterForm(filters, onFilterChange, true)}
             </div>
 
             {/* Modal Footer with SUBMIT BUTTON */}
-            <div className="p-4 border-t border-slate-100 bg-white shadow-lg space-y-2">
+            <div className="p-4 bg-white shadow-lg space-y-2">
               <Button
                 onClick={handleMobileSubmit}
                 className="w-full h-12 bg-purple-600 hover:bg-purple-700 text-white font-black text-sm rounded-chip shadow-md flex items-center justify-center gap-2 transition-all"

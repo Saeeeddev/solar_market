@@ -29,7 +29,7 @@ export function Header() {
           </div>
           <span className="text-base sm:text-xl md:text-2xl font-black text-slate-900 whitespace-nowrap">سولار بازار</span>
         </Link>
-
+        <Navigation />
         {/* Global Search Bar (Always visible on mobile & desktop) */}
         <form onSubmit={handleSearchSubmit} className="flex items-center gap-1.5 flex-1 max-w-[200px] sm:max-w-xs md:max-w-sm mx-1">
           <div className="relative w-full">
@@ -39,7 +39,7 @@ export function Header() {
               placeholder="جستجوی عمومی..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="pr-8 pl-2 h-9 w-full text-xs font-bold bg-slate-100/90 border-slate-300 focus:border-[#6D7F9F] focus:bg-white rounded-chip shadow-xs transition-all"
+              className="pr-8 pl-2 h-9 w-full text-xs font-bold bg-slate-100/90 border-0 focus:border-[#6D7F9F] focus:bg-white rounded-chip shadow-xs transition-all"
               dir="rtl"
             />
           </div>
@@ -53,7 +53,7 @@ export function Header() {
         </form>
 
         {/* Navigation & Mobile Hamburger Menu */}
-        <Navigation />
+        
       </div>
     </header>
   );

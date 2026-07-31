@@ -78,11 +78,17 @@ export function getConsultantsData(): JSONDataContainer<ConsultantRecord> {
   return consultantsCache!;
 }
 
+function isNoRankItem(rk: string): boolean {
+  if (!rk) return true;
+  const s = rk.trim().toLowerCase();
+  return s === '' || s === '-' || s.includes('فاقد') || s.includes('ندارد') || s.includes('بدون');
+}
+
 function matchRank(rankString: string, targetRank: string): boolean {
-  if (!rankString) return false;
+  if (!rankString) return targetRank === 'no_rank' || targetRank === 'فاقد رتبه' || targetRank === 'بدون رتبه';
   const s = rankString.toLowerCase();
-  if (targetRank === 'no_rank') {
-    return s.includes('ندارد') || s.includes('فاقد');
+  if (targetRank === 'no_rank' || targetRank === 'فاقد رتبه' || targetRank === 'بدون رتبه') {
+    return isNoRankItem(rankString);
   }
   if (targetRank === '1' || targetRank === 'رتبه ۱' || targetRank === 'رتبه 1') {
     return s.includes('رتبه ۱') || s.includes('رتبه 1') || s.includes('1 نیرو') || s.includes('۱ نیرو');
@@ -145,13 +151,13 @@ export function querySmallScaleContractors(params: {
 
   // 4. Filter by Rank (supports 7 buttons: all, no_rank, 1, 2, 3, 4, 5)
   if (params.rank && params.rank !== 'all') {
-    if (params.rank === 'no_rank') {
+    if (params.rank === 'no_rank' || params.rank === 'فاقد رتبه' || params.rank === 'بدون رتبه') {
       records = records.filter(
         (r) =>
           r.contractor_certificate === 'ندارد' ||
           !r.ranks ||
           r.ranks.length === 0 ||
-          r.ranks.some((rk) => matchRank(rk, 'no_rank'))
+          r.ranks.every((rk) => isNoRankItem(rk))
       );
     } else {
       const targetRk = params.rank;
@@ -213,12 +219,12 @@ export function queryMegawattContractors(params: {
 
   // 3. Filter by Rank (supports 7 buttons: all, no_rank, 1, 2, 3, 4, 5)
   if (params.rank && params.rank !== 'all') {
-    if (params.rank === 'no_rank') {
-      records = records.filter(
-        (r) =>
-          (!r.ranks || r.ranks.length === 0) &&
-          (!r.organization_rank || r.organization_rank.length === 0)
-      );
+    if (params.rank === 'no_rank' || params.rank === 'فاقد رتبه' || params.rank === 'بدون رتبه') {
+      records = records.filter((r) => {
+        const ranksNoRank = !r.ranks || r.ranks.length === 0 || r.ranks.every((rk) => isNoRankItem(rk));
+        const orgNoRank = !r.organization_rank || r.organization_rank.length === 0 || r.organization_rank.every((rk) => isNoRankItem(rk));
+        return ranksNoRank && orgNoRank;
+      });
     } else {
       const targetRk = params.rank;
       records = records.filter(
@@ -281,12 +287,12 @@ export function queryConsultants(params: {
 
   // 3. Filter by Rank
   if (params.rank && params.rank !== 'all') {
-    if (params.rank === 'no_rank') {
-      records = records.filter(
-        (r) =>
-          (!r.ranks || r.ranks.length === 0) &&
-          (!r.power_rank || r.power_rank.length === 0)
-      );
+    if (params.rank === 'no_rank' || params.rank === 'فاقد رتبه' || params.rank === 'بدون رتبه') {
+      records = records.filter((r) => {
+        const ranksNoRank = !r.ranks || r.ranks.length === 0 || r.ranks.every((rk) => isNoRankItem(rk));
+        const powerNoRank = !r.power_rank || r.power_rank.length === 0 || r.power_rank.every((rk) => isNoRankItem(rk));
+        return ranksNoRank && powerNoRank;
+      });
     } else {
       const targetRk = params.rank;
       records = records.filter(

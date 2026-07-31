@@ -24,7 +24,7 @@ interface ContractorFiltersProps {
 
 const rankOptions = [
   { label: 'همه', value: '' },
-  { label: 'بدون رتبه', value: 'no_rank' },
+  { label: 'فاقد رتبه', value: 'no_rank' },
   { label: 'رتبه ۱', value: 'رتبه ۱' },
   { label: 'رتبه ۲', value: 'رتبه ۲' },
   { label: 'رتبه ۳', value: 'رتبه ۳' },
@@ -39,16 +39,10 @@ export function ContractorFilters({
   totalResults,
 }: ContractorFiltersProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [draftFilters, setDraftFilters] = useState<ContractorFilterState>(filters);
 
-  // Sync draft filters whenever props filter or drawer opens
-  useEffect(() => {
-    setDraftFilters(filters);
-  }, [filters, mobileOpen]);
-
-  const resetFilters = (targetState: ContractorFilterState, setFn: (f: ContractorFilterState) => void) => {
-    setFn({
-      type: targetState.type,
+  const resetFilters = () => {
+    onFilterChange({
+      type: filters.type,
       search: '',
       status: 'all',
       certificate: 'all',
@@ -60,7 +54,6 @@ export function ContractorFilters({
     f.search !== '' || f.status !== 'all' || f.certificate !== 'all' || f.rank !== '';
 
   const handleMobileSubmit = () => {
-    onFilterChange(draftFilters);
     setMobileOpen(false);
     setTimeout(() => {
       const resultsEl = document.getElementById('results-section');
@@ -115,14 +108,14 @@ export function ContractorFilters({
           </div>
         </div>
 
-        <div className="flex items-center justify-between border-t border-slate-100 pt-4">
+        <div className="flex items-center justify-between pt-2">
           <h3 className="font-black text-xs text-slate-900">فیلترهای اختصاصی</h3>
 
           {hasActiveFilters(currentFilters) && (
             <Button
               variant="ghost"
               size="sm"
-              onClick={() => resetFilters(currentFilters, updateFn)}
+              onClick={resetFilters}
               className="h-auto p-0 text-xs text-rose-600 hover:text-rose-700 font-bold"
             >
               <RotateCcw className="h-3 w-3 ml-1" />
@@ -144,7 +137,7 @@ export function ContractorFilters({
               placeholder="جستجوی نام شرکت، شناسه ملی..."
               value={currentFilters.search}
               onChange={(e) => updateFn({ ...currentFilters, search: e.target.value })}
-              className="pr-9 h-10 text-xs font-extrabold rounded-chip border-2 border-slate-300 focus:border-[#6D7F9F] bg-slate-50 focus:bg-white text-slate-900 shadow-xs placeholder:font-normal"
+              className="pr-9 h-10 text-xs font-extrabold rounded-chip border-0 bg-slate-100 focus:bg-white text-slate-900 shadow-xs placeholder:font-normal"
               dir="rtl"
             />
           </div>
@@ -163,7 +156,7 @@ export function ContractorFilters({
           </div>
 
           {isSmallScale ? (
-            <div className="p-3 bg-slate-100 rounded-chip text-center text-xs text-slate-500 font-semibold border border-slate-200">
+            <div className="p-3 bg-slate-100 rounded-chip text-center text-xs text-slate-500 font-semibold">
               پیمانکاران مقیاس کوچک فاقد رتبه‌بندی سازمان برنامه هستند
             </div>
           ) : (
@@ -272,22 +265,22 @@ export function ContractorFilters({
 
   return (
     <>
-      {/* DESKTOP FILTER SIDEBAR (Unchanged for bigger screens lg+) */}
-      <div className="hidden lg:block p-5 border border-slate-200/80 rounded-card bg-white shadow-card sticky top-20">
+      {/* DESKTOP FILTER SIDEBAR (Borderless) */}
+      <div className="hidden lg:block p-5 border-0 ring-0 rounded-card bg-white shadow-md sticky top-20">
         {renderFilterForm(filters, onFilterChange, false)}
 
         {totalResults !== undefined && (
-          <div className="pt-4 mt-6 text-center border-t border-slate-100 text-xs font-extrabold text-[#6D7F9F]">
+          <div className="pt-4 mt-6 text-center text-xs font-extrabold text-[#6D7F9F]">
             {totalResults.toLocaleString('fa-IR')} پیمانکار یافته شد
           </div>
         )}
       </div>
 
-      {/* MOBILE COMPACT FILTER TRIGGER BUTTON (Only for smaller screens < lg) */}
+      {/* MOBILE COMPACT FILTER TRIGGER BUTTON */}
       <div className="lg:hidden mb-4">
         <Button
           onClick={() => setMobileOpen(true)}
-          className="w-full h-12 bg-white hover:bg-slate-50 border border-slate-300 text-slate-900 font-black text-sm rounded-chip shadow-sm flex items-center justify-between px-4"
+          className="w-full h-12 bg-white hover:bg-slate-50 border-0 ring-0 text-slate-900 font-black text-sm rounded-chip shadow-md flex items-center justify-between px-4"
         >
           <div className="flex items-center gap-2">
             <div className="p-1.5 rounded-chip bg-[#6D7F9F]/10 text-[#6D7F9F]">
@@ -308,12 +301,12 @@ export function ContractorFilters({
         </Button>
       </div>
 
-      {/* MOBILE FILTER MODAL / DRAWER (Only when mobileOpen is true) */}
+      {/* MOBILE FILTER MODAL / DRAWER */}
       {mobileOpen && (
         <div className="fixed inset-0 z-50 lg:hidden flex flex-col justify-end bg-slate-900/60 backdrop-blur-xs animate-in fade-in-0 duration-200">
           <div className="bg-white rounded-t-2xl max-h-[85vh] flex flex-col shadow-2xl overflow-hidden animate-in slide-in-from-bottom duration-300">
             {/* Modal Header */}
-            <div className="flex items-center justify-between p-4 border-b border-slate-100 bg-slate-50/80">
+            <div className="flex items-center justify-between p-4 bg-slate-50">
               <div className="flex items-center gap-2">
                 <SlidersHorizontal className="h-4 w-4 text-[#6D7F9F]" />
                 <h3 className="font-black text-sm text-slate-900">فیلتر و جستجوی پیمانکاران</h3>
@@ -330,11 +323,11 @@ export function ContractorFilters({
 
             {/* Modal Body */}
             <div className="p-5 overflow-y-auto flex-1">
-              {renderFilterForm(draftFilters, setDraftFilters, true)}
+              {renderFilterForm(filters, onFilterChange, true)}
             </div>
 
             {/* Modal Footer with SUBMIT BUTTON */}
-            <div className="p-4 border-t border-slate-100 bg-white shadow-lg space-y-2">
+            <div className="p-4 bg-white shadow-lg space-y-2">
               <Button
                 onClick={handleMobileSubmit}
                 className="w-full h-12 bg-[#6D7F9F] hover:bg-[#56698a] text-white font-black text-sm rounded-chip shadow-md flex items-center justify-center gap-2 transition-all"

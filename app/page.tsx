@@ -81,7 +81,7 @@ export default function HomePage() {
         ) : stats ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Small Scale Contractors Stats */}
-            <Card className="bg-white border border-slate-200/80 shadow-card hover:shadow-card-hover transition-shadow duration-300 rounded-card">
+            <Card className="bg-white border-0 ring-0 shadow-md hover:shadow-lg transition-shadow duration-300 rounded-card">
               <CardContent className="pt-8 pb-8">
                 <div className="flex items-center gap-6">
                   <div className="p-4 bg-[#6D7F9F]/10 rounded-chip">
@@ -100,7 +100,7 @@ export default function HomePage() {
             </Card>
 
             {/* Megawatt Contractors Stats */}
-            <Card className="bg-white border border-slate-200/80 shadow-card hover:shadow-card-hover transition-shadow duration-300 rounded-card">
+            <Card className="bg-white border-0 ring-0 shadow-md hover:shadow-lg transition-shadow duration-300 rounded-card">
               <CardContent className="pt-8 pb-8">
                 <div className="flex items-center gap-6">
                   <div className="p-4 bg-emerald-100/80 rounded-chip">
@@ -119,7 +119,7 @@ export default function HomePage() {
             </Card>
 
             {/* Consultants Stats */}
-            <Card className="bg-white border border-slate-200/80 shadow-card hover:shadow-card-hover transition-shadow duration-300 rounded-card">
+            <Card className="bg-white border-0 ring-0 shadow-md hover:shadow-lg transition-shadow duration-300 rounded-card">
               <CardContent className="pt-8 pb-8">
                 <div className="flex items-center gap-6">
                   <div className="p-4 bg-purple-100/80 rounded-chip">
@@ -256,7 +256,7 @@ export default function HomePage() {
 
       {/* CTA Section */}
       <section className="wrap py-12">
-        <div className="gradient-brand rounded-card p-12 md:p-16 text-center space-y-6 shadow-card border border-slate-200/60">
+        <div className="gradient-brand rounded-card p-12 md:p-16 text-center space-y-6 shadow-md border-0 ring-0">
           <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 text-balance">
             آیا شما هم متخصص یا شرکت فعال هستید؟
           </h2>
