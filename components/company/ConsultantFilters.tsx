@@ -210,8 +210,14 @@ export function ConsultantFilters({
 
       {/* MOBILE FILTER MODAL / DRAWER */}
       {mobileOpen && (
-        <div className="fixed inset-0 z-50 lg:hidden flex flex-col justify-end bg-slate-900/60 backdrop-blur-xs animate-in fade-in-0 duration-200">
-          <div className="bg-white rounded-t-2xl max-h-[85vh] flex flex-col shadow-2xl overflow-hidden animate-in slide-in-from-bottom duration-300">
+        <div
+          className="fixed inset-0 z-50 lg:hidden flex flex-col justify-end bg-slate-900/60 backdrop-blur-xs animate-in fade-in-0 duration-200"
+          onClick={() => setMobileOpen(false)}
+        >
+          <div
+            className="bg-white rounded-t-2xl max-h-[85vh] flex flex-col shadow-2xl overflow-hidden animate-in slide-in-from-bottom duration-300"
+            onClick={(e) => e.stopPropagation()}
+          >
             {/* Modal Header */}
             <div className="flex items-center justify-between p-4 bg-slate-50">
               <div className="flex items-center gap-2">
