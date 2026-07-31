@@ -10,6 +10,8 @@ import {
   FileText,
   Zap,
   ShieldCheck,
+  Globe,
+  ExternalLink,
 } from 'lucide-react';
 import { cn } from '@/lib/utils/cn';
 
@@ -32,6 +34,15 @@ export function CompanyCard({ company, type }: CompanyCardProps) {
   const expirationDate = company.expiration_date || '-';
   const isExpired = company.is_expired ?? company.status === 'expired';
   const statusText = company.status_text || (isExpired ? 'منقضی شده' : 'معتبر');
+
+  // Extract website URL
+  const rawWebsite = company.website || company.website_url || company.site || '';
+  const hasWebsite = typeof rawWebsite === 'string' && rawWebsite.trim().length > 0;
+  const websiteUrl = hasWebsite
+    ? (rawWebsite.trim().startsWith('http://') || rawWebsite.trim().startsWith('https://')
+        ? rawWebsite.trim()
+        : `https://${rawWebsite.trim()}`)
+    : '';
 
   // Determine category badge
   const isSmallScale =
@@ -185,6 +196,23 @@ export function CompanyCard({ company, type }: CompanyCardProps) {
             <span className="text-[10px] text-slate-400 font-bold">-</span>
           )}
         </div>
+
+        {/* WEBSITE BUTTON (Bottom Center) - Only rendered if company.website is present */}
+        {hasWebsite && (
+          <div className="mt-1 pt-1 border-t border-slate-100 flex items-center justify-center">
+            <a
+              href={websiteUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 px-5 py-2 bg-[#6D7F9F] hover:bg-[#56698a] text-white text-xs font-bold rounded-chip transition-all shadow-xs group/web cursor-pointer"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <Globe className="h-4.5 w-4.5 text-white/90 group-hover/web:rotate-12 transition-transform" />
+              <span>مشاهده وب‌سایت</span>
+              <ExternalLink className="h-4 w-4 text-white/80" />
+            </a>
+          </div>
+        )}
       </CardContent>
     </Card>
   );

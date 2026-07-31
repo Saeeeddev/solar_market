@@ -9,6 +9,7 @@ export interface BaseRecord {
   status_text: string;
   phone_numbers: string[];
   ranks: string[];
+  website?: string;
 }
 
 export interface SmallScaleRecord extends BaseRecord {

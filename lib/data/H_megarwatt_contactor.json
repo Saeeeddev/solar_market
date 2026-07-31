@@ -27,7 +27,8 @@
       ],
       "organization_rank": [
         "رتبه 5 نیرو"
-      ]
+      ],
+      "website": "https://pouian.ir/"
     },
     {
       "company_name": "احداث و توسعه نیروگاه های مپنا - توسعه یک",
@@ -45,25 +46,28 @@
       ],
       "organization_rank": [
         "رتبه 1 نیرو"
-      ]
+      ],
+      "website": "https://mapnagroup.com/mapnacompanies/mapna-md1/"
     },
     {
-      "company_name": "آذین سانای برق آرمان",
+      "company_name": "تامین آب و برق ایران (تابیران)",
       "national_id": [
-        "14005550706"
+        "10100660789"
       ],
-      "expiration_date": "22/12/1405",
+      "expiration_date": "08/07/1406",
       "is_expired": false,
       "status_text": "معتبر",
       "phone_numbers": [
-        "02177917939"
+        "02188636526",
+        "09372117855"
       ],
       "ranks": [
-        "رتبه 5 نیرو"
+        "رتبه 1 نیرو"
       ],
       "organization_rank": [
-        "رتبه 5 نیرو"
-      ]
+        "رتبه 1 نیرو"
+      ],
+      "website": "https://tabiran.ir/"
     },
     {
       "company_name": "آرتا گستر تاجواره",
@@ -81,45 +85,47 @@
       ],
       "organization_rank": [
         "رتبه 4 نیرو"
-      ]
+      ],
+      "website": ""
     },
     {
-      "company_name": "آرمان انرژی",
+      "company_name": "توسعه و تعمیرات شبکه های برق (نیرو توسعه)",
       "national_id": [
-        "10102627087"
+        "10101692264"
       ],
-      "expiration_date": "01/05/1406",
+      "expiration_date": "30/10/1406",
       "is_expired": false,
       "status_text": "معتبر",
       "phone_numbers": [
-        "02122904823",
-        "09351256680"
+        "02144107065",
+        "09121055987"
       ],
       "ranks": [
-        "رتبه 2 نیرو"
+        "رتبه 3 نیرو"
       ],
       "organization_rank": [
-        "رتبه 2 نیرو"
-      ]
+        "رتبه 3 نیرو"
+      ],
+      "website": "https://www.nirootoseeh.com/"
     },
     {
-      "company_name": "آرمان نیرو زنده رود",
+      "company_name": "تولید ملزومات برق",
       "national_id": [
-        "14005423878"
+        "10100131332"
       ],
-      "expiration_date": "20/08/1406",
+      "expiration_date": "18/09/1405",
       "is_expired": false,
       "status_text": "معتبر",
       "phone_numbers": [
-        "03134318126",
-        "09131081226"
+        "02187740"
       ],
       "ranks": [
-        "رتبه 5 نیرو"
+        "رتبه 1 نیرو"
       ],
       "organization_rank": [
-        "رتبه 5 نیرو"
-      ]
+        "رتبه 1 نیرو"
+      ],
+      "website": "https://www.tmb-co.com/fa/"
     }
   ]
 }
