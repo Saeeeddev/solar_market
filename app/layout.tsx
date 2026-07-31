@@ -5,11 +5,14 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "سولار بازار | دایرکتوری جامع صنعت خورشیدی ایران",
+  title: "سولار مارکت | دایرکتوری جامع صنعت خورشیدی ایران",
   description: "دسترسی به لیست کامل پیمانکاران، مشاوران و شرکت‌های فعال در صنعت نیروگاه‌های خورشیدی",
   keywords: "خورشیدی، نیروگاه، پیمانکار، مشاور، انرژی تجدیدپذیر، سولار",
+  icons: {
+    icon: "/icon.svg",
+  },
   openGraph: {
-    title: "سولار بازار | دایرکتوری صنعت خورشیدی",
+    title: "سولار مارکت | دایرکتوری صنعت خورشیدی",
     description: "دسترسی به لیست کامل پیمانکاران و مشاوران صنعت خورشیدی",
     type: "website",
     locale: "fa_IR",

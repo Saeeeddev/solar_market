@@ -1,6 +1,6 @@
 // App constants
 
-export const APP_NAME = 'سولار بازار';
+export const APP_NAME = 'سولار مارکت';
 export const APP_DESCRIPTION = 'دایرکتوری جامع صنعت خورشیدی ایران';
 
 export const ITEMS_PER_PAGE = 12;

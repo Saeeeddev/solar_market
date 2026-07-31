@@ -26,12 +26,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   
   if (!consultant) {
     return {
-      title: 'مشاور یافت نشد | سولار بازار',
+      title: 'مشاور یافت نشد | سولار مارکت',
     };
   }
 
   return {
-    title: `${consultant.name} | مشاوران | سولار بازار`,
+    title: `${consultant.name} | مشاوران | سولار مارکت`,
     description: consultant.description || `اطلاعات ${consultant.name} - مشاور صنعت خورشیدی`,
   };
 }

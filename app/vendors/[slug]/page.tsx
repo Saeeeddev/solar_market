@@ -26,12 +26,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   
   if (!vendor) {
     return {
-      title: 'پیمانکار یافت نشد | سولار بازار',
+      title: 'پیمانکار یافت نشد | سولار مارکت',
     };
   }
 
   return {
-    title: `${vendor.name} | پیمانکاران | سولار بازار`,
+    title: `${vendor.name} | پیمانکاران | سولار مارکت`,
     description: vendor.description || `اطلاعات ${vendor.name} - پیمانکار صنعت خورشیدی`,
   };
 }

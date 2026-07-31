@@ -30,7 +30,7 @@ export function Header() {
           <div className="p-1 sm:p-1.5 rounded-chip bg-[#6D7F9F]/10 group-hover:bg-[#6D7F9F]/20 transition-colors">
             <Sun className="h-6 w-6 sm:h-7 sm:w-7 text-[#6D7F9F] transition-transform group-hover:rotate-12" />
           </div>
-          <span className="text-base sm:text-xl md:text-2xl font-black text-slate-900 whitespace-nowrap">سولار بازار</span>
+          <span className="text-base sm:text-xl md:text-2xl font-black text-slate-900 whitespace-nowrap">سولار مارکت</span>
         </Link>
 
         {/* Navigation & Mobile Hamburger Menu */}

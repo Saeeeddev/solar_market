@@ -26,12 +26,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   
   if (!company) {
     return {
-      title: 'شرکت یافت نشد | سولار بازار',
+      title: 'شرکت یافت نشد | سولار مارکت',
     };
   }
 
   return {
-    title: `${company.name} | شرکت‌های شعبه | سولار بازار`,
+    title: `${company.name} | شرکت‌های شعبه | سولار مارکت`,
     description: company.description || `اطلاعات ${company.name} - شرکت شعبه صنعت خورشیدی`,
   };
 }

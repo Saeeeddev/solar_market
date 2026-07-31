@@ -5,7 +5,7 @@ import { LoadingSpinner } from '@/components/shared/LoadingSpinner';
 import { ErrorMessage } from '@/components/shared/ErrorMessage';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Sun, Users, Building2, Zap, ArrowLeft, ShieldCheck } from 'lucide-react';
+import { Phone, Users, Building2, Zap, ArrowLeft, Mail } from 'lucide-react';
 import Link from 'next/link';
 import {
   useSmallScaleContractors,
@@ -261,22 +261,22 @@ export default function HomePage() {
           <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed text-balance">
             برای افزودن شرکت یا مشاوره خود به این دایرکتوری، با ما تماس بگیرید
           </p>
-          <div className="flex gap-4 justify-center flex-wrap pt-4">
-            <Link href="/contractors">
-              <Button size="lg" className="btn-primary rounded-chip font-extrabold">
-                مشاهده پیمانکاران
-              </Button>
-            </Link>
-            <Link href="/consultants">
-              <Button
-                size="lg"
-                variant="outline"
-                className="rounded-chip bg-white hover:bg-slate-100 border-slate-300 font-extrabold text-slate-800"
-              >
-                مشاهده مشاوران
-              </Button>
-            </Link>
-          </div>
+          <div className="flex flex-col sm:flex-row gap-4 items-center justify-center pt-2">
+                <a
+                  href="mailto:info@solarmarket.ir"
+                  className="flex items-center gap-2 px-4 py-2 bg-white border border-slate-200 rounded-chip text-sm font-bold text-[#6D7F9F] hover:bg-slate-100 transition-colors"
+                >
+                  <Mail className="h-4 w-4" />
+                  <span dir="ltr">info@solarmarket.ir</span>
+                </a>
+                <a
+                  href="tel:02112345678"
+                  className="flex items-center gap-2 px-4 py-2 bg-white border border-slate-200 rounded-chip text-sm font-bold text-[#6D7F9F] hover:bg-slate-100 transition-colors"
+                >
+                  <Phone className="h-4 w-4" />
+                  <span dir="ltr">021-12345678</span>
+                </a>
+              </div>
         </div>
       </section>
     </div>

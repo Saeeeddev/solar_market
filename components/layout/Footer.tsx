@@ -10,7 +10,7 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <Sun className="h-8 w-8 text-[#6D7F9F]" />
-              <span className="text-xl font-bold text-slate-900">سولار بازار</span>
+              <span className="text-xl font-bold text-slate-900">سولار مارکت</span>
             </div>
             <p className="text-sm text-slate-600 text-right leading-relaxed">
               دایرکتوری جامع صنعت خورشیدی ایران - دسترسی آسان به پیمانکاران و مشاوران تایید شده نیروگاه‌های خورشیدی
@@ -39,7 +39,7 @@ export function Footer() {
             <div className="space-y-2">
               <div className="flex items-center gap-2 text-sm text-slate-600">
                 <Mail className="h-4 w-4 text-[#6D7F9F]" />
-                <span dir="ltr">info@solarbazar.ir</span>
+                <span dir="ltr">info@solarmarket.ir</span>
               </div>
               <div className="flex items-center gap-2 text-sm text-slate-600">
                 <Phone className="h-4 w-4 text-[#6D7F9F]" />
@@ -51,7 +51,7 @@ export function Footer() {
 
         {/* Copyright */}
         <div className="mt-12 pt-8 border-t border-slate-200 text-center text-sm text-slate-500">
-          <p>© {new Date().getFullYear()} سولار بازار. تمامی حقوق محفوظ است.</p>
+          <p>© {new Date().getFullYear()} سولار مارکت. تمامی حقوق محفوظ است.</p>
         </div>
       </div>
     </footer>

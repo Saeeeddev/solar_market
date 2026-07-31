@@ -3,8 +3,8 @@ import { Sun, Target, Users, TrendingUp, ShieldCheck, Mail, Phone } from 'lucide
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'درباره ما | سولار بازار',
-  description: 'سولار بازار - دایرکتوری جامع صنعت خورشیدی ایران',
+  title: 'درباره ما | سولار مارکت',
+  description: 'سولار مارکت - دایرکتوری جامع صنعت خورشیدی ایران',
 };
 
 export default function AboutPage() {
@@ -21,7 +21,7 @@ export default function AboutPage() {
                   <Sun className="h-16 w-16 text-[#6D7F9F]" />
                 </div>
               </div>
-              <h1 className="text-4xl font-extrabold text-slate-900">درباره سولار بازار</h1>
+              <h1 className="text-4xl font-extrabold text-slate-900">درباره سولار مارکت</h1>
               <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
                 دایرکتوری جامع و مرجع تخصصی صنعت نیروگاه‌های خورشیدی ایران
               </p>
@@ -34,7 +34,7 @@ export default function AboutPage() {
                 <h2 className="text-2xl font-bold text-slate-900">ماموریت ما</h2>
               </div>
               <p className="leading-relaxed text-slate-700 text-base">
-                سولار بازار با هدف ایجاد یک پلتفرم جامع، مطمئن و به‌روز برای معرفی پیمانکاران،
+                سولار مارکت با هدف ایجاد یک پلتفرم جامع، مطمئن و به‌روز برای معرفی پیمانکاران،
                 مشاوران و فعالان صنعت نیروگاه‌های خورشیدی ایران طراحی شده است.
                 ما تلاش می‌کنیم تا دسترسی به اطلاعات معتبر، ارزیابی شده و طبقه‌بندی‌شده متخصصان
                 این حوزه را برای تمامی سرمایه‌گذاران، متقاضیان و ذی‌نفعان آسان و شفاف سازیم.
@@ -91,7 +91,7 @@ export default function AboutPage() {
 
             {/* Services List inside the same card */}
             <div className="space-y-4 border-t border-slate-100 pt-8">
-              <h2 className="text-2xl font-bold text-slate-900 mb-4">خدمات سولار بازار</h2>
+              <h2 className="text-2xl font-bold text-slate-900 mb-4">خدمات سولار مارکت</h2>
               <ul className="space-y-3">
                 <li className="flex items-start gap-2 text-slate-700 font-medium">
                   <span className="text-[#6D7F9F] font-bold">•</span>
@@ -116,15 +116,15 @@ export default function AboutPage() {
             <div className="border-t border-slate-100 pt-8 text-center space-y-4 bg-slate-50/80 -mx-8 -mb-8 p-8 rounded-b-card">
               <h2 className="text-2xl font-bold text-slate-900">تماس با ما</h2>
               <p className="text-slate-600 text-sm max-w-lg mx-auto">
-                برای افزودن اطلاعات شرکت یا مطرح کردن هرگونه پیشنهاد، با تیم پشتیبانی سولار بازار در ارتباط باشید.
+                برای افزودن اطلاعات شرکت یا مطرح کردن هرگونه پیشنهاد، با تیم پشتیبانی سولار مارکت در ارتباط باشید.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 items-center justify-center pt-2">
                 <a
-                  href="mailto:info@solarbazar.ir"
+                  href="mailto:info@solarmarket.ir"
                   className="flex items-center gap-2 px-4 py-2 bg-white border border-slate-200 rounded-chip text-sm font-bold text-[#6D7F9F] hover:bg-slate-100 transition-colors"
                 >
                   <Mail className="h-4 w-4" />
-                  <span dir="ltr">info@solarbazar.ir</span>
+                  <span dir="ltr">info@solarmarket.ir</span>
                 </a>
                 <a
                   href="tel:02112345678"
