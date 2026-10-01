@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Button } from '@/components/ui/button';
@@ -74,10 +74,29 @@ export function ContractorFilters({
 
     return (
       <div className="space-y-6">
+        <div className="flex items-center justify-between gap-2 border-b border-slate-200 pb-4 pt-2">
+          <h3 className="flex items-center gap-2 text-xl font-black text-slate-900">
+            <SlidersHorizontal className="h-5 w-5 text-[#6D7F9F]" />
+            فیلترها
+          </h3>
+
+          {hasActiveFilters(currentFilters) && (
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={resetFilters}
+              className="h-auto p-0 text-xs text-rose-600 hover:text-rose-700 font-bold"
+            >
+              <RotateCcw className="h-3 w-3 ml-1" />
+              پاک کردن فیلترها
+            </Button>
+          )}
+        </div>
+
         {/* Type Switcher Selector */}
         <div className="space-y-2">
-          <Label className="text-xs font-black text-slate-900">انتخاب دسته پیمانکاران</Label>
-          <div className="grid grid-cols-2 gap-2 p-1 bg-slate-100 rounded-chip">
+          <Label className="text-sm font-bold text-slate-800">انتخاب دسته پیمانکاران</Label>
+          <div className="grid grid-cols-2 gap-2 rounded-chip bg-slate-100 p-1 ring-1 ring-slate-200">
             <button
               type="button"
               onClick={() => updateFn({ ...currentFilters, type: 'small', certificate: 'all', rank: '' })}
@@ -108,25 +127,9 @@ export function ContractorFilters({
           </div>
         </div>
 
-        <div className="flex items-center justify-between pt-2">
-          <h3 className="font-black text-xs text-slate-900">فیلترهای اختصاصی</h3>
-
-          {hasActiveFilters(currentFilters) && (
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={resetFilters}
-              className="h-auto p-0 text-xs text-rose-600 hover:text-rose-700 font-bold"
-            >
-              <RotateCcw className="h-3 w-3 ml-1" />
-              پاک کردن فیلترها
-            </Button>
-          )}
-        </div>
-
         {/* SEARCH BAR */}
         <div className="space-y-2">
-          <Label htmlFor={isMobileView ? "mobile-search" : "search"} className="text-xs font-extrabold text-slate-900">
+          <Label htmlFor={isMobileView ? "mobile-search" : "search"} className="text-sm font-bold text-slate-800">
             جستجوی پیشرفته ({headers[0] || 'نام شرکت'})
           </Label>
           <div className="relative">
@@ -137,7 +140,7 @@ export function ContractorFilters({
               placeholder="جستجوی نام شرکت، شناسه ملی..."
               value={currentFilters.search}
               onChange={(e) => updateFn({ ...currentFilters, search: e.target.value })}
-              className="pr-9 h-10 text-xs font-extrabold rounded-chip border-0 bg-slate-100 focus:bg-white text-slate-900 shadow-xs placeholder:font-normal"
+              className="h-10 rounded-chip border border-slate-300 bg-white pr-9 text-sm font-bold text-slate-900 focus:border-[#6D7F9F] placeholder:font-normal"
               dir="rtl"
             />
           </div>
@@ -146,7 +149,7 @@ export function ContractorFilters({
         {/* RANK FILTER */}
         <div className="space-y-2">
           <div className="flex items-center justify-between">
-            <Label className={cn("text-xs font-extrabold flex items-center gap-1", isSmallScale ? "text-slate-400" : "text-slate-900")}>
+            <Label className={cn("flex items-center gap-1 text-sm font-bold", isSmallScale ? "text-slate-500" : "text-slate-800")}>
               <Award className="h-3.5 w-3.5 text-[#6D7F9F]" />
               فیلتر رتبه (۷ حالت)
             </Label>
@@ -160,14 +163,14 @@ export function ContractorFilters({
               پیمانکاران مقیاس کوچک فاقد رتبه‌بندی سازمان برنامه هستند
             </div>
           ) : (
-            <div className="grid grid-cols-2 gap-1.5 p-1 bg-slate-100 rounded-chip text-xs">
+            <div className="grid grid-cols-2 gap-1.5 rounded-chip bg-slate-100 p-1 ring-1 ring-slate-200">
               {rankOptions.map((opt) => (
                 <button
                   key={opt.value}
                   type="button"
                   onClick={() => updateFn({ ...currentFilters, rank: opt.value })}
                   className={cn(
-                    'py-2 px-2 rounded-chip font-black transition-all text-xs text-center',
+                    'rounded-chip px-2 py-2 text-center text-sm font-bold transition-all',
                     currentFilters.rank === opt.value
                       ? 'bg-[#6D7F9F] text-white shadow-xs'
                       : 'text-slate-700 hover:text-slate-900 hover:bg-slate-200/80'
@@ -182,10 +185,10 @@ export function ContractorFilters({
 
         {/* Status Filter */}
         <div className="space-y-2">
-          <Label className="text-xs font-extrabold text-slate-900">
+          <Label className="text-sm font-bold text-slate-800">
             وضعیت اعتبار ({headers[4] || 'تاریخ انقضاء'})
           </Label>
-          <div className="grid grid-cols-3 gap-1.5 p-1 bg-slate-100 rounded-chip text-xs">
+          <div className="grid grid-cols-3 gap-1.5 rounded-chip bg-slate-100 p-1 text-sm ring-1 ring-slate-200">
             <button
               type="button"
               onClick={() => updateFn({ ...currentFilters, status: 'all' })}
@@ -222,10 +225,10 @@ export function ContractorFilters({
         {/* Certificate Filter for Small Scale */}
         {isSmallScale && (
           <div className="space-y-2">
-            <Label className="text-xs font-extrabold text-slate-900">
+            <Label className="text-sm font-bold text-slate-800">
               {headers[2] || 'گواهینامه پیمانکاری'}
             </Label>
-            <div className="grid grid-cols-3 gap-1.5 p-1 bg-slate-100 rounded-chip text-xs">
+            <div className="grid grid-cols-3 gap-1.5 rounded-chip bg-slate-100 p-1 text-sm ring-1 ring-slate-200">
               <button
                 type="button"
                 onClick={() => updateFn({ ...currentFilters, certificate: 'all' })}
@@ -265,22 +268,17 @@ export function ContractorFilters({
 
   return (
     <>
-      {/* DESKTOP FILTER SIDEBAR (Borderless) */}
-      <div className="hidden lg:block p-5 border-0 ring-0 rounded-card bg-white shadow-md sticky top-20">
+      {/* Desktop filter panel is framed by the listing page. */}
+      <div className="hidden p-6 lg:block">
         {renderFilterForm(filters, onFilterChange, false)}
 
-        {totalResults !== undefined && (
-          <div className="pt-4 mt-6 text-center text-xs font-extrabold text-[#6D7F9F]">
-            {totalResults.toLocaleString('fa-IR')} پیمانکار یافته شد
-          </div>
-        )}
       </div>
 
       {/* MOBILE COMPACT FILTER TRIGGER BUTTON */}
       <div className="lg:hidden mb-4">
         <Button
           onClick={() => setMobileOpen(true)}
-          className="w-full h-12 bg-white hover:bg-slate-50 border-0 ring-0 text-slate-900 font-black text-sm rounded-chip shadow-md flex items-center justify-between px-4"
+          className="flex h-12 w-full items-center justify-between rounded-chip border border-[#6D7F9F]/40 bg-[#eef1f6] px-4 text-sm font-black text-slate-900 shadow-sm hover:bg-[#e6ebf3]"
         >
           <div className="flex items-center gap-2">
             <div className="p-1.5 rounded-chip bg-[#6D7F9F]/10 text-[#6D7F9F]">

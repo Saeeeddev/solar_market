@@ -17,10 +17,8 @@ export interface NavItem {
 
 const navItems: NavItem[] = [
   { href: '/', label: 'خانه' },
-  { href: '/contractors', label: 'پیمانکاران' },
+  { href: '/about#services', label: 'خدمات' },
   { href: '/sellers', label: 'فروشندگان', badge: 'به زودی', isSoon: true },
-  { href: '/consultants', label: 'مشاوران' },
-  { href: '/about', label: 'درباره ما' },
 ];
 
 export function Navigation() {
@@ -28,6 +26,7 @@ export function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [soonModalOpen, setSoonModalOpen] = useState(false);
   const [soonModalTitle, setSoonModalTitle] = useState('');
+  const [soonModalDescription, setSoonModalDescription] = useState('');
   const containerRef = useRef<HTMLDivElement>(null);
 
   // Close mobile menu when clicking anywhere outside of containerRef or pressing Escape
@@ -66,13 +65,14 @@ export function Navigation() {
 
   const handleSoonClick = (item: NavItem) => {
     setSoonModalTitle(`بخش ${item.label} به زودی فعال می‌شود`);
+    setSoonModalDescription('سامانه جامع فروشندگان و تامین‌کنندگان تجهیزات خورشیدی در حال آماده‌سازی و بروزرسانی است.');
     setSoonModalOpen(true);
   };
 
   return (
     <div ref={containerRef} className="relative">
       {/* Desktop Navigation */}
-      <nav className="hidden md:flex items-center gap-5">
+      <nav className="hidden md:flex items-center gap-3 lg:gap-5">
         {navItems.map((item) =>
           item.isSoon ? (
             <button
@@ -173,6 +173,7 @@ export function Navigation() {
         isOpen={soonModalOpen}
         onClose={() => setSoonModalOpen(false)}
         title={soonModalTitle}
+        description={soonModalDescription}
       />
     </div>
   );

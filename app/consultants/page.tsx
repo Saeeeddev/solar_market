@@ -37,7 +37,7 @@ export default function ConsultantsPage() {
   });
 
   return (
-    <div className="container mx-auto px-3 sm:px-4 py-8">
+    <div className="w-full px-3 py-8 sm:px-5 lg:py-10 lg:pl-8 lg:pr-[344px] 2xl:pl-12">
       <div className="space-y-6 md:space-y-8">
         {/* Header */}
         <div className="space-y-2">
@@ -45,17 +45,12 @@ export default function ConsultantsPage() {
           <p className="text-xs sm:text-sm text-slate-600">
             لیست کامل مشاوران تایید شده در صنعت نیروگاه‌های خورشیدی
           </p>
-          {data && (
-            <p className="text-xs sm:text-sm font-bold text-[#6D7F9F]">
-              {data.total.toLocaleString('fa-IR')} مشاور ثبت‌شده
-            </p>
-          )}
         </div>
 
         {/* Content Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 md:gap-8">
+        <div className="space-y-5">
           {/* Sidebar */}
-          <aside className="lg:col-span-1">
+          <aside className="lg:fixed lg:top-14 lg:bottom-0 lg:right-0 lg:z-40 lg:w-[320px] lg:overflow-y-auto lg:border-l lg:border-slate-200 lg:bg-white lg:shadow-md">
             <ConsultantFilters
               filters={filters}
               onFilterChange={handleFilterChange}
@@ -65,7 +60,11 @@ export default function ConsultantsPage() {
           </aside>
 
           {/* Main Grid */}
-          <main id="results-section" className="lg:col-span-3 space-y-6 scroll-mt-20">
+          <main id="results-section" className="min-w-0 space-y-6 scroll-mt-20">
+            <div className="flex items-center justify-between border-b border-slate-200 pb-4">
+              <h2 className="text-xl font-extrabold text-slate-900">نتایج</h2>
+              {data && <span className="rounded-full bg-white px-3 py-1 text-sm font-bold text-[#6D7F9F]">{data.total.toLocaleString('fa-IR')} مشاور</span>}
+            </div>
             {isError && <ErrorMessage message="خطا در بارگذاری مشاوران" />}
 
             {(isLoading || isFetching) ? (

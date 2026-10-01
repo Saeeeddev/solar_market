@@ -8,14 +8,10 @@ import { LoadingSpinner } from '@/components/shared/LoadingSpinner';
 import { ErrorMessage } from '@/components/shared/ErrorMessage';
 import { Button } from '@/components/ui/button';
 import { useContractors } from '@/lib/api/queries';
-import { ChevronLeft, ChevronRight, Zap, Building2 } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { cn } from '@/lib/utils/cn';
 
-function ContractorsContent() {
-  const searchParams = useSearchParams();
-  const initialType = searchParams.get('type') === 'megawatt' ? 'megawatt' : 'small';
-  const initialSearch = searchParams.get('search') || '';
-
+function ContractorsContent({ initialType, initialSearch }: { initialType: 'small' | 'megawatt'; initialSearch: string }) {
   const [page, setPage] = useState(1);
   const [filters, setFilters] = useState<ContractorFilterState>({
     type: initialType,
@@ -24,15 +20,6 @@ function ContractorsContent() {
     certificate: 'all',
     rank: '',
   });
-
-  // Update search filter if URL searchParam changes (e.g. from header search)
-  useEffect(() => {
-    const urlSearch = searchParams.get('search');
-    if (urlSearch !== null && urlSearch !== filters.search) {
-      setFilters((prev) => ({ ...prev, search: urlSearch }));
-      setPage(1);
-    }
-  }, [searchParams]);
 
   // Scroll to top whenever page or filter changes
   useEffect(() => {
@@ -57,7 +44,7 @@ function ContractorsContent() {
   const isSmallScale = filters.type === 'small';
 
   return (
-    <div className="container mx-auto px-3 sm:px-4 py-8">
+    <div className="w-full px-3 py-8 sm:px-5 lg:py-10 lg:pl-8 lg:pr-[344px] 2xl:pl-12">
       <div className="space-y-6 md:space-y-8">
         {/* Clean Header (Duplicate top switcher buttons removed as requested) */}
         <div className="space-y-2">
@@ -67,17 +54,12 @@ function ContractorsContent() {
           <p className="text-xs sm:text-sm text-slate-600">
             لیست کامل پیمانکاران تایید شده نیروگاه‌های خورشیدی ایران
           </p>
-          {data && (
-            <p className="text-xs sm:text-sm font-bold text-[#6D7F9F]">
-              {data.total.toLocaleString('fa-IR')} شرکت پیمانکاری ثبت‌شده
-            </p>
-          )}
         </div>
 
         {/* Content Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 md:gap-8">
+        <div className="space-y-5">
           {/* Filters Sidebar (Contains the category switcher buttons) */}
-          <aside className="lg:col-span-1">
+          <aside className="lg:fixed lg:top-14 lg:bottom-0 lg:right-0 lg:z-40 lg:w-[320px] lg:overflow-y-auto lg:border-l lg:border-slate-200 lg:bg-white lg:shadow-md">
             <ContractorFilters
               filters={filters}
               onFilterChange={handleFilterChange}
@@ -87,7 +69,11 @@ function ContractorsContent() {
           </aside>
 
           {/* Main Content Grid (1 card per row on mobile) */}
-          <main id="results-section" className="lg:col-span-3 space-y-6 scroll-mt-20">
+          <main id="results-section" className="min-w-0 space-y-6 scroll-mt-20">
+            <div className="flex items-center justify-between border-b border-slate-200 pb-4">
+              <h2 className="text-xl font-extrabold text-slate-900">نتایج</h2>
+              {data && <span className="rounded-full bg-white px-3 py-1 text-sm font-bold text-[#6D7F9F]">{data.total.toLocaleString('fa-IR')} شرکت</span>}
+            </div>
             {isError && <ErrorMessage message="خطا در دریافت اطلاعات پیمانکاران" />}
 
             {(isLoading || isFetching) ? (
@@ -161,10 +147,18 @@ function ContractorsContent() {
   );
 }
 
+function ContractorsRoute() {
+  const searchParams = useSearchParams();
+  const initialType = searchParams.get('type') === 'megawatt' ? 'megawatt' : 'small';
+  const initialSearch = searchParams.get('search') || '';
+
+  return <ContractorsContent key={searchParams.toString()} initialType={initialType} initialSearch={initialSearch} />;
+}
+
 export default function ContractorsPage() {
   return (
     <Suspense fallback={<LoadingSpinner />}>
-      <ContractorsContent />
+      <ContractorsRoute />
     </Suspense>
   );
 }

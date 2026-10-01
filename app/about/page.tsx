@@ -16,14 +16,10 @@ export default function AboutPage() {
           <CardContent className="p-8 md:p-12 space-y-12 text-right">
             {/* Header / Brand */}
             <div className="text-center space-y-4 border-0 ring-0 border-slate-100 pb-8">
-              <div className="flex justify-center mb-4">
-                <div className="p-5 rounded-hero bg-[#6D7F9F]/10">
-                  <Sun className="h-16 w-16 text-[#6D7F9F]" />
-                </div>
-              </div>
-              <h1 className="text-4xl font-extrabold text-slate-900">درباره سولار مارکت</h1>
+             
+              <h1 className="text-4xl font-extrabold text-slate-900"> سولار مارکت</h1>
               <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-                دایرکتوری جامع و مرجع تخصصی صنعت نیروگاه‌های خورشیدی ایران
+                پرتال جامع صنعت کسب کارهای خورشیدی ایران 
               </p>
             </div>
 
@@ -42,7 +38,7 @@ export default function AboutPage() {
             </div>
 
             {/* Features Grid inside the same card */}
-            <div className="space-y-4 border-t border-slate-100 pt-8">
+            <div id="services" className="scroll-mt-24 space-y-4 border-t border-slate-100 pt-8">
               <h2 className="text-2xl font-bold text-slate-900 mb-6">ویژگی‌ها و ارزش‌های کلیدی</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="p-5 bg-slate-50 rounded-xl border border-slate-200/60 space-y-2">

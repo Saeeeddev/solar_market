@@ -68,8 +68,11 @@ export function ConsultantFilters({
   ) => {
     return (
       <div className="space-y-6">
-        <div className="flex items-center justify-between pb-1">
-          <h3 className="font-bold text-xs text-slate-800">فیلترهای مشاوران</h3>
+        <div className="flex items-center justify-between gap-2 border-b border-slate-200 pb-5">
+          <h3 className="flex items-center gap-2 text-xl font-black text-slate-900">
+            <SlidersHorizontal className="h-5 w-5 text-[#6D7F9F]" />
+            فیلترها
+          </h3>
 
           {hasActiveFilters(currentFilters) && (
             <Button
@@ -86,7 +89,7 @@ export function ConsultantFilters({
 
         {/* Search */}
         <div className="space-y-2">
-          <Label htmlFor={isMobileView ? "mobile-search-consultant" : "search-consultant"} className="text-xs font-semibold text-slate-700">
+          <Label htmlFor={isMobileView ? "mobile-search-consultant" : "search-consultant"} className="text-sm font-bold text-slate-800">
             جستجو ({headers[0] || 'نام شرکت'})
           </Label>
           <div className="relative">
@@ -97,7 +100,7 @@ export function ConsultantFilters({
               placeholder="نام شرکت، شناسه ملی، شماره تماس..."
               value={currentFilters.search}
               onChange={(e) => updateFn({ ...currentFilters, search: e.target.value })}
-              className="pr-9 text-xs rounded-chip border-0 bg-slate-100 focus:bg-white"
+              className="h-10 rounded-chip border border-slate-300 bg-white pr-9 text-sm focus:border-[#6D7F9F]"
               dir="rtl"
             />
           </div>
@@ -105,18 +108,18 @@ export function ConsultantFilters({
 
         {/* 7 RANK BUTTONS FILTER */}
         <div className="space-y-2">
-          <Label className="text-xs font-semibold text-slate-700 flex items-center gap-1">
+          <Label className="flex items-center gap-1 text-sm font-bold text-slate-800">
             <Award className="h-3.5 w-3.5 text-purple-600" />
             فیلتر رتبه نیرو (۷ حالت)
           </Label>
-          <div className="grid grid-cols-2 gap-1.5 p-1 bg-slate-100 rounded-chip text-xs">
+          <div className="grid grid-cols-2 gap-1.5 rounded-chip bg-slate-100 p-1 ring-1 ring-slate-200">
             {rankOptions.map((opt) => (
               <button
                 key={opt.value}
                 type="button"
                 onClick={() => updateFn({ ...currentFilters, rank: opt.value })}
                 className={cn(
-                  'py-1.5 px-2 rounded-chip font-bold transition-all text-xs text-center',
+                  'rounded-chip px-2 py-2 text-center text-sm font-bold transition-all',
                   currentFilters.rank === opt.value
                     ? 'bg-purple-600 text-white shadow-xs'
                     : 'text-slate-700 hover:text-slate-900 hover:bg-slate-200/60'
@@ -130,10 +133,10 @@ export function ConsultantFilters({
 
         {/* Status Filter */}
         <div className="space-y-2">
-          <Label className="text-xs font-semibold text-slate-700">
+          <Label className="text-sm font-bold text-slate-800">
             وضعیت اعتبار ({headers[4] || 'تاریخ انقضاء'})
           </Label>
-          <div className="grid grid-cols-3 gap-1.5 p-1 bg-slate-100 rounded-chip text-xs">
+          <div className="grid grid-cols-3 gap-1.5 rounded-chip bg-slate-100 p-1 text-sm ring-1 ring-slate-200">
             <button
               type="button"
               onClick={() => updateFn({ ...currentFilters, status: 'all' })}
@@ -172,22 +175,17 @@ export function ConsultantFilters({
 
   return (
     <>
-      {/* DESKTOP FILTER SIDEBAR (Borderless) */}
-      <div className="hidden lg:block p-5 border-0 ring-0 rounded-card bg-white shadow-md sticky top-20">
+      {/* Desktop filter panel is framed by the listing page. */}
+      <div className="hidden p-6 lg:block">
         {renderFilterForm(filters, onFilterChange, false)}
 
-        {totalResults !== undefined && (
-          <div className="pt-3 mt-4 text-center text-xs font-bold text-purple-700">
-            {totalResults.toLocaleString('fa-IR')} شرکت مشاور یافته شد
-          </div>
-        )}
       </div>
 
       {/* MOBILE COMPACT FILTER TRIGGER BUTTON */}
       <div className="lg:hidden mb-4">
         <Button
           onClick={() => setMobileOpen(true)}
-          className="w-full h-12 bg-white hover:bg-slate-50 border-0 ring-0 text-slate-900 font-black text-sm rounded-chip shadow-md flex items-center justify-between px-4"
+          className="flex h-12 w-full items-center justify-between rounded-chip border border-[#6D7F9F]/40 bg-[#eef1f6] px-4 text-sm font-black text-slate-900 shadow-sm hover:bg-[#e6ebf3]"
         >
           <div className="flex items-center gap-2">
             <div className="p-1.5 rounded-chip bg-purple-100 text-purple-700">

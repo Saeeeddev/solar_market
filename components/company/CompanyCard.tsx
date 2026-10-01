@@ -15,8 +15,31 @@ import {
 } from 'lucide-react';
 import { cn } from '@/lib/utils/cn';
 
+export interface CompanyRecord {
+  id?: string | number;
+  company_name?: string;
+  name?: string;
+  national_id?: string | string[];
+  phone_numbers?: string[];
+  phone_list?: string[];
+  phone?: string;
+  expiration_date?: string;
+  is_expired?: boolean;
+  status?: string;
+  status_text?: string;
+  website?: string;
+  website_url?: string;
+  site?: string;
+  category?: string;
+  contractor_certificate?: string;
+  organization_rank?: string[];
+  power_rank?: string[];
+  ranks?: string[];
+  activity_conditions?: string[];
+}
+
 interface CompanyCardProps {
-  company: any;
+  company: CompanyRecord;
   type?: 'small' | 'megawatt' | 'consultant' | 'vendor' | 'branch';
 }
 
@@ -63,8 +86,8 @@ export function CompanyCard({ company, type }: CompanyCardProps) {
   const hasCertificate = company.contractor_certificate === 'دارد';
 
   return (
-    <Card className="group card-hover h-full flex flex-col justify-between border-0 ring-0 rounded-card bg-white shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden">
-      <CardHeader className="p-3.5 sm:p-5 space-y-2.5 pb-2">
+    <Card className="group card-hover flex h-full min-w-0 flex-col justify-between overflow-hidden rounded-card border-0 bg-white shadow-md ring-0 transition-all duration-300 hover:shadow-lg">
+      <CardHeader className="min-w-0 space-y-2.5 p-3.5 pb-2 sm:p-5">
         {/* Category & Status Badge Row */}
         <div className="flex items-center justify-between gap-1.5 flex-wrap">
           {/* Category Tag */}
@@ -105,7 +128,7 @@ export function CompanyCard({ company, type }: CompanyCardProps) {
         </div>
 
         {/* Company Title */}
-        <h3 className="text-base sm:text-xl font-bold text-right leading-snug text-slate-900 group-hover:text-[#6D7F9F] transition-colors line-clamp-2">
+        <h3 className="break-words text-right text-base font-bold leading-snug text-slate-900 transition-colors group-hover:text-[#6D7F9F] sm:text-xl">
           {companyName}
         </h3>
 
@@ -116,8 +139,8 @@ export function CompanyCard({ company, type }: CompanyCardProps) {
         </div>
       </CardHeader>
 
-      <CardContent className="p-3.5 sm:p-5 pt-0 space-y-3 flex-1 flex flex-col justify-between">
-        <div className="space-y-2.5">
+      <CardContent className="flex min-w-0 flex-1 flex-col justify-between space-y-3 p-3.5 pt-0 sm:p-5">
+        <div className="min-w-0 space-y-2.5">
           {/* Certificate Info (Small Scale) */}
           {company.contractor_certificate !== undefined && (
             <div className="flex items-center justify-between text-xs text-right pt-2">
@@ -137,15 +160,14 @@ export function CompanyCard({ company, type }: CompanyCardProps) {
 
           {/* BOLD Ranks Chips */}
           {ranks.length > 0 && (
-            <div className="flex flex-wrap gap-1.5 pt-1">
+            <div className="flex min-w-0 flex-wrap gap-1.5 pt-1">
               {ranks.map((rank, idx) => (
-                <Badge
+                <span
                   key={idx}
-                  variant="secondary"
-                  className="text-[10px] sm:text-xs rounded-chip bg-[#6D7F9F]/15 text-[#3a4966] border-0 font-extrabold px-2.5 py-1"
+                  className="max-w-full break-words whitespace-normal rounded-chip bg-[#6D7F9F]/15 px-2.5 py-1 text-right text-[10px] font-extrabold leading-relaxed text-[#3a4966] sm:text-xs"
                 >
                   {rank}
-                </Badge>
+                </span>
               ))}
             </div>
           )}
@@ -157,11 +179,11 @@ export function CompanyCard({ company, type }: CompanyCardProps) {
                 <ShieldCheck className="h-3 w-3 text-[#6D7F9F]" />
                 شرایط فعالیت:
               </p>
-              <div className="p-2.5 sm:p-3 bg-slate-100 rounded-xl text-[11px] sm:text-xs space-y-1 text-slate-800 border-0 text-right leading-relaxed">
+              <div className="min-w-0 space-y-1 rounded-xl border-0 bg-slate-100 p-2.5 text-right text-[11px] leading-relaxed text-slate-800 sm:p-3 sm:text-xs">
                 {activityConditions.map((cond, idx) => (
-                  <div key={idx} className="flex items-start gap-1 font-medium">
+                  <div key={idx} className="flex min-w-0 items-start gap-1 font-medium">
                     <span className="text-[#6D7F9F] font-bold">•</span>
-                    <span>{cond}</span>
+                    <span className="min-w-0 break-words">{cond}</span>
                   </div>
                 ))}
               </div>
@@ -170,7 +192,7 @@ export function CompanyCard({ company, type }: CompanyCardProps) {
         </div>
 
         {/* BOTTOM ROW: Expiration Date (Right) & STACKED BUTTON-LIKE PHONE NUMBERS (Left) */}
-        <div className="mt-3 pt-3 flex items-center justify-between gap-2">
+        <div className="mt-3 flex flex-wrap items-center justify-between gap-2 pt-3">
           {/* Expiration Date */}
           <div className="flex items-center gap-1 text-[10px] sm:text-xs text-slate-600">
             <Calendar className="h-3.5 w-3.5 text-slate-400 flex-shrink-0" />
