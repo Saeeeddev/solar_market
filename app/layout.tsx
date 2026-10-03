@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "دسترسی به لیست کامل پیمانکاران، مشاوران و شرکت‌های فعال در صنعت نیروگاه‌های خورشیدی",
   keywords: "خورشیدی، نیروگاه، پیمانکار، مشاور، انرژی تجدیدپذیر، سولار",
   icons: {
-    icon: "/icon.svg",
+    icon: [{ url: "/images/solarmarketicon.webp", type: "image/webp" }],
   },
   openGraph: {
     title: "سولار مارکت | دایرکتوری صنعت خورشیدی",
@@ -41,4 +41,3 @@ export default function RootLayout({
     </html>
   );
 }
-

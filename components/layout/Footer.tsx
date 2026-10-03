@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { Sun, Mail, Phone } from 'lucide-react';
+import Image from 'next/image';
+import { Mail, Phone } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -9,8 +10,7 @@ export function Footer() {
           {/* Brand Section */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <Sun className="h-8 w-8 text-[#6D7F9F]" />
-              <span className="text-xl font-bold text-slate-900">سولار مارکت</span>
+              <Image src="/images/solarmarketLOGO.webp" width={2087} height={753} alt="سولار مارکت" className="h-14 w-auto" />
             </div>
             <p className="text-sm text-slate-600 text-right leading-relaxed">
               دایرکتوری جامع صنعت خورشیدی ایران - دسترسی آسان به پیمانکاران و مشاوران تایید شده نیروگاه‌های خورشیدی

@@ -17,7 +17,7 @@ export interface NavItem {
 
 const navItems: NavItem[] = [
   { href: '/', label: 'خانه' },
-  { href: '/about#services', label: 'خدمات' },
+  { href: '/#services', label: 'خدمات' },
   { href: '/sellers', label: 'فروشندگان', badge: 'به زودی', isSoon: true },
 ];
 
@@ -70,7 +70,7 @@ export function Navigation() {
   };
 
   return (
-    <div ref={containerRef} className="relative">
+    <div ref={containerRef} className="relative order-2 sm:order-none">
       {/* Desktop Navigation */}
       <nav className="hidden md:flex items-center gap-3 lg:gap-5">
         {navItems.map((item) =>
@@ -123,7 +123,7 @@ export function Navigation() {
       {/* Mobile Dropdown Menu & Fullscreen Backdrop Overlay */}
       {mobileMenuOpen && (
         <div
-          className="fixed inset-0 top-16 z-40 bg-slate-900/50 backdrop-blur-xs md:hidden animate-in fade-in-0 duration-200"
+          className="fixed inset-0 top-[104px] z-40 bg-slate-900/50 backdrop-blur-xs sm:top-16 md:hidden animate-in fade-in-0 duration-200"
           onClick={() => setMobileMenuOpen(false)}
         >
           <nav

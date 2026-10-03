@@ -64,7 +64,7 @@ export function ExploreCategories() {
 
   return (
     <section className="wrap space-y-5" aria-label="دسته‌بندی خدمات و فروشندگان">
-      <div className="rounded-card border border-slate-200/80 bg-white p-5 shadow-sm sm:p-7">
+      <div id="services" className="scroll-mt-24 rounded-card border border-slate-200/80 bg-white p-5 shadow-sm sm:p-7">
         <div className="mb-5 flex items-center gap-4 border-b border-slate-200 pb-4">
           <span className="h-7 w-1 rounded-full bg-[#6D7F9F]" aria-hidden="true" />
           <h2 className="text-3xl font-extrabold text-slate-900">خدمات</h2>
